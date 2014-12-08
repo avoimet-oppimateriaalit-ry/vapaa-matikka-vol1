@@ -1,0 +1,137 @@
+\qrlinkki{http://opetus.tv/maa/maa2/n-asteinen-polynomiepayhtalo/}{Opetus.tv: \emph{N-asteinen polynomiepäyhtälö} ($16.19$ ja $12.00$)}
+
+Korkeamman asteen epäyhtälö, kuten epäyhtälö
+\[
+x^3 -6x \leq x^2
+\]
+voinaan ratkaista siirtämällä kaikki termit epäyhtälön toiselle puolelle ja tutkimalla syntyvän polynomin merkkiä:
+\begin{align*}
+x^3-6x & \leq x^2 & &\ppalkki -x^2 \\
+\underbrace{x^3-x^2-6x}_{P(x)} &\leq 0. &&
+\end{align*}
+Polynomin $P(x)$ merkin selvittämiseksi ratkaistaan sen nollakohdat:
+\begin{align*}
+    x^3 - x^2-6x &= 0 & &\ppalkki \text{$x$ yhteiseksi tekijäksi} \\
+    x(x^2 -x -6) &= 0 & &\ppalkki \text{tulon nollasääntö} \\
+    x = 0 \quad \text{tai} \quad & x^2 -x -6 = 0 & &\ppalkki \text{ratkaisukaava} \\
+    x= 0 \quad \text{tai} \quad & x=\frac{-(-1) \pm \sqrt{(-1)^2-4\cdot 1 \cdot (-6)}}{2\cdot 1} && \\
+    x = -2 \quad \text{tai} \quad & x = 3. &&
+\end{align*}
+Polynomin $P$ nollakohdat ovat siis $0$, $-2$ ja $3$. Tästä voidaan jatkaa kahdella eri tavalla.
+
+\textbf{Tapa 1: Tekijöihin jako.}
+
+Jaetaan polynomi tekijöihin nollakohtien avulla:
+\[
+P(x) = x^3 - x^2-6x = x(x^2-x-6) = x(x+2)(x-3).
+\]
+Tutkitaan kunkin tulon tekijän merkkiä:
+\begin{align*}
+    x+2>0 & \quad \text{kun} \quad x > -2\\
+    x-3>0 & \quad \text{kun} \quad x > 3\\
+    x>0 & \quad \text{kun} \quad x > 0.
+\end{align*}
+
+Kootaan tulokset \termi{merkkikaavio}{merkkikaavioon}. Merkitään ensin lukusuoralle polynomin $P$ nollakohdat. Nämä kolme nollakohtaa jakavat lukusuoran neljään osaan. Taulukoidaan lukusuoran alle kunkin tekijän merkki kullakin välillä.
+\begin{center}
+    \begin{merkkikaavio}{3}
+        \merkkikaavioKohta{$-2$}
+        \merkkikaavioKohta{$0$}
+        \merkkikaavioKohta{$3$}
+
+        \merkkikaavioFunktio{$x+2$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+
+        \merkkikaavioUusirivi
+        \merkkikaavioFunktio{$x-3$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+
+        \merkkikaavioUusirivi
+        \merkkikaavioFunktio{$x$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+
+        \merkkikaavioUusiriviKaksoisviiva
+        \merkkikaavioFunktio{$x(x+2)(x-3)$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+    \end{merkkikaavio}
+\end{center}
+Merkkikaavion alin rivi saadaan tulon merkkisäännöstä: kolmen negatiivisen luvun tulo on negatiivinen, yhden positiivisen ja kahden negatiivisen tulo positiivinen ja niin edelleen. Kaavion viimeiseltä riviltä voidaan nyt lukea vastaus alkuperäiseen kysymykseen: $x^3-x^2-6 \leq 0$, kun $x\leq -2$ tai $0\leq x \leq 3$.
+
+\textbf{Tapa 2: Testipisteet.}
+
+Polynomit ovat jatkuvia funktioita. (Jatkuvuutta käsitellään tarkemmin vasta kurssilla 7.) Intuitiivisesti jatkuvuudessa on kyse siitä, että funktion kuvaaja on yhtenäinen viiva. Jatkuvuudesta seuraa, että polynomi ei voi vaihtaa merkkiä kulkematta nollakohdan kautta. Polynomin merkin nollakohtien välillä saa selville laskemalla funktion arvon jossakin väliltä otetussa testipisteessä.
+
+Esimerkissä nollakohdat olivat $-2$, $0$ ja $3$. Valitaan niiden välistä ja ympäriltä testipisteiksi vaikkapa $x=-3$, $x=-1$, $x=1$ ja $x=4$. Tarkistetaan funktion merkki kussakin pisteessä:
+
+\begin{tabular}{c|c|l|c}
+Väli & Testipiste & $f(x)=x^3-x^2-6x$ & Funktion merkki \\
+\hline
+$x < -2$ & $x = -3$ & $(-3)^3 -(-3)^2 - 6(-3) = -18$ & $-$ \\
+$-2 <x < 0$ & $x = -1$ & $(-1)^3 -(-1)^2 - 6(-1) =4$ & $+$ \\
+$0 <x < 3$ & $x = 1$ & $1^3 -1^2 - 6\cdot 1 =  -6$ & $-$ \\
+$3 <x $ & $x = 4$ & $4^3 -4^2 - 6\cdot 4 = 24$ & $+$
+\end{tabular}
+
+Vastaukseksi saadaan sama kuin edellä: $x^3-x^2-6 \leq 0$, kun $x\leq -2$ tai $0\leq x \leq 3$.
+
+\begin{esimerkki}
+Ratkaise epäyhtälö $x^2-x^4 \leq 0$.
+\begin{esimratk}
+Jaetaan ensin tekijöihin ja ratkaistaan nollakohdat.
+\begin{align*}
+x^2+x^4 &=x^2(1-x^2) && \ppalkki \text{ muistikaava }\\
+&= x^2(1-x)(1+x) 
+\end{align*}
+Nollakohdat ovat $x=0$, $x=1$ ja $x=-1$. Tehdään merkkikaavio:
+\begin{center}
+    \begin{merkkikaavio}{3}
+        \merkkikaavioKohta{$-1$}
+        \merkkikaavioKohta{$0$}
+        \merkkikaavioKohta{$1$}
+
+        \merkkikaavioFunktio{$x^2$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+
+        \merkkikaavioUusirivi
+        \merkkikaavioFunktio{$1-x$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$-$}
+
+        \merkkikaavioUusirivi
+        \merkkikaavioFunktio{$1+x$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+
+        \merkkikaavioUusiriviKaksoisviiva
+        \merkkikaavioFunktio{$x^2(1-x)(1+x)$}
+        \merkkikaavioMerkki{$-$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$+$}
+        \merkkikaavioMerkki{$-$}
+    \end{merkkikaavio}
+\end{center}
+Merkkikaaviosta voidaan lukea, että $x^2(1-x)(1+x) <0$, kun $x < -1$ tai $x >1$. Lisäksi $x^2(1-x)(1+x)=0$, kun $x=-1$, $x=0$ tai $x=1$.
+\end{esimratk}
+\begin{esimvast}
+$x \leq -1$, $x=0$ tai $x \geq 1$.
+\end{esimvast}
+\end{esimerkki}

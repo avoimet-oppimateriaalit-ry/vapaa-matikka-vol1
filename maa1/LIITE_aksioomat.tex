@@ -1,0 +1,39 @@
+Kvanttorit $\forall$ ja $\exists$ merkitsevät ''kaikilla'' ja ''on olemassa,'' vastaavasti.
+
+Reaalilukujen aksiomaattinen määritelmä muodostuu kolmesta osasta:
+
+\paragraph*{Kunta-aksioomat, kuntana reaaliluvut}
+\begin{description}
+\item[K1.] $\forall x, y \in \rr: \, x+(y+z) = (x+y)+z$ (summan liitäntälaki)
+\item[K2.] $\exists 0 \in \rr: \, x+0 = x$ (summan neutraalialkio)
+\item[K3.] $\forall x \in \rr: \, \exists (-x) \in \rr: \, x+(-x)=0$ (vasta-alkio)
+\item[K4.] $\forall x, y \in \rr: \, x+y = y+x$ (summan vaihdantalaki)
+\item[K5.] $\forall x, y, z \in \rr: \, x \cdot (y+z) = x \cdot y + x \cdot z$ (osittelulaki)
+\item[K6.] $\forall x, y, z \in \rr: \, x \cdot (y \cdot z) = (x \cdot y) \cdot z$ (tulon liitäntälaki)
+\item[K7.] $\exists 1 \in \rr, 1 \neq 0: \, 1 \cdot x = x$ (tulon neutraalialkio)
+\item[K8.] $\forall x \in \rr \setminus \{0\}: \, \exists x^{-1} \in \rr \setminus \{0\}: \, x \cdot x^{-1}=1$ (tulon käänteisalkio)
+\item[K9.] $\forall x, y \in \rr: \, x \cdot y = y \cdot x$ (tulon vaihdantalaki)
+\end{description}
+
+\paragraph*{Järjestysaksioomat}
+\begin{description}
+\item[J1.] $\forall x, y \in \rr: \, \text{täsmälleen yksi seuraavista:} \, (x > y), \, (x = y), \, (x < y)$
+\item[J2.] $\forall x, y, z \in \rr: \, (x < y) \land (y < z) \Rightarrow (x < z)$
+\item[J3.] $\forall x, y, z \in \rr: \, (x < y) \Leftrightarrow (x + z < y + z)$
+\item[J4.] $\forall x, y \in ]0,\infty[: \, x \cdot y \in ]0,\infty[$
+\end{description}
+
+\paragraph*{Täydellisyysaksiooma}
+\begin{description}
+\item[T1.] Jokaisella ylhäältä rajoitetulla epätyhjällä reaalilukujen osajoukolla on pienin yläraja.
+\end{description}
+
+\begin{tehtava}
+	Todista aksioomista lähtien:
+	\alakohdat{
+		§ $\forall x \in \rr: 0 \cdot x = 0$
+		§ $\forall x \in \rr: -1 \cdot x = -x$
+		§ $\forall x, y \in ]-\infty,0[: x \cdot y \in ]0,\infty[$
+		§ $1 > 0$
+	}
+\end{tehtava}

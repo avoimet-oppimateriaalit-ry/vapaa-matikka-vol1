@@ -1,0 +1,85 @@
+\qrlinkki{http://opetus.tv/maa/maa2/toisen-asteen-polynomifunktio/}{Opetus.tv: \emph{toisen asteen polynomifunktio} ($7.59$)}
+
+Toisen asteen polynomifunktio on muotoa
+\begin{align*}
+P(x)=ax^2+bx+c,
+\end{align*}
+missä vakiot $b$ ja $c$ voivat olla mitä tahansa reaalilukuja $(b, \ c \in \rr)$ ja $a$ voi olla mikä tahansa reaaliluku, paitsi luku nolla $(a \in \rr, \ a \neq 0)$.
+
+Toisen asteen polynomifunktion kuvaajaa nimitetään \termi{paraabeli}{paraabeliksi}.
+
+Funktion $P(x)=ax^2+bx+c$ kuvaaja on joka ylös- tai alaspäin aukeava paraabeli. Paraabelin suuntaan vaikuttaa ainoastaan toisen asteen termin kerroin $a$: kun $a>0$, paraabeli aukeaa ylöpäin, ja kun $a<0$, paraabeli aukeaa alaspäin.
+
+\begin{center}
+\begin{tabular}{cc}
+
+\begin{tabular}{c}
+	\begin{lukusuora}{-2}{2}{4}
+	\lukusuoraisobbox
+	\lukusuorakuvaaja{x**2-1}
+	\end{lukusuora}
+	\\ ylöspäin aukeava paraabeli, \\ $a > 0$
+\end{tabular}
+&
+\begin{tabular}{c}
+	\begin{lukusuora}{-2}{2}{4}
+	\lukusuoraisobbox
+	\lukusuorakuvaaja{-x**2+1}
+	\end{lukusuora}
+	\\ alaspäin aukeava paraabeli, \\ $a < 0$
+\end{tabular}
+
+\end{tabular}
+\end{center}
+
+Vakiotermi $c$ vaikuttaa kuvaajan korkeuteen.
+
+%FIXME: kuvaajassa x^2+3 ja x^2 menevät päällekäin 
+\begin{luoKuva}{paraabelit}
+	kuvaaja.pohja(-5, 5, -1, 8, leveys=7)
+	
+	kuvaaja.piirra("x**2+3", nimi="$x^2+3$")
+	kuvaaja.piirra("x**2", nimi="$x^2$")
+\end{luoKuva}
+
+\begin{luoKuva}{paraabelit2}
+	kuvaaja.pohja(-5, 5, -4, 6, leveys=7)
+	
+	kuvaaja.piirra("x**2-3*x", nimi="$x^2-3x$")
+	kuvaaja.piirra("x**2", nimi="$x^2$")
+\end{luoKuva}
+
+
+%\begin{luoKuva}{vakio}
+%	kuvaaja.pohja(-5, 5, -5, 5, leveys=7)
+%	
+%	kuvaaja.piirra("*x**2+2", nimi="$x^2+2$")
+%	kuvaaja.piirra("x**2", nimi="$x^2$")
+%\end{luoKuva}
+
+\begin{center}
+	\naytaKuva{paraabelit}
+\end{center}
+
+Ensimmäisen asteen termin kerroin $b$ vaikuttaa huipun sijaintiin sekä pysty- että vaakasuunnassa.
+
+\begin{center}
+	\naytaKuva{paraabelit2}
+\end{center}
+
+Tarkempi perustelu edellä esitetyille seikoille löytyy lisämateriaalista, sivulta \pageref{paraabeli_tod}.
+
+%\begin{center}
+%	\naytaKuva{vakio}
+%\end{center}
+
+%\begin{luoKuva}{ekaaste}
+%	kuvaaja.pohja(-5, 5, -5, 5, leveys=7)
+%	
+%	kuvaaja.piirra("*x**2-3*x", nimi="$x^2-3x$")
+%	kuvaaja.piirra("x**2", nimi="$x^2$")
+%\end{luoKuva}
+%
+%\begin{center}
+%	\naytaKuva{ekaaste}
+%\end{center}

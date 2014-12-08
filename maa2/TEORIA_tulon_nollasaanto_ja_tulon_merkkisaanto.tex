@@ -1,0 +1,90 @@
+\subsection*{Tulon merkkisääntö}
+
+Pitkän matematiikan $1$. kurssilla on esitetty seuraava sääntö kahden reaaliluvun tulolle:
+
+\luettelolaatikko{Tulon merkkisääntö kahdelle tulon tekijälle}{
+        § Jos tulon tekijät ovat samanmerkkisiä, tulo on positiivinen.
+	    §§ Kahden positiivisen luvun tulo on positiivinen.
+	    §§ Kahden negatiivisen luvun tulo on positiivinen.
+        § Jos tulon tekijät ovat erimerkkisiä, tulo on negatiivinen.
+	    §§ Positiivisen ja negatiivisen luvun tulo on negatiivinen.
+}
+
+Tulon merkkisäännöstä seuraa, että reaaliluvun neliö ei voi olla negatiivinen, koska kahden samanmerkkisen luvun tulo aina on positiivinen. Lyhyemmin ilmaistuna $x^2 \geq 0$, eli reaaliluvun neliö on aina \termi{epänegatiivinen}{epänegatiivinen} positiivinen tai nolla.
+
+\begin{esimerkki}
+Osoita, että funktio $P(x)=x^2+7$ saa vain positiivisia arvoja.
+    \begin{esimratk}
+	Koska $x^2 \geq 0$, lausekkeen $x^2+7$ arvo on vähintään $7$. Fuktio saa siis
+	vain positiivisia arvoja.
+    \end{esimratk}
+\end{esimerkki}
+
+Tulon merkkisääntö yleistyy mille tahansa määrälle tulontekijöitä. Mikäli tulossa on pariton $(1, 3, 5, \ldots)$ määrä negatiivisia tekijöitä, tulo on negatiivinen. Muulloin tulo on positiivinen, eli esimerkiksi parillisesta potenssista ei voi tulla negatiivista vastausta.
+
+\begin{esimerkki}
+Mikä on funktion $f:\mathbb{R} \rightarrow \mathbb{R}, f(t)=-t^4+3$ suurin arvo?
+    \begin{esimratk}
+Koska muuttuja $t$ on reaaliluku, ei sen parillinen potenssi voi olla merkkisäännön mukaan negatiivinen, vaan $t^4$:n arvo on vähintään $0$. Tämän perusteella $-t^4$:n arvo on epäpositiivinen eli korkeintaan nolla. Jos $-t^4$:n suurin arvo on nolla, niin lisäämällä tähän luvun $3$, saadaan funktion $f(t)=-t^4+3$ suurimmaksi mahdolliseksi arvoksi $3$.
+    \end{esimratk}
+\end{esimerkki}
+
+\subsection*{Tulon nollasääntö}
+
+Reaaliluku voi olla vain joko positiivinen, nolla tai negatiivinen. Tulon merkkisäännöstä seuraa, että positiivisten ja negatiivisten lukujen tulo on aina positiivinen tai negatiivinen, ei koskaan nolla. Jos siis tulo on $0$, tulon tekijöistä ainakin yhden täytyy olla $0$. Toisaalta jos jokin tulon tekijöistä on $0$, myös tulo on automaattisesti $0$.
+
+Nämä tiedot yhdistämällä saadaan \termi{tulon nollasääntö}{tulon nollasääntö}:
+
+\laatikko[Tulon nollasääntö]{
+Ainakin yksi tulon tekijöistä on $0$. $\Longleftrightarrow$ Tulo on $0$.
+}
+
+Tulon nollasäännössä on olennaista, että päättely toimii \emph{molempiin suuntiin}.
+
+\begin{esimerkki}
+Sievennä lauseke $(x^5-7)\cdot y \cdot 0\cdot(3a-5b)^2$.
+    \begin{esimratk}
+Koska tulossa on tekijänä $0$, vastaus on $0$.
+    \end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki} Ratkaistaan yhtälö $(x+5) \cdot x =0 $.
+    \begin{align*}
+        (x+5)\cdot x &=0 \quad \ppalkki \text{ tulon nollasääntö} \\
+        x +5= 0 \text{ tai } x &=0 \\
+        x= -5 \text{ tai } x &=0.
+    \end{align*}
+    Ratkaisuja on siis kaksi: $x= -5$ tai $x= 0$.
+\end{esimerkki}
+
+\begin{esimerkki} Ratkaistaan yhtälö $2(x+5)=0$. Tulon nollasäännön perusteella tiedetään, että $2=0$ tai $x+5=0$. Koska selvästi $2\neq 0$, jää ainoaksi ratkaisuksi $x+5=0$ eli $x=-5$. (Yhtälön voi ratkaista myös avaamalla sulkeet ja ratkaisemalla saatu ensimmäisen asteen yhtälö tavallisin yhtälönmuokkaamiskeinoin.)
+\end{esimerkki}
+
+\begin{esimerkki} Mitä voidaan yhtälön $xyz=0$ perusteella päätellä tuntemattomista $x$, $y$ ja $z$?
+	\begin{esimratk}
+Tulon nollasäännön perusteella $x=0$, $y=0$ tai $z=0$. Nollia voi siis olla $1$--$3$ kappaletta.
+	\end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki}
+Millä ehdolla $(ab^3)^0$ on määritelty?
+	\begin{esimratk}
+	Nollas potenssi on määritelty, kun kantalukuna ei ole nolla. Siis tulo $ab^3$ ei saa olla nolla. Tämä toteutuu, kun kumpikaan tekijä -- $a$ tai $b^3$ -- ei ole nolla. Siis lauseke on määritelty, $a$ ei ole nolla eikä $b$ myöskään ole nolla.
+	\end{esimratk}
+\end{esimerkki}
+
+\subsection*{\star Tulon nollasäännön todistus}
+
+\begin{todistus}
+Annettuna joukko nollasta poikkeavia lukuja $x_0, x_1, x_2 ... , x_n$ asetetaan
+\begin{align*}
+    x_0 \cdot x_1 \cdot x_2 \cdot ... \cdot x_n &= 0 & \ppalkki & : (x_0 \cdot x_1 \cdot x_2 \cdot ... \cdot x_{n-1}) \\
+    & & & \text{koska kaikille $x_i$ pätee $x_i \neq 0$} \\
+    \\
+    \frac{x_0 \cdot x_1 \cdot x_2 \cdot ... \cdot x_n}{x_0 \cdot x_1 \cdot x_2 \cdot ... \cdot x_{n-1}} &=
+    \frac{0}{x_0 \cdot x_1 \cdot x_2 \cdot ... \cdot x_{n-1}} & \ppalkki & \frac{0}{x_i} = 0\ \text{kaikilla $x_i,\ x_i \neq 0$} \\
+    \\
+    x_n &= 0, & &
+\end{align*}
+mikä on ristiriidassa todistuksessa asetetun vaatimuksen kanssa, että kaikkien lukujen piti olla nollasta poikkeavia. Näin alkuperäsen väitteen täytyy olla tosi.
+\end{todistus}

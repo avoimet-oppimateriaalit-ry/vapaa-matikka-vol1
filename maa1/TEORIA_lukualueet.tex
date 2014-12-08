@@ -1,0 +1,565 @@
+\subsection{Luonnolliset luvut}
+
+\termi{luonnolliset luvut}{Luonnolliset luvut} ovat lukuja, joita voidaan käyttää lukumäärän ja järjestyksen ilmaisemiseen. Luonnollisten lukujen joukkoa merkitään kirjaimella $\nn$ ja niihin katsotaan kuuluvan luvut $0$, $1$, $2$, $3$, jne. Matematiikan kielellä tämä on usein tapana ilmaista seuraavanlaisella merkinnällä: \[\nn = \{0, 1, 2, 3, \ldots\}\]
+
+Luvun kuulumista johonkin joukkoon voidaan merkitä symbolilla $\in$, esimerkiksi $2 \in \nn$. Jos luku ei kuulu johonkin joukkoon, merkitään vastaavasti $\notin$, esimerkiksi
+$-2 \notin \nn$.
+
+Tässä kirjasarjassa katsotaan, että nolla on myös luonnollinen luku. Matematiikan alasta riippuen käytännöt saattavat vaihdella. Jos halutaan ehdottomasti painottaa nollan kuuluvan käytettyyn luonnollisten lukujen joukkoon, voidaan joukosta käyttää merkintää $\mathbb{N}_0$.
+
+Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$. Luonnollisten lukujen kertolasku määritellään peräkkäisinä yhteenlaskuina
+
+\[5 \cdot 3 = 5 + 5 + 5 = 3 + 3 + 3 + 3 + 3.\]
+
+tai yleisesti kirjaimia käyttäen:
+
+\laatikko[Kertolasku]{\[m \cdot n = \underbrace{m + m + \ldots + m}_{n\,\text{kpl}} = \underbrace{n + n + \ldots + n}_{m\,\text{kpl}}.\]}
+
+Kolmea pistettä käytetään kaavoissa esittämään puuttuvaa, systemaattisesti jatkuvaa lausekkeen osaa. Kolmea pistettä ei tule käyttää ellei ole hyvin selvää, miten lyhennetty kohta jatkuu! %selitä kaava
+
+Nollalla kertomisen ajatellaan olevan ''tyhjä yhteenlasku'' eli nolla:
+\laatikko[Nollalla kertominen]{\[0 \cdot m = 0\]}
+
+Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla: $m-n$ on luku $k$, jolle $k + n = m$. Tämä on kuitenkin köykäistä, ja vähennyslasku käsitellään elegantimmin kokonaislukujen joukossa.
+
+\subsection{Kokonaisluvut}
+
+Peruskoulun matematiikasta tutuista laskutoimituksista yhteenlasku ja kertolasku ovat ainoat, joilla voidaan laskea niin, että pysytään luonnollisten lukujen sisällä. Esimerkiksi vähennyslaskua $3-5$ ei voida laskea luonnollisten lukujen joukossa. Jotta vähennyslasku olisi kaikille luvuille mahdollinen, on keksitty niin sanottu \termi{vastaluku}{vastaluvun} käsite. Vastaluku määritellään seuraavasti:
+
+\laatikko[Vastaluku]{Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$.}
+
+Esimerkiksi luvun $2$ vastaluku on $-2$. Yllä olevan määritelmän mukaan, kun luku lasketaan yhteen vastalukunsa kanssa, saadaan tulokseksi $0$. Esimerkiksi $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$. Yleisesti pätee \termi{peilaus}{peilaus}:
+
+\laatikko[Peilaus]{$$-(-a)=a\text{.}$$}
+
+Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä \termi{kokonaisluvut}{kokonaislukujen} joukon \[\zz = \{\ldots, -2, -1, 0, 1, 2, \ldots\},\] jota voidaan havainnollistaa \termi{lukusuora}{lukusuoran} avulla:
+
+\begin{kuva}
+	lukusuora.pohja(-4,4,12)
+	lukusuora.piste(-3, "$-3$")
+	lukusuora.piste(-2,"$-2$")
+	lukusuora.piste(-1,"$-1$")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(1,"$1$")
+	lukusuora.piste(2,"$2$")
+	lukusuora.piste(3,"$3$")
+\end{kuva}
+
+%\begin{center}
+%\begin{lukusuora}{-4}{4}{10}
+%\lukusuorapiste{-3}{}
+%\lukusuorapiste{-2}{}
+%\lukusuorapiste{-1}{}
+%\lukusuorapiste{0}{}
+%\lukusuorapiste{1}{}
+%\lukusuorapiste{2}{}
+%\lukusuorapiste{3}{}
+%\lukusuoraalanimi{-3}{$-3$}
+%\lukusuoraalanimi{-2}{$-2$}
+%\lukusuoraalanimi{-1}{$-1$}
+%\lukusuoraalanimi{0}{$0$}
+%\lukusuoraalanimi{1}{$1$}
+%\lukusuoraalanimi{2}{$2$}
+%\lukusuoraalanimi{3}{$3$}
+%
+%\end{lukusuora}
+%\end{center}
+
+Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
+
+\laatikko[Vähennyslasku]{
+\[m-n = m+(-n)\]
+}
+%esim.
+\subsection{Rationaaliluvut}
+
+Peruskoulussa opituista laskutoimituksista yhteenlasku, vähennyslasku ja kertolasku ovat sellaisia, joilla voidaan laskea niin, että pysytään kokonaislukujen joukon sisällä. Jakolaskun kanssa sen sijaan saattaa joskus tulla ''ongelmia''.
+\begin{esimerkki}
+Laskusta $8:4$ tulee tulokseksi kokonaisluku $2$. Sen sijaan esimerkiksi laskutoimituksella $8:3$ ei ole tulosta kokonaislukujen joukossa.
+\end{esimerkki}
+
+Samalla tavalla kuin luonnolliset luvut laajennettiin vastaluvun avulla kokonaisluvuiksi, kokonaisluvut saadaan laajennettua \termi{rationaaliluku}{rationaaliluvuiksi} ottamalla käyttöön käänteisluvun käsite. (Tästä lisää omassa luvussaan. ) Siten jakolasku onnistuu kaikilla rationaaliluvuilla -- myös kokonaisluvuilla. Rationaaliluku määritellään lukuna, joka voidaan esittää kahden kokonaisluvun osamääränä.
+ %etymologiahuomautus!
+\begin{esimerkki}
+Esimerkiksi $\frac{2}{3}$ on rationaaliluku, samoin $0,25=\frac{1}{4}$.
+Myös kaikki kokonaisluvut ovat rationaalilukuja, sillä ne voidaan esittää osamäärinä: esimerksi $5=\frac{5}{1}$.
+\end{esimerkki}
+
+Rationaalilukujen joukkoa merkitään symbolilla $\qq$. \[\qq= \text{ rationaalilukujen joukko} \]    
+
+Lisää rationaalilukujen ominaisuuksia käsitellään myöhemmissä luvuissa.
+
+\subsection{Reaaliluvut}
+
+Kaikki käyttämämme luvut eivät ole edes rationaalilukuja. Esimerkiksi peruskoulussa on käytetty lukua $\pi$, joka kuvaa ympyrän kehän pituuden suhdetta ympyrän halkaisijaan. Lukua $\pi$ ei voida esittää kahden kokonaisluvun osamääränä, joten se ei ole rationaaliluku.
+
+Toinen esimerkki luvusta, joka ei ole rationaaliluku on $\sqrt{2}$. $\sqrt{2}$ tarkoittaa sellaista positiivista lukua, joka kerrottuna itsellään on $2$. Se tulee vastaan esimerksi suorakulmaisessa kolmiossa, jonka kateetit (eli kaksi lyhyintä sivua) ovat pituudeltaan $1$. (Neliöjuuren käsitteestä puhutaan tarkemmin tämän kirjan luvussa Juuret.)
+
+\begin{kuva}
+	skaalaa(4)
+
+	A=(0,0)
+	B=(0,1)
+	C=(1,0)
+	D=(0.1,0.1)
+	E=(0,0.1)
+	F=(0.1,0)
+
+	geom.jana(B,A,"$1$")
+	geom.jana(C,B,r"$\sqrt{2}$")
+	geom.jana(A,C,"$1$")
+	geom.jana(E,D)
+	geom.jana(D,F)
+\end{kuva}
+
+Lukuja kuten $\pi$ ja $\sqrt{2}$, joita ei voida esittää kahden kokonaisluvun osamääränä, sanotaan \termi{irrationaaliluku}{irrationaaliluvuiksi}. Rationaaliluvut ja irrationaaliluvut muodostavat yhdessä \termi{reaaliluku}{reaalilukujen} joukon $\rr$. Reaalilukujen ominaisuuksista kerrotaan lisää luvussa Reaaliluvut.
+
+Seuraavassa taulukossa on yhteenveto lukiokursseilla käytettävistä lukualueista:
+\laatikko[Lukualueet]{
+\begin{center}\begin{tabular}{l|c|l}
+Joukko & Symboli & Mitä ne ovat\\
+\hline
+Luonnolliset luvut & $\nn$ &
+Luvut $0$, $1$, $2$, $3$, $\ldots$ \\
+Kokonaisluvut & $\zz$ & Luvut $\ldots$ $-2$, $-1$, $0$, $1$, $2$ $\ldots$ \\ 
+Rationaaliluvut & $\qq$ & Luvut, jotka voidaan esittää
+murtolukuna \\
+Reaaliluvut & $\rr$ & Kaikki lukusuoran luvut \\
+\end{tabular} \end{center}}
+
+Joukot $\nn$, $\zz$, $\qq$ ja $\rr$ ovat sisäkkäisiä. Kaikki luonnolliset luvut ovat myös kokonaislukuja, kaikki kokonaisluvut ovat myös rationaalilukuja ja kaikki rationaaliluvut ovat myös reaalilukuja.
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\clip(-7.4,-8.8) rectangle (16.8,8.6);
+\draw [rotate around={0.5:(2.2,0)}] (2.2,0) ellipse (1.1cm and 0.9cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2cm and 1.6cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2.9cm and 2.6cm);
+\draw (2,1.5) node[anchor=north west] {$\nn$};
+\draw (4.0,2.7) node[anchor=north west] {$\zz$};
+\draw (5.5,3.9) node[anchor=north west] {$\qq$};
+%\draw (6.6,-4.6) node[anchor=north west] {{\scriptsize Irrationaaliluvut}};
+\draw (9.5,6.4) node[anchor=north west] {$\rr$};
+\draw [rotate around={0.5:(4.4,0)}] (4.4,0) ellipse (5cm and 4.2cm);
+%\draw [rotate around={18.2:(7.9,-5.4)}] (7.9,-5.4) ellipse (2.7cm and 0.6cm);
+\draw (0.8,1.6) node[anchor=north west] {$1$};
+\draw (1,-0.4) node[anchor=north west] {$5$};
+\draw (2.4,-0.2) node[anchor=north west] {$101$};
+\draw (4.8,0.7) node[anchor=north west] {$-5$};
+\draw (1.2,-1.7) node[anchor=north west] {$0$};
+\draw (1.2,3.1) node[anchor=north west] {$-14$};
+%\draw (4.1,-1) node[anchor=north west] {$75$};
+\draw (4.2,-2.8) node[anchor=north west] {$-\frac{1}{3}$};
+\draw (6.6,1.4) node[anchor=north west] {$2\frac{1}{2}$};
+\draw (-1.6,0.9) node[anchor=north west] {$-3$};
+%\draw (0.4,-3.1) node[anchor=north west] {$-4$};
+\draw (2.4,4.7) node[anchor=north west] {$2,6$};
+\draw (-1.3,4.1) node[anchor=north west] {$\frac{5}{7}$};
+\draw (-2.7,-1) node[anchor=north west] {$0,1$};
+\draw (5.5,-5.9) node[anchor=north west] {$\pi$};
+\draw (9.1,-3) node[anchor=north west] {$\sqrt[]{2}$};
+%\draw (6,-4.7) node[anchor=north west] {$-\frac{\pi}{2}$};
+%\draw (9.8,1.6) node[anchor=north west] {$\frac{5}{2}$};
+\draw (10.5,3) node[anchor=north west] {$\frac{1}{\sqrt{2}}$};
+%\draw (4.4,7.3) node[anchor=north west] {$3$};
+\draw (-0.1,-5.3) node[anchor=north west] {$\sqrt{15}$};
+%\draw (-4.9,1.5) node[anchor=north west] {$-5$};
+\draw (11.8,-0.9) node[anchor=north west] {$-\frac{\pi}{2}$};
+\draw (-0.6,6.8) node[anchor=north west] {$0,10110111011110\ldots$};
+%\draw (-3.7,-3) node[anchor=north west] {$-3$};
+\end{tikzpicture}
+
+Lukualueiden ominaisuudet tulevat tarkemmin esille tämän kirjan myöhemmissä luvuissa.
+
+Lukualueita voidaan laajentaa lisää vielä reaaliluvuistakin -- esimerkiksi \termi{kompleksiluvut}{kompleksiluvuiksi}, jotka voidaan esittää tason pisteinä. Kompleksilukuja merkitään kirjaimella $\cc$. Kompleksiluvut eivät kuulu lukion oppimäärään, mutta niitä tarvitaan muun muassa insinöörialoilla yliopistoissa ja ammattikorkeakouluissa. Esimerkiksi vaihtosähköpiirien analyysissä, signaalinkäsittelyssä ja säätötekniikassa käytetään runsaasti kompleksilukuja. Kompleksiluvut ovat tärkeitä myös matematiikan tutkimuksessa itsessään. Tässä kirjassa niihin ei kuitenkaan perehdytä tarkemmin.
+
+\subsection{Aritmetiikka}
+Peruslaskutoimitusten yhteen-, vähennys-, kerto- sekä jakolaskun tutkimusta kutsutaan \termi{aritmetiikka}{aritmetiikaksi}. Huomaa, että joitakin laskutoimituksia voidaan merkitä useilla eri tavoilla:
+
+\begin{center}\begin{tabular}{l|l}
+Laskutoimitus & Merkintä\\
+\hline
+Yhteenlasku & $+$ \\
+Vähennyslasku & $-$ \\
+Kertolasku & $ \times $  $ \ast $  $ \cdot $ \\
+Jakolasku & $:$ $/$ $-$ (jakoviivana) \\
+\end{tabular} \end{center} 
+
+%The × symbol for multiplication was introduced by William Oughtred in 1631.[4] It was chosen for religious reasons to represent the cross.
+%In some languages (especially, French[citation needed]) and Bulgarian the use of full stop as a multiplication symbol, such as a.b, is common.
+%maininta, miten merkit kirjoitetaan tietokoneella ja että ohjelmointikielissä ja muutenkin tietokonekirjoituksessa kertomerkki on *
+Laskimista tuttua symbolia $\div$ (obelus) ei tulisi käyttää käsinkirjoitetussa lausekkeissa. Jakoviivan ylä- ja alapuolilla olevat pisteet kuvaavat murtolukuesityksen osoittajaa ja nimittäjää.
+\begin{esimerkki}
+Laskimeen näppäilty ''$4\div2$'' vastaa jakoviivan avulla merkittyä murtolukuesitystä $\frac{4}{2}$.
+\end{esimerkki}
+
+\luettelolaatikko{Aritmeettiset operaatiot}{
+§ $\text{yhteenlaskettava}+\text{yhteenlaskettava}=\text{summa}$
+§ $\text{vähennettävä}-\text{vähentäjä}=\text{erotus}$
+§ $\text{tekijä} \cdot \text{tekijä}=\text{tulo}$
+§ $\text{jaettava} :\text{jakaja}=\text{osamäärä}$
+}
+
+Yllä on lueteltu peruslaskutoimituksiin osallistuville luvuille annetut nimitykset. Huomaa, että yhteen- ja kertolaskussa laskutoimitukseen osallistuvia lukuja nimitetään samalla tavalla. Tämä kertoo yhteen- ja kertolaskun \termi{vaihdannaisuus}{vaihdannaisuudesta}. Näissä laskutoimituksissa lukujen järjestyksellä ei siis ole väliä.
+
+Kuten tullaan näkemään, kerto- ja jakolasku määritellään yhteenlaskun avulla.
+
+\subsubsection*{Yhteen- ja vähennyslasku}
+
+Vähennyslasku määriteltiin kokonaislukujen yhteydessä vastaluvun lisäämiseksi:
+
+\[m-n = m+(-n)\]
+
+Tämän perusteella voidaan myös päätellä, mitä tapahtuu, kun vähennettävä luku onkin negatiivinen. Esimerkiksi:
+
+\begin{align*}
+&8-(-5)&\quad\quad\quad\textrm{Muutetaan vähennyslasku vastaluvun lisäämiseksi}\\
+= &8+(-(-5))&\quad\quad\quad\textrm{$-(-5)$ tarkoittaa $-5$:n vastalukua, joka on 5.}\\
+= &8+5
+\end{align*}
+
+Tähän ideaan perustuvat seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
+
+\luettelolaatikko{Merkkisäännöt I}{
+§ $a+(+b)=a+b$
+§ $a+(-b)=a-b$
+§ $a-(+b)=a-b$
+§ $a-(-b)=a+b$
+}
+
+Tämä asia ilmaistaan usein sanomalla, että kaksi peräkkäistä '$-$'-merkkiä kumoavat toisensa.
+
+%Seuraavassa kommentoituna taulukoitu versio lukusuorista.
+
+%\begin{luoKuva}{yhteenlasku1}
+%	lukusuora.pohja(-4,14,4,n=2, varaa_tila = False)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku2}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku3}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=2)
+%	with vari("blue"): lukusuora.vali(-3,5,i=1)
+%	lukusuora.piste(0,"$0$",2)
+%	lukusuora.piste(5,"$5$")
+%	lukusuora.piste(-3,"$-3$",1)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku4}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=2)
+%	with vari("blue"): lukusuora.vali(-3,5,i=1)
+%	lukusuora.piste(0,"$0$",2)
+%	lukusuora.piste(5,"$5$")
+%	lukusuora.piste(-3,"$-3$",1)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku5}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{tabular}{|p{4.0cm}|c|}
+%\hline
+% ${\color{red}5}+{\color{blue}8}=13$ & \naytaKuva{yhteenlasku1}  \\
+%\hline
+% ${\color{red}5}+({\color{blue}+8})=13$ & \naytaKuva{yhteenlasku2}  \\
+%\hline
+% ${\color{red}5}-({\color{blue}+8})=-3$ & \naytaKuva{yhteenlasku3}  \\
+%\hline
+%${\color{red}5}+({\color{blue}-8})=-3$ & \naytaKuva{yhteenlasku4} \\
+%\hline
+%${\color{red}5}-({\color{blue}-8})=13$ & \naytaKuva{yhteenlasku5}  \\
+%\hline
+%\end{tabular}
+
+Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan helposti tulkita lukusuoran avulla:
+    
+    $5+8$ ''viiteen lisätään kahdeksan''
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%      \begin{lukusuora}{-1}{14}{14}
+%        %\lukusuoranuolialas{5}{13}
+%        %\lukusuoranuolialas{0}{8}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
+       ${\color{red}5}+{\color{blue}8}=13$
+\end{center}
+   
+    $5+(+8)$ ''viiteen lisätään plus kahdeksan''
+    
+$+8$ tarkoittaa samaa kuin $8$. '$+$'-merkkiä käytetään luvun edessä silloin, kun halutaan korostaa, että kyseessä on nimenomaan positiivinen luku.
+    
+%säädetään kuva vähän irti tuosta edeltävästä tektistä
+%\vspace{0.3cm}     
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%          \begin{lukusuora}{-1}{14}{14}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
+       ${\color{red}5}+({\color{blue}+8})=13$
+\end{center}
+    
+    $5-(+8)$ ''viidestä vähennetään $+8$''
+    
+Tämä tarkoittaa samaa kuin $5-8$. Lukusuoralla siis liikutaan $8$ pykälää taaksepäin.
+
+%säädetään kuva vähän irti tuosta edeltävästä tektistä
+\vspace{0.3cm}     
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=2)
+	with vari("blue"): lukusuora.vali(-3,5,i=1)
+	lukusuora.piste(0,"$0$",2)
+	lukusuora.piste(5,"$5$")
+	lukusuora.piste(-3,"$-3$",1)
+\end{kuva}
+%              \begin{lukusuora}{-4}{8}{14}
+%        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+%        \lukusuorauusi
+%%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%       \end{lukusuora}
+       ${\color{red}5}-({\color{blue}+8})=-3$
+\end{center}
+
+%kuvat epäselviä: Tarvittaisiin vierekkäin olevat nuolet
+    
+Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, se kasvaa yhdellä. Kun lukuun lisätään $0$, se ei kasva lainkaan. Kun lukuun lisätään negatiivinen luku, esimerkiksi $-1$, on luonnollista ajatella, että se pienenee. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua. Juuri näin vähennyslasku määritellään: $5+(-8)$ on yhtä suuri kuin $5-8$.
+    
+\vspace{0.3cm}     
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=2)
+	with vari("blue"): lukusuora.vali(-3,5,i=1)
+	lukusuora.piste(0,"$0$",2)
+	lukusuora.piste(5,"$5$")
+	lukusuora.piste(-3,"$-3$",1)
+\end{kuva}
+%                 \begin{lukusuora}{-4}{8}{14}
+%        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+%        \lukusuorauusi
+%%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%       \end{lukusuora}
+       ${\color{red}5}+({\color{blue}-8})=-3$
+\end{center}
+    
+    
+    $5-(-8)$ ''viidestä vähennetään miinus kahdeksan''
+    
+Negatiivisen luvun lisääminen on vastakohta positiivisen luvun lisäämiselle. Tällöin on luonnollista, että negatiivisen luvun vähentäminen on vastakohta positiivisen luvun vähentämiselle. Koska positiivisen luvun vähentäminen pienentää lukua, pitäisi negatiivisen luvun vähentämisen kasvattaa lukua. Lasku $5-(-8)$ tarkoittaa siis samaa kuin $5+8$.
+\vspace{0.3cm}     
+        
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
+       ${\color{red}5}-({\color{blue}-8})=13$
+\end{center}
+
+
+%Koska $+b-b=0$, yhteen- ja vähennyslasku kumoavat toisensa, eli
+%
+%\luettelo{
+%§ $a+b-b=a$
+%§ $a-b+b=a$
+%}
+
+%\begin{esimerkki}
+% rivi/sivulaskuja
+%\end{esimerkki}
+
+\subsubsection*{Kertolasku}
+
+Samaan logiikkaan perustuen on sovittu myös merkkisäännöt positiivisten ja negatiivisten lukujen kertolaskuissa. Kun negatiivinen ja positiivinen luku kerrotaan keskenään, saadaan negatiivinen luku, mutta kun kaksi negatiivista lukua kerrotaan keskenään, saadaan positiivinen luku.
+
+    $3 \cdot 4$ ''kolme kappaletta nelosia''
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("red")
+	lukusuora.vali(0,4)
+	lukusuora.vali(4,8)
+	lukusuora.vali(8,12)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(4,"$4$")
+	lukusuora.piste(8,"$8$")
+	lukusuora.piste(12,"$12$")
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%	\color{red} \lukusuoravaliss{0}{4}{$0$}{$4$}
+%	\color{red} \lukusuoravaliss{4}{8}{$4$}{$8$}
+%	\color{red} \lukusuoravaliss{8}{12}{$8$}{$12$}
+%
+%      \end{lukusuora}
+      $3\cdot {\color{red}4}=12$
+\end{center}
+    
+    $3 \cdot (-4)$ ''kolme kappaletta miinus-nelosia''
+    
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("red")
+	lukusuora.vali(-4,0)
+	lukusuora.vali(-8,-4)
+	lukusuora.vali(-12,-8)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(-4,"$-4$")
+	lukusuora.piste(-8,"$-8$")
+	lukusuora.piste(-12,"$-12$")
+\end{kuva}
+%    \begin{lukusuora}{-13}{2}{14}
+%	\color{red} \lukusuoravaliss{-12}{-8}{$-12$}{$-8$}
+%	\color{red} \lukusuoravaliss{-8}{-4}{$-8$}{$-4$}
+%	\color{red} \lukusuoravaliss{-4}{0}{$-4$}{$0$}
+%
+%      \end{lukusuora}
+      $3\cdot ({\color{red}-4})=-12$
+\end{center}
+    
+    $-3 \cdot 4$ ''miinus-kolme nelinkertaistetaan''
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("blue")
+	lukusuora.vali(-3,0)
+	lukusuora.vali(-6,-3)
+	lukusuora.vali(-9,-6)
+	lukusuora.vali(-12,-9)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(-3,"$-3$")
+	lukusuora.piste(-6,"$-6$")
+	lukusuora.piste(-9,"$-9$")
+	lukusuora.piste(-12,"$-12$")
+\end{kuva}
+%    \begin{lukusuora}{-13}{2}{14}
+%	\color{red} \lukusuoravaliss{-12}{-9}{$-12$}{$-9$}
+%	\color{red} \lukusuoravaliss{-9}{-6}{$-9$}{$-6$}
+%	\color{red} \lukusuoravaliss{-6}{-3}{$-6$}{$-3$}
+%	\color{red} \lukusuoravaliss{-3}{0}{$-3$}{$0$}
+%
+%      \end{lukusuora}
+      ${\color{blue}-3}\cdot 4=-12$
+\end{center}
+    
+    $-3 \cdot (-4)$ ''miinus-kolme miinus-nelinkertaistetaan''
+    
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("blue")
+	lukusuora.vali(0,3)
+	lukusuora.vali(3,6)
+	lukusuora.vali(6,9)
+	lukusuora.vali(9,12)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(3,"$3$")
+	lukusuora.piste(6,"$6$")
+	lukusuora.piste(9,"$9$")
+	lukusuora.piste(12,"$12$")
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%	\color{red} \lukusuoravaliss{12}{9}{$12$}{$9$}
+%	\color{red} \lukusuoravaliss{9}{6}{$9$}{$6$}
+%	\color{red} \lukusuoravaliss{6}{3}{$6$}{$3$}
+%	\color{red} \lukusuoravaliss{3}{0}{$3$}{$0$}
+%
+%      \end{lukusuora}
+      ${\color{blue}-3}\cdot (-4)=12$
+\end{center}
+
+Jokainen miinusmerkki voidaan tarvittaessa myös tulkita kertolaskuna: $-a=(-1)\cdot a$.
+
+%esim.
+
+\subsubsection*{Jakolasku}
+%Lisää visualisointi!
+
+Kun ensin kerrotaan jollain ja sitten jaetaan samalla luvulla, päädytään takaisin siihen, mistä lähdettiin. Jakolaskujen merkkisäännöt on sovittu niin, että tämä ominaisuus säilyy. Ne ovat siis samat kuin kertolaskujen merkkisäännöt.
+
+Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna luvulla $-3$ on $-12$. Kertolaskun merkkisäännöistä nähdään helposti, että tämän luvun täytyy olla $+4$ eli $4$. Niinpä on sovittu, että $(-12):(-3)=12:3=4$.
+
+\luettelolaatikko{Merkkisäännöt II}{
+§ $a\cdot (-b)=(-a)\cdot b=-(ab)$
+§ $(-a)\cdot (-b)=a\cdot b=ab$
+§ $(-a):b=a:(-b)=-\frac{a}{b}$
+§ $(-a):(-b)=a: b=\frac{a}{b}$
+}

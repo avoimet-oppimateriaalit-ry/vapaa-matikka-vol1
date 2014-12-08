@@ -1,0 +1,606 @@
+Tämä luku on kattava esitys yksiköiden käyttämisestä sovelluksissa. Tämä on suositeltavaa aineistoa myös fysiikan ja kemian opiskelijoille!
+
+\subsection{Suureet ja yksiköt}
+
+Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \termi{yksikkö}{yksikön} kanssa. Tällöin luku ja yksikkö yhdessä esittävät tietoa \termi{suure}{suureesta} eli jostakin mitattavasta ominaisuudesta. Saman suureen esittämiseen on usein mahdollista käyttää montaa eri yksikköä, mutta käytetty yksikkö määrää yksiselitteisesti suureen. Samaan ominaisuuteen saatetaan viitata joskus useilla eri nimillä.
+
+\begin{esimerkki}
+\alakohdat{
+§ Aika on suure, jota voidaan mitata käyttämällä yksikkönä esimerkiksi sekunteja tai vuosia. Sovelluksissa suureeseen saatetaan viitata joskus myös nimellä kesto tai jopa pituus (''Meneekö vielä pitkään?'') tai nopeus ("Tämä pallo putoasi nopeammin maahan kuin tuo toinen").
+§ Pituus on suure, ja sen arvo voidaan mitata ja esittää käyttäen yksikkönä esimerkiksi metrejä ja tuumia. Myös matkaa ja etäisyyttä mitataan samoissa yksiköissä; näillä on sovellusriippuvainen, erityisesti geometriassa ja fysiikassa esille tuleva nyanssiero.
+§ Energia on suure, jota mitataan esimerkiksi yksiköissä joule tai kalori. Myös työtä mitataan fysiikassa jouleissa.
+§ Massa on suure, jota mitataan esimerkiksi grammoissa tai paunoissa. (Hiukkasfysiikassa massa ja energia kuitenkin usein rinnastetaan.)
+}
+\end{esimerkki}
+
+%sanojen etymologiat
+Jotkin suureet ovat \termi{skalaarisuure}{skalaarisuureita} ja toiset \termi{vektorisuure}{vektorisuureita}. Skalaarisuureet ovat sellaisia mitattavia ominaisuuksia, joiden kuvaamiseen riittää yksi luku. Vektorisuureet ovat ominaisuuksia, joilla on sekä suuruus että suunta, eikä yksi luku riitä kertomaan kaikkea. (Vektorilaskentaan tutustutaan tarkemmin MAA5-kurssilla sekä fysiikan mekaniikan kursseilla.)
+
+\begin{esimerkki}
+\alakohdat{
+§ Lämpötilan esittämiseen riittää yksi luku, eli lämpötila on skalaarisuure. Tilanteesta ja käytetystä yksiköstä riippuen kyseinen luku saattaa olla joko negatiivinen, nolla tai positiivinen.
+§ Nopeus on vektorisuure, koska nopeuteen liittyy sen suuruuden lisäksi myös suunta. Esimerkiksi puhuttaessa tuulen nopeudesta kerrotaan myös, mistä suunnasta tuuli puhaltaa. (Termiä nopeus käytetään joskus myös muidenkin ominaisuuksien muuttumisesta ajan suhteen kuin vain sijainnin.)
+%§ Kulma on skalaarisuure, joka kertoo
+%kuva nopeusvektorinuolesta (tuulennopeus)
+}
+\end{esimerkki}
+
+%Kaikkia lukuja ei seuraa sovelluksissakaan yksikkö. Suhteet ja monet kertoimet voivat olla yksiköttömiä, ''paljaita lukuja''.%dimension käsite ja dimensiottomuus (''paljas luku'')? lukumäärät, vakiot... http://www.wikiwand.com/en/Dimensionless_quantity Joskus laskuissa voi esiintyä sama suure monessa yhteydessä, ja on olennaista tietää, mihin kulloinkin viitataan.
+%\begin{esimerkki}
+%pitoisuudet, %ppm, ppb, hiilimonoksidin tapaava konsentraatia
+%\end{esimerkki}
+
+Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden (metri, kilogramma, joule) nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön lyhenteen väliin lyhyt väli. \footnote{Tämä on ISO-standardin (International Organisation for Standardization) ja Kotimaisten kielten tutkimuskeskuksen (Kotus) suosituksen mukainen merkintätapa.} Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $\textdegree$, $'$ ja $''$, sekä jotkin pituusyksiköt kuten jalka ja tuuma, joita merkitään myös $'$ ja $''$, kirjoitetaan kiinni lukuun. Merkki $'$ on niin sanottu yläpuolinen indeksointipilkku (ei heittomerkki '), joka lausutaan käytännössä ''pilkku''.
+
+Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn -- ei \textit{kursiivilla}. Jos yksikkö on nimetty henkilön mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella mutta aukikirjoitettuna yksikkö kirjoitetaan pienellä.
+
+\begin{esimerkki}
+\alakohdat{
+§ Fyysikko Isaac Newtonin mukaan on nimetty voiman yksikkö newton, jota merkitään suurella N-kirjaimella.
+§ Heinrich Hertz antoi nimensä taajuuden yksikölle hertsi (engl. \textit{hertz}), joka lyhennetään Hz. (Huomaa ''suomennettu'' yksikkö, ja että myös englanninkielinen yksikön nimi kirjoitetaan pienaakkosin.)
+§ Lämpötiloja voidaan mitata celsiuasteina Anders Celsiuksen mukaan. Lyhenteessä C on suuraakkonen: $\textdegree$C. Käytetään myös ilmaisua ''astetta celsiusta''.
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+Seuraava taulukko selventää oikeinkirjoitusta:
+\begin{center}
+\begin{tabular}{c|c}
+Oikein & Väärin \\
+\hline
+$3$\,m & $3$m 	\\
+$100$\,$\frac{\text{km}}{\text{h}}$ & $100\frac{km}{h}$	\\
+$2$\,\% & $2$\% \\
+$3\textdegree$ & $3$ $\textdegree$\\
+$3,16\textdegree$ $5'$\,$13''$ & $3,16$ $\textdegree$ $5$\,$'$ $13$\,$''$ 	\\
+$6$\,$\textdegree$C & $6\textdegree$C 	\\
+\end{tabular}
+\end{center}
+\end{esimerkki}
+
+\laatikko[Suure]{Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat kerrotut keskenään: \\
+luku $\cdot$ yksikkö}
+
+Suureen määritelmän luvun ja yksikön kertolaskutulkinnasta seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin lyhyt väli kertolaskun asemesta. Luvun ja yksikön välistä kertomerkkiä ei yleensä merkitä ''oikeisiin'' laskuihin, mutta teemme sen joissakin esimerkeissä, jotta laskemistekniikka tulisi selväksi.
+
+Suureita voi tarvittaessa vapaasti kertoa ja jakaa keskenään, jolloin luvut ja yksiköt ryhmitellään erilleen lopullista vastausta varten. Potenssia voi käyttää uuden muodostuvan yksikön sieventämiseen. Pituuden yksiköiden toisen ja kolmannen potenssin tapauksessa käytetään etuliitteitä neliö- ja kuutio-. %oikeinkirjoitus?
+
+\begin{esimerkki}
+\alakohdat{
+§ $2$ metriä kertaa $3$ metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m}=6\cdot \text{m}^2=6\,\text{m}^2$ eli kuusi neliömetriä.
+} %+ jokin johdannaissuure?
+\end{esimerkki}
+
+\subsection{SI-järjestelmä}
+
+SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. \textit{Système international d'unités}) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
+
+\laatikko[SI-järjestelmän perussuureet ja yksiköt]{
+\begin{center}
+	\begin{tabular}{c|c|c|c}
+Suure & Suureen tunnus & Yksikkö & Yksikön tunnus\\
+\hline
+pituus & $l$ & metri &	m\\
+massa & $m$ &kilogramma & kg 	\\
+aika & $t$ & sekunti & s \\
+sähkövirta & $I$ & ampeeri & A \\
+(termodynaaminen) lämpötila & $T$ & kelvin & K \\
+ainemäärä & $n$ & mooli & mol \\
+valovoima & $I$ & kandela & cd
+	\end{tabular}
+\end{center}}
+
+Toisin kuin yksiköt, suureiden kirjainlyhenteet kirjoitetaan konekirjoituksessa \textit{kursiivilla}. Jokaisella perussuureen yksiköllä on oma tarkka määritelmänsä, jotka käsitellään tarkemmin fysiikassa ja kemiassa. Matematiikan kursseilla suureista tulee kuitenkin tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.)
+
+Huomaa, että joillakin suureilla ja yksiköillä voi olla sama kirjainlyhenne!% Tarkoittaako täten $3m$ kolmea metriä vai kolminkertaista massaa? On monta tapaa erottaa nämä toisistaan.
+%\luettelo{
+%§ Yksiköt ovat aina luvun perässä, ja suureen tunnus... %Jos käytetään samaa kirjainta eri suureisiin,
+%§ pystyyn ja kursiivilla
+%§ kertolasku $2m$, mutta 2\,T
+%}
+
+Myös useilla suureilla voi olla keskenään sama symboli. Yleensä kontekstista selviää, mitä tällöin tarkoitetaan.
+
+\begin{esimerkki}
+Pienaakkonen $t$ voi tilanteesta riippuen tarkoittaa joko aikaa tai lämpötilaa esitettynä celciusasteina. Kontekstista selviää, kummasta on kyse.
+\end{esimerkki}
+
+Perussuureiden lisäksi tehtävissä esiintyy usein joitakin näistä perussuureistayhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
+
+\luettelolaatikko{Tärkeitä johdannaissuureita}{
+§ Nopeus (tunnus $v$, engl. \textit{velocity}) on johdannaissuure, joka saadaan kuljetun matkan ja matkan kulkemiseen käytetyn ajan osamäärästä: $\text{nopeus}=\frac{\text{matka}}{\text{aika}}$. Vastaava nopeuden yksikkö saadaan jakamalla matkan yksikkö ajan yksiköllä, käytettiin mitä yksiköitä hyvänsä -- esimerkiksi $\frac{\text{m}}{\text{s}}$ ja $\frac{\text{km}}{\text{h}}$.
+
+§ Pinta-ala (tunnus $A$, engl. \textit{area}) saadaan kertomalla pituus toisella pituudella. Vastaavasti pinta-alan yksiköt saadaan pituuden yksiköistä. Jos esimerkiksi pituutta on mitattu metreissä, niin vastaava pinta-alan yksikkö on $\text{m}\cdot \text{m}=\text{m}^2$ eli neliömetri.
+
+§ Tilavuus (tunnus $V$, engl. \textit{volume}) on edelleen johdettavissa kolmen pituuden tulona. Jos pituutta on mitattu metreissä, niin vastaava tilavuuden yksikkö on $\text{m}\cdot \text{m} \cdot \text{m}=\text{m}^3$ eli kuutiometri.
+
+§ Tiheys (tunnus $\rho$, kreikkalainen pieni kirjain \textit{roo}) on johdannaissuure, joka määritellään massan ja tilavuuden osamääränä: $\text{tiheys}=\frac{\text{massa}}{\text{tilavuus}}$. Vastaavasti tiheyden yksiköt saadaan jakolaskulla massan ja tilavuuden yksiköistä: jos kappaleen tilavuus on mitattu kuutiometreissä ja massa kilogrammoina, voidaan kappaleen tiheys esittää yksiköissä $\frac{\text{kg}}{\text{m}^3}$. Tiheydestä kannattaa muistaa nyrkkisääntönä, että veden tiheys on noin yksi kilogramma per litra.
+}
+
+Suureiden tunnuksia käytetään yleensä muuttujan tai tuntemattoman symbolina kaavoissa.
+
+\begin{esimerkki}
+%\alakohdat{
+%§
+Tiheyden kaava on suureiden symbolein kirjoitettuna $\rho=\frac{m}{V}$.
+%§
+%§
+%}
+\end{esimerkki}
+
+Joillekin johdannaisyksiköille on annettu oma nimensä ja lyhenteensä, eikä yksikössä esiinny alkuperäisiä perusyksiköitä. 
+
+\begin{esimerkki}
+\alakohdat{
+§ Tuhatta kilogrammaa kutsutaan tonniksi, jonka lyhenne on t.
+§ Yksi litra vastaa yhtä kuutiodesimetriä, eli $1\,\text{l}=1\,\text{dm}^3$ (ks. etuliitteet edellä). %tarkista paikka, jotta minimoidaan viittaukset
+§ Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyttämällä: $\text{J}=\frac{\text{m}^2\,\text{kg}}{\text{s}^2}$.
+}
+\end{esimerkki}
+
+Kun johdannaisyksiköissä esiintyy jakolaskua, yksikön voi kirjoittaa useassa eri muodossa potenssisääntöjen avulla.
+
+\begin{esimerkki}
+Nopeuden yksikkö metriä sekunnissa voidaan kirjoittaa murtolausekkeena $\frac{\text{m}}{\text{s}}$, samalla rivillä m/s tai negatiivisen eksponentin avulla m\,s$^{-1}$.
+\end{esimerkki}
+
+Sovelluksissa voi tulla vastaan myös sellaisia johdannaissuureita, joita ei ole lueteltu edellä, tai yhdistelmäsuureita, jotka eivät ole lainkaan johdettavissa perussuureista. Monet näistä ovat tuttuja arkisia kahden suureen suhteita tai jonkin suureen muutosnopeuden tarkasteluja.
+
+\begin{esimerkki}
+\alakohdat{
+§ Kilogrammahinta eli kilohinta on rahamäärän ja ostettavan tai myytävän hyödykkeen massan suhde. Yksiköksi saadaan tällöin esimerkiksi $\frac{\text{€}}{\text{kg}}$.
+§ Tilavuusvirta (tai pelkästään virtaus) on johdannaissuure, joka tarkastelee tilavuuden muutosta ajassa -- esimerkiksi sitä, kuinka nopeasti vettä kuluu. Yksikkönä voisi tällöin olla esimerkiksi $\frac{\text{m}^3}{\text{s}}$.
+}
+\end{esimerkki}
+
+\subsubsection{Suuruusluokat}
+
+Suuruusluokkien ymmärtäminen (kuvaajien ja tilastojen tulkitsemisen ohella) on tärkeä osa \textit{luku}taitoa -- näiden ymmärtäminen estää sinua tulemasta huijatuksi ja harhaanjohdetuksi.\footnote{Kirjallisuutta aiheesta tarjoaa muun muassa John Allen Paulosin teos Numerotaidottomuus. (Kirja on nimetty hassusti, ottaen huomioon, että siinä erityisesti puhutaan \textit{luvuista}, ei numeroista -- oletamme tämän huonoksi käännökseksi, koska englanninkielen sana \textit{number} tarkoittaa lukua.}
+%monilla menee milligrammat ja mikrogrammat samaan kastiin "vähän"
+
+Kymmenpotenssimuoto eli eksponenttimuoto on merkintätapa, jossa luku ilmoitetaan kertoimen sekä jonkin kymmenen kokonaislukupotenssin tulona. Kymmenpotenssimuodosta on hyötyä, kun halutaan kirjoittaa suuria tai pieniä lukuja lyhyesti.Myös mittaustarkkuuden ilmoittamiseksi tarvitaan joskus kymmenpotenssimuotoa. On yleinen tapa (standardi) valita esitysmuoto niin, että potenssin kerroin on vähintään yksi mutta alle kymmenen. Kymmenpotenssimuotoa $a\cdot 10^n$, missä $a$ on jotain ydehn ja kymmenen väliltä, kutsutaan joskus myös tieteelliseksi merkintätavaksi, engl. \termi{scientific notation}{scientific notation}. Sama luku voidaan kuitenkin esittää kymmenpotensismuodossa äärettömän monella tavalla, jos luovutaan kertoimen suuruusehdosta.
+
+Yleisellä ilmaisulla ``\termi{pilkun siirtäminen}{pilkun siirtäminen}'' tarkoitetaan käytännössä luvun kymmenpotenssiesityksen muokkaamista. Pilkku siirtyy oikealle yhtä monta pykälää kuin kymmenen potenssi pienenee ja päinvastoin. Pilkuttoman luvun tapauksessa pilkku ``kuvitellaan luvun perään''. Koska $10^0 = 1$, voidaan ilman kymmenpotenssia esitetyn luvun perään tarvittaessa lisätä tämä kerroin mielessä. $10$ tarkoittaa luonnollisesti samaa asiaa kuin $10^1$. 
+
+%\begin{esimerkki}
+%Laske luvun $10$ potensseja: $10^1, 10^2, 10^3, 10^4, \ldots$ Kuinka monta nollaa on luvussa $10^n$?
+%	\begin{vastaus}
+%$10^1 = 10, 10^2 = 100, 10^3 = 1\,000, 10^4 = 10\,000$. Luvussa $10^n$ on $n$ kappaletta nollia. 
+%	\end{vastaus}
+%\end{esimerkki}
+
+\laatikko[Joitakin esitysmuotoja samoille luvuille]{
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c}
+\hline
+$1\,234\,000\cdot10^{-3}$ & $14\cdot10^{-3}$ & $130\,000\,000\,000\cdot10^{-3}$ & $1\cdot10^{-5}$ \\
+$123\,400\cdot10^{-2}$ & $1,4\cdot10^{-2}$ & $13\,000\,000\,000\cdot10^{-2}$ & $0,1\cdot10^{-4}$ \\
+$12\,340\cdot10^{-1}$ & $0,14\cdot10^{-1}$ &  $1\,300\,000\,000\cdot10^{-1}$ &  $0,001\cdot10^{-2}$ \\
+$1\,234$ & $0,014$ & $130,000\,000$ & $0,00001$ \\
+$123,4\cdot10$ & $0,0014\cdot10$ & $130\cdot10^{6}$ & $0,000001\cdot10$ \\
+$12,34\cdot10^{2}$ & $0,00014\cdot10^{2}$ & $1,3\cdot10^{2}$ & $0,0000001\cdot10^{2}$ \\
+$1,234\cdot10^{3}$ & $0,000014\cdot10^{3}$ & $0,13\cdot10^{9}$ & $0,00000001\cdot10^{3}$ \\
+    	 \end{tabular}
+  \end{center}
+}
+\begin{esimerkki}
+\alakohdat{
+§ Maan massa on noin $5\,974\,000\,000\,000\,000\,000\,000\,000$\,kg. Luvussa on ensimmäisen numeron (5) jälkeen vielä $24$ numeroa, eli kymmenpotenssimuodoksi saadaan $5,974\cdot10^{24}$\,kg.
+§ Vetymolekyylissä H$_2$ ytimien välinen etäisyys on noin $0,000000000074$\,m eli $7,4\cdot10^{11}$\,m.  
+§ Jos juoksuradan pituudeksi ilmoitetaan $1\,000$\,m, ei lukija voi tietää, millä tarkkuudella mittaus on tehty. Mittaustarkkuus välittyy kymmenpotenssin avulla: jos etäisyys ilmoitetaan muodossa $1,00\cdot10^{3}$\,m, on mitattu kymmenen metrin tarkkuudella, ja jos muodossa $1,0\cdot10^{3}$\,m, on mitattu sadan metrin tarkkuudella jne.
+}
+\end{esimerkki}
+
+Suurten lukujen nimet kannattaa opetella, ja myös huomata, että eri kielten välillä on joitakin poikkeuksia.
+
+\begin{esimerkki}
+Nykyisellä amerikanenglannilla miljardi on \textit{billion}, ja biljoona on \textit{trillion}.
+\end{esimerkki}
+% Suomessa on käytössä niin sanottu lyhyt asteikko...
+
+%long ja short scale -selitys! +harjoitustehtäviä englannista suomeen ja toisinpäin
+
+\subsection{Kerrannaisyksiköt ja etuliitteet}
+
+Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä, joka toimii suuruusluokkaa muuttavana kertoimena.
+
+\laatikko[Tavallisimmat kerrannaisyksiköiden etuliitteet]{
+\begin{center}
+\begin{tabular}{c|c|c|c}
+Nimi & Kerroin & Tunnus & Arvo suomeksi \\
+\hline
+deka & $10^{1}$ & da  & kymmenen	\\
+hehto & $10^{2}$ & h & sata 	\\
+kilo & $10^{3}$ & k & tuhat	\\
+mega & $10^{6}$ & M & miljoona 	\\
+giga & $10^{9}$ & G & miljardi		\\
+tera & $10^{12}$ & T & biljoona \\
+peta & $10^{15}$ & P & tuhat biljoonaa \\
+
+\hline
+
+Nimi & Kerroin & Tunnus & Arvo suomeksi \\
+\hline
+desi & $10^{-1}$ & d & kymmenesosa	\\
+sentti & $10^{-2}$ & c & sadasosa\\
+milli & $10^{-3}$ & m	& tuhannesosa\\
+mikro & $10^{-6}$ & $\mathup{\mu}$ & miljoonasosa\\
+nano & $10^{-9}$ & n & miljardisosa\\
+piko & $10^{-12}$ & p & biljoonasosa\\
+femto & $10^{-15}$ & f & tuhatbiljoonasosa
+\end{tabular}
+\end{center}
+}
+
+Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivan kokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
+
+\begin{esimerkki}
+\alakohdat{
+§ Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on ainut SI-järjestelmän perusyksikkö, jolla on etuliite. Pelkän gramman asemesta se on valittu ilmeisesti käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin turhan pieni yksikkö.
+§ Eläinsolun läpimitta voisi olla $0,000046$ metriä. Luku on niin pieni, että on niin lyhyempää, käytännöllisempää ja usein helppotajuisempaakiin kirjoittaa $46$ mikrometriä eli $46$\,$\mathrm{\mu}$m.
+§ Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. Esimerkiksi $1\,\textrm{ng} = 1 \cdot 10^{-9}\,\textrm{g} = 0,000000009\,\textrm{g}$.
+}
+\end{esimerkki}
+
+\subsubsection*{Huomautuksia tietotekniikasta}
+
+Datan tai informaation määrää mitataan \termi{bitti}{bitteinä} ja \termi{tavu}{tavuina} -- yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on suureena \termi{diskreetti}{diskreetti} eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Yhteen kahdeksan bitin mittaiseen tavuun voidaan tallettaa kokonaisluku väliltä 0--255. Tavun sisällön merkitys voidan tulkita usealla tavalla, esimerkiksi yhtenä kirjaimena jossain merkistössä. Suomen kielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. \textit{bit}) ja tavulle (engl. \textit{byte}) ovat vastaavasti b ja B.
+
+\begin{esimerkki} %tarkennus tähän
+\alakohdat{
+§ Pelkästään muotoilematonta tekstiä kirjoittaessa yksi tavallinen englanninkielen kirjoitusmerkki (eli ei esimerkiksi π, ä tai ø) vie tietokoneella tallennustilaa yhden tavun. Englanninkielensanoissa on keskimäärin $5,1$ kirjainta. \textit{Taru sormusten herrasta} -kirjatrilogian alkuperäistekstissä on yhteensä noin $473$ tuhatta sanaa, joten merkkejä trilogiassa on yhteensä noin $473\,000\cdot5,1=2\,412\,300$. Puhtaana tekstinä kirja veisi siis tietokoneella tilaa vähintään noin kaksi ja puoli miljoonaa tavua. Arviota tekee epätarkemmaksi se, että erikoismerkit ja kuvat tarvitsevat kukin enemmän kuin tavun verran tallennustilaa.
+§ Internetpalveluntarjoajat mainostavat yhteysnopeuksiaan yleensä muodossa $X$/$Y$, missä $X$ on luvattu teoreettinen maksiminopeus datan vastaanottamiselle (lataamiselle, engl. \textit{download}) ja $Y$ teoreettinen maksiminopeus datan lähettämiselle (engl. \textit{upload}). Yksikkönä mainosteksteissä on tavallisilla kuluttajanopeuksilla usein englanninkielinen Mbps eli megabittiä sekunnissa (\textit{megabits per second}, oikeaoppisesti kirjoitettuna Mb/s). Koska ilmaisu on biteissä käytännössä enemmän käytettyjen tavujen sijaan, nopeus näyttää suurelta. Oma yhteysnopeus kannattaa testata jossain siihen tarkoitetussa verkkopalvelussa -- palveluntarjoajalle eli operaattorille kannattaa valittaa, jos yhteysnopeus jää paljon luvatusta.
+}
+\end{esimerkki}
+
+Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdosta tavujen kerrannaisyksiköllä tarkoitetaan yleensä kymmenen potenssien sijaan usein lähimpiä kahden potensseja. SI-järjestelmä ei tue kaksikantaista käytäntöä, vaan sen mukaan kt on tasan $1\,000$\,t ja niin edelleen. Tarvitsemme datan käsittelyyn uudet binääriset etuliitteet:
+%sisältyvät IEC:n standardiin (\textit{International Electrotechnical Commission}
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+Etuliite & Nimi & Arvo & Lähin kymmenenpotenssi \\
+\hline
+ki & kibi & $2^{10}$ & $10^3$	\\
+Mi & mebi & $2^{20}$ & $10^6$\\
+Gi & gibi & $2^{30}$ & $10^9$\\
+Ti & tebi & $2^{40}$ & $10^{12}$ \\
+Pi & pebi & $2^{50}$ & $10^{15}$\\
+\end{tabular}
+\end{center}
+
+Kyseisten etuliitteiden käyttö on kuitenkin (edelleen) harvinaista. Kun vuosikymmeniä sitten datan tallennuskapasiteetti oli pieni, ei kilotavun ja kibitavun (suhteellinen) ero ollut suuri, mutta nykyään ero on suurempien datamäärien käsittelyssä hyvin merkityksellinen. 
+
+\begin{esimerkki}
+Lasketaan SI-etuliiteiden ja binääristen eli kaksikantaisten etuliitteiden erotuksia tavujen tilanteessa.
+\alakohdat{
+§ $1$\,kit$-1$\,kt$=1\,024$\,t$-1\,000$\,t$=24$\,t
+§ $1$\,Mit$-1$\,Mt$=2^{20}-10^6=48\,576$\,t
+§ $1$\,Git$-1$\,Gt$=2^{30}-10^9=73\,741\,824$\,t %merkitse myös kerrannaisyksiköiden avulla
+}
+Huomataan, että suuruusluokkien kasvaessa esitystapojen välinen virhe kasvaa merkittävästi.
+\end{esimerkki}
+
+Arkikielessä ja markkinoinnissa nykyään käytetään kuitenkin lähinnä SI-järjestelmän etuliitteitä, ja on ymmärrettävä kontekstista, että ''kilotavulla'' tarkoittaakin $1\,024$:ää tavua ($2^{10}$), ''megatavulla'' tarkoitetaankin $1\,024$:ta ''kilotavua'', ja niin edelleen.
+
+Valitettavasti monessa yhteydessä ei ole selvää, tarkoitetaanko kymmenen vai kahden potensseja. Jotkin käyttöjärjestelmät ja tietokoneohjelmat sanovat toista ja tarkoittavat toista. Kuluttajan hämmennykseksi usein esimerkiksi keskusmuistien koosta puhuttaessa käytetään binäärikerrannaisyksikköjä mutta kiintolevyjen koosta puhuttaessa kymmenen potensseja. Siirtonopeudet sen sijaan ovat yleensä \textit{aivan oikein} ilmoitettu SI-etuliitteillä.
+
+\begin{esimerkki}
+Ostat kahden ''teran'' kiintolevyn pöytäkoneeseesi. Tuotteessa itsessään lukee tällöin yleensä englanniksi $2$\,TB ja suomeksi puhumme teratavuista (merkitään $2$\,Tt). Ilmaisu tuo kuitenkin mukanaan yllätyksen, sillä kun levyn asentaa koneeseen, voi käyttöjärjestelmä ilmoittaa vapaan tilan olevan huomattavasti kahta teratavua pienempi. Ero johtuu siitä, että levyllä on tilaa $2\,\textrm{Tt}=2\cdot 10^{12}$ tavua, mutta ohjelmat, käyttöjärjestelmä (ja myös koneen käyttäjä) voi olettaa koon olevan ilmoitettu kaksikantaisena niin, että kokonaistila olisikin $2\,\textrm{Tit}=2\cdot 2^{40}$ tavua. Jos käyttöjärjestelmä tämän lisäksi ilmoittaa levytilan SI-etuliitteiden avulla (vaikka tarkoittaiskin kaksikantaisia), voi levyn ostajalle tulla huijattu olo. Eroa näillä kahdella ilmaisulla on $2\cdot 2^{40}\,$t$-2\cdot 10^{12}\,$t$=99\,511\,627\,776\textrm{t}\approx 100 \text{gigatavua} \approx 93$ gigitavua! , eli käytettävissä olevaa tilaa onkin melkein kymmenesosa vähemmän kuin mitä on mielestää ostanut! (Monta kiintolevyvalmistajaa on haastettu oikeuteen näistä epämääräisyyksistä.)
+\end{esimerkki}
+
+\subsection{Yksikkömuunnokset}
+
+Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteet ovat matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä.
+
+\begin{esimerkki}
+$270\,\text{mm}=270\cdot\text{mm}=270\cdot10^{-3}\,\text{m}=\frac{270}{1\,000}\,\text{m}=0,27\,\text{m}$
+\end{esimerkki}
+
+\begin{esimerkki}
+Erään solun tilavuus on $9,0 \cdot 10^{-12}$\,l. Ilmoita tilavuus
+\alakohdat{
+§ pikolitroina
+§ nanolitroina
+}
+	\begin{esimratk}
+\alakohdat{
+§ $9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl}$.
+§ Kymmenen eksponentiksi halutaan $-9$. Koska $10^{-12}$ on pienempi kuin $10^{-9}$, sitä tulee kasvattaa -- samalla kerroin pienenee. Kymmenenpotenssi kerrotaan tuhannella, ja kerroin jaetaan samaten tuhannella, jotta itse lukuarvo ei muutu: $9,0 \cdot 10^{-12}=9,0\cdot 10^{-3} \cdot 10^{-9}=0,009\,\textrm{nl}$.
+}
+	\end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki}
+Kun ääntä (esimerkiksi musiikkia) pakataan MP3-muotoon, keskiverron ääneenlaadun saavuttamiseksi bittivirta (engl. \textit{bitrate}) voi olla $128$\,kb/s. Tämä tarkoittaa oikeasti tasan $128\,000$ bitin siirtoa sekuntia kohden. Koska tavu on kahdeksan bittiä, vastaa tämä tavuissa tiedonsiirtonopeutta $\frac{128}{8}$\,kb/s$=16$\,kt/s.
+\end{esimerkki}
+
+\laatikko[Erittäin tärkeää kerrannaisyksiköiden potensseista!]{
+Aiemmin esitetty taulukko etuliitteistä pätee vain ensimmäisen asteen yksiköihin! Desimetri on kymmenesosa metristä, mutta neliödesimetri \emph{ei} ole kymmenesosa neliömetristä. (Vrt. neliödesimetri ja desineliömetri) Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
+
+\begin{center}
+dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
+\end{center}
+}
+
+\begin{esimerkki}
+Potenssisääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!
+\end{esimerkki}
+
+\begin{esimerkki}
+%yksiköiden käyttö yksikseen ilman lukua?
+Kuinka mones osa kuutiodesimetri on kuutiometristä?
+	\begin{esimratk}
+	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää:
+	\begin{align*}
+	1\,\text{dm}^3&=1\,(\text{dm})^3\\
+	&=1\,\text{d}^3\,\text{m}^3 \\
+	&=1\,(10^{-1})^3\,\text{m}^3 \\
+	&=10^{-1\cdot3}\,\text{m}^3 \\
+	&=(10^{-1})^3\,\text{m}^3 \\
+	&=10^{-3}\,\text{m}^3 \\
+	&=\frac{1}{1\,000}\,\text{m}^3
+	\end{align*}
+	Nähdään, että yksi kuutiodesimetri on tuhannesosa kuutiometristä.
+	\end{esimratk}
+\end{esimerkki}
+
+%\begin{esimerkki}
+
+%Kuinka monta desilitraa \ldots 
+
+%\end{esimerkki}
+
+%toine ja ehkä kolmaskin esimerkki
+%esimerkki suhdeyksikön muutoksista
+
+Joskus suureen johdannaisyksikössä on suhde, ja tämä halutaan ilmaista käänteisenä suhteena. Tällöin voidaan ottaa käänteisluku.
+
+%ESIMERKKI! Vertailu: Jenkeissä autoista kerrotaan, kuinka monta mailia gallonalla – Suomessa, kuinka monta litraa satasella
+
+Matkan (pituuden), pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään lisää geometrian MAA3-kurssilla. 
+
+\subsubsection*{Ajan yksiköt}
+
+Ajan yksiköissä on jäänteitä $60$-järjestelmästä. Tavallisimpia yksikköjä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
+
+\luettelolaatikko{Tunti, minuutti ja sekunti}{
+  § Yksi tunti (lyhenne yleiskielessä t, SI-järjestelmässä h, engl. \textit{hour}) on $60$ minuuttia (lyhenne min): $1\,\text{h} = 60\,\text{min}$
+  § Yksi minuutti on $60$ sekuntia (lyhenne s): $1\,\text{min} = 60\,\text{s}$
+}
+
+\begin{esimerkki}
+\alakohdat{
+§ Kuinka monta sekuntia on yhdessä tunnissa?
+§ Kuinka monta minuuttia on $1,25$\,h?
+§ Leffamaratonissa katsotaan \textit{Taru sormusten herrasta} -elokuvatrilogian ''Special extended Blu-ray edition'' -versio, jonka kokonaiskesto on $726$ minuuttia. Kuinka monta tuntia tähän täytyy varata aikaa?
+}
+	\begin{esimratk}
+	\alakohdat{
+	§ Yksiköiden määritelmien mukaan $1\,\text{h} = 60\,\text{min} = 60 \cdot 60\,\text{s} = 3\,600\,\text{s}$. %selvennä vielä, miten pelkkä min korvataan, vai pitääkö olla 1 min, jotta voidaan muuttaa.
+	§ $1,25\,\text{h} = 1,25 \cdot 60\,\text{min} = 75\,\text{min}$. $1,25$ tuntia on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ sekamurtolukuna $1\frac{25}{100}$ eli $1\frac{1}{4}$, mikä saattaa helpottaa laskemista.
+	§ Minuutin ja tunnin suhdeluku on $60$. Koska haluamme siirtyä pienemmästä yksiköstä (minuutit) suurempaan yksikköön (tunnit), suureen lukuarvon täytyy pienentyä -- suoritamme siis jakolaskun: $\frac{726\,\text{min}}{60}=\frac{726}{60}\,\text{h}=12,1\,\text{h}$. Elokuvamaratonissa esitetään siis elokuvia reilut $12$ tuntia putkeen. (Ylitse jää tunnin kymmenesosa eli $\frac{60\,\text{min}}{10}=6$ minuuttia.)
+}
+	\end{esimratk}
+\end{esimerkki}
+
+On huomattavaa, että laskutehtävissä käytetään joistakin ajan yksiköistä idealisoituja määritelmiä.
+
+\luettelolaatikko{Vuorokausi, viikko, kuukausi ja vuosi}{
+§ Todellinen astronominen vuorokausi eli aika, joka Maalta kestää pyörähtää kerran oman akselinsa ympäri, on noin $23$ tuntia, $56$ minuuttia ja $4,1$ sekuntia. Laskutehtävissä käytetään kuitenkin tavallisesti kalentereista tuttua yksinkertaistettua määritelmää, jonka mukaan vuorokausi olisi tasan $24$ tuntia. Vuorokausiyksikön lyhenne yleiskielessä vrk ja SI-järjestelmässä d, engl. \textit{day}.
+§ Vuoden pituus määritellään aikana, jona Maa kiertää kerran Auringon ympäri, ja tämä on noin $365,24$ vuorokautta. Vuosi on siis oikeasti noin neljännesvuorokauden pidempi kuin tasan $365$, jota arkisissa laskutehtävissä käytetään nimellisenä vuoden pituutena. Vuoden lyhenne on yleiskielessä v ja kansainvälisesti a -- latinan sanasta \textit{annus}.
+§ Kuukausi (suomen kielen lyhenne kk) määritellään ajaksi, jona Kuu kiertää Maan yhden kerran, ja tämä on noin $29,53$ vuorokautta. Jotta kalenterivuoteen saataisiin täsmälleen $12$ kuukautta ja $365$ vuorokautta, kuukausien pituudet on määritelty erilaisiksi. $31$-päiväisiä kuukausia ovat tammi-, maalis-, touko-, heinä-, elo-, loka- sekä joulukuu, $30$-päiväisiä ovat huhti-, kesä-, syys- sekä marraskuu, ja helmikuussa on tavallisesti $28$ vuorokautta.
+§ Koska vuorokausi on oikeasti lyhyempi kuin nimellinen $24$ tuntia, on otettu käyttöön karkausvuosi, jolla kompensoidaan vuorokausien ''väärää'' kestoa gregoriaanisessa kalenterissa. Karkausvuosina helmikuussa on ylimääräinen päivä, eli helmikuu kestääkin $29$ vuorokautta ja koko vuosi $366$ vuorokautta. Jos päivien tarkka määrä on hyvin olennaista -- esimerkiksi korkolaskuissa -- karkausvuodet ja kuukausien vaihtelevat pituudet otetaan huomioon myös lukiomatematiikan tehtävissä.
+§ Viikon pituus on vaihdellut niin ajan kuin paikankin mukaan. Tämän hetkinen yleisin viikon pituus (seitsemän päivää) on sekin mielivaltainen yhteiskunnallinen päätös, eikä se perustu taivaankappaleiden liikkeisiin kuten vuorokauden, kuukauden ja vuoden tapaukset. Yhteen kalenterikuukauteen mahtuu hieman yli neljä kokonaista viikkoa ja vuoteen hieman yli $52$ kokonaista viikkoa. Suomen kielessä viikko voidaan lyhentää vk.
+}
+
+\begin{esimerkki}
+\alakohdat{
+§ Kuinka monta tuntia maaliskuu kestää (nimellisten kestojen mukaan)?
+§ Naisten keski-ikä Suomessa vuoden 2008 tilastoista laskettuna oli $83,01$ vuotta. Kuinka monta kokonaista viikkoa ''keskivertonainen'' elää tämän perusteella?
+§ Kuinka monta vuorokautta pitkä on puolen kalenterivuoden ajanjakso 5.3.--5.9.? Oletamme, että vuosi ei ole karkausvuosi.
+§ Kuinka monta päivää kestää kymmenen vuoden ajanjakso, joka alkaa vuoden 2000 alusta?
+}
+	\begin{esimratk}
+	\alakohdat{
+	§ Lasketaan suoraan auki yksiköiden määritelmien avulla: $1\,\text{kk}=31\,\text{d}=31\cdot24\,\text{h}=744\,\text{h}$. (Huomaa, että maaliskuussa on $31$ päivää.)
+	§ Koska kyseessä on keskimääräinen arvo, emme voi tarkastella erikseen karkausvuosia tai kuukausien vaihtelevia pituuksia. Oletetaan vuoden pituudeksi $365$ päivää, jolloin päiviä on yhteensä $83,01\,\text{a}=83,01\cdot365\,\text{d}=30\,298,65\,\text{d}$. Koska määritelmällisesti nykyviikossa on seitsemän päivää, viikkojen määräksi saadaan $\frac{30\,298,65\,\text{d}}{7}\approx 4\,328,38\,\text{vk}$. Koska kysyttiin vain kokonaisia viikkoja, vastaus on $4\,328$ viikkoa.
+	§ Jaksolla on kaksi epätäyttä kuukautta ja viisi kokonaista kuukautta. Kokonaiset kuukaudet ovat huhtikuu ($30$ päivää), toukokuu ($31$ päivää), kesäkuu ($30$ päivää), heinäkuu ($31$ päivää) ja elokuu ($31$ päivää) -- yhteensä $153$ päivää. Ei-kokonaiset kuukaudet ovat maaliskuu ($31$ päivää) ja syyskuu ($30$ päivää), joista maaliskuun osaan kuuluu $31-5+1=27$ päivää. (Plus yksi sen vuoksi, että myös aloituspäivä lasketaan.) Huomaa, että voi olla epäselvää, lasketaanko päivämäärähaarukan viimeinen päivämäärä laskuihin. Jos puolivuosijakso päättyy 5.9., mutta viimeinen kokonainen päivä on $4.9.$, niin syyskuun puolelle mahtuu neljä vuorokautta. Tällöin vuorokausien kokonaismäärä on $153+27+4=184$.
+	§ Kyseiseen kymmenen vuoden ajanjaksoon lasketaan kokonaisuudessaan vuodet 2000--2009. Karkausvuosia ajanjaksolle mahtuu kolme: 2000, 2004 ja 2008, ja loput seitsemän vuotta ovat $365$ päivän pituisia. Päiviä on siis yhteensä $7\cdot 365+3\cdot 366=3\,653$.
+	}
+	\end{esimratk}
+\end{esimerkki}
+
+Sekunteja ei enää jaeta pienempiin osiin $60$-järjestelmän mukaan vaan käytetään tavallisia kymmenjärjestelmän jakoja ja kerrannaisyksiköiden etuliitteitä.
+
+\begin{esimerkki}
+\alakohdat{
+§ Ajanottoon tarkoitettu sekuntikello saattaa näyttää tuloksen muodossa $34.56.78$. Tämä tarkoittaa $34$ minuuttia, $56$ sekuntia ja $78$ sadasosasekuntia.
+§ Kun eläinten hermosolut aktivoituvat tai sydämessä tapahtuu sähköistä toimintaa, yksittäisten tapahtumien kestoa mitataan yleensä millisekunneissa.
+}
+\end{esimerkki}
+
+Aikaa sisältävistä johdannaissuureiden yksiköistä kannattaa hallita ainakin nopeuden yksiköt metriä sekunnissa ja kilometriä tunnissa.
+%esimerkki 3,6-muunnokseen
+
+\begin{esimerkki}
+Pikajuoksija Usain Boltin huippunopeudeksi $100$ metrin juoksukilpailussa mitattiin $12,2$\,m/s. Janin polkupyörän huippunopeus alamäessä oli $42,5$\,km/h. Kumman huippunopeus oli suurempi?
+	\begin{esimratk}
+Muunnetaan yksiköt vastaamaan toisiaan, jolloin luvuista tulee keskenään vertailukelpoisia. Janin polkupyörän huippunopeus oli $42,5\,\textrm{km/h} =42,5\cdot \textrm{(1\,000\,m)/h} = 42\,500\,\textrm{m/h} = 42\,500\,\textrm{m/(3\,600\,s)}= \frac{42\,500}{3\,600}\,\textrm{m/s} \approx 11,8\,\textrm{m/s}$. Bolt oli siis pyöräilevää Jania nopeampi. Samaan tulokseen olisi päädytty, jos olisi muutettu Boltin juoksunopeus yksikköön km/h ja verrattu sitä Janin pyöräilynopeuteen.
+	\end{esimratk}
+\end{esimerkki}
+
+%Lasketaan, kuinka nopeasti $100$/$10$-yhteydellä ...
+
+\subsubsection*{SI:n ulkopuolisia yksiköitä}
+
+SI-järjestelmä ei ole ainoa käytetty mittayksikköjärjestelmä. Esimerkiksi niin kutsutussa brittiläisessä mittayksikköjärjestelmässä (\textit{imperial}) pituutta voidaan mitata esimerkiksi tuumissa. Yksi tuuma (merkitään $1''$) vastaa $2,54$ senttimetriä, ja yhteen jalkaan ($1'$) menee täsmälleen $12$ tuumaa. Massan perusyksikkönä brittiläisessä mittayksikköjärjestelmässä käytetään paunaa. %mihin pauna perustuu?
+%+jaardi
+
+\begin{tabular}{c|c|c|c}
+Suure & Yksikkö & Yksikön tunnus & SI-järjestelmässä\\
+\hline
+pituus & jalka & $^\prime$ (tai ft) & $30,48$\,cm \\
+pituus & tuuma & $^{\prime \prime}$ (tai in) & $2,54$\,cm \\
+massa & pauna & lb & $453,59237$\,g \\
+tilavuus & gallona (neste, USA) & gal &  $3,785441784$\,l
+\end{tabular}
+
+Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmään yllä olevassa taulukossa näkyvien suhdelukujen avulla.
+
+\begin{esimerkki}
+Kuinka monta senttimetriä on $3,5$ tuumaa? Entä kuinka monta tuumaa on $7,2$ senttimetriä?
+	\begin{esimratk}
+Yksi tuuma vastaa $2,54$ senttimetriä, joten kaksi tuumaa vastaa $5,08$ senttimetriä jne.
+	
+\begin{kuva}
+	lukusuora.pohja(0,9,9)
+	lukusuora.piste(0, "$0^{\prime \prime} = 0 $ cm")
+	lukusuora.piste(2.54,"$1^{\prime \prime} = 2,54$ cm")
+	lukusuora.piste(5.08,"$2^{\prime \prime} = 5,08$ cm")
+	lukusuora.piste(7.62,"$3^{\prime \prime} = 7,62$ cm")
+	with vari("red"):
+	  lukusuora.piste(7.2)
+	  lukusuora.piste(8.9)
+\end{kuva}
+
+Tuumat saadaan siis senttimetreiksi kertomalla luvulla $2,54$. Näin ollen $3,5^{\prime \prime} = 3,5 \cdot 2,54\,\textrm{cm} \approx 8,9\,$cm. Senttimetrien muuntaminen tuumiksi onnistuu vastaavasti \emph{jakamalla} luvulla $2,54$. Näin ollen $7,2\,\textrm{cm} \approx 2,8^{\prime \prime}$, koska $7,2:2,54 \approx 2,8$.
+	\end{esimratk}
+\end{esimerkki}
+
+%parempaan paikkaan Muunnokset tapahtuvat kerto- ja jakolaskulla. Jos ei ole varma, kumpaa pitäisi käyttää, kannattaa vertailla yksiköitä: kumpi niistä on suurempi? Jos muunnat jonkin suureen esitettäväksi suuremmalla yksiköllä, niin tällöin luvun tarvitsee pienentyä, ja toisinpäin.
+
+%tehtäviin metriä sekunnissa vs kilometriä tunnissa!
+%hemoglobiiniviitearvot g/dl -> g/l
+%yksikkötarkastelutehtäviä? esimerkkejä, harjoitustehtäviä! kerrotaanko [nopeus]=m/s -notaatiosta
+
+%+valuutat
+
+%TÄHÄN BREIKKI JA JAKO TOISEEN LUKUUN?!
+
+\subsection{Yksiköiden yhdistäminen laskuissa}
+
+Jos lausekkeessa on useita termejä, joissa on samoja yksiköitä, nämä voidaan yhdistää yksikön muuttumatta. Samat suureet voi sekä laskea yhteen että vähentää toisistaan osittelulain nojalla. Eri suureiden yhteen- ja vähennyslasku ei ole määritelty -- mitä tarkoittaisikaan ''kolme metriä plus kaksi grammaa''?
+%jonnekin, että vakio voi tarkoittaa myös yksiköllistä ilmaisua, esim. g
+%ja jonnekin, miten yksiköitä on muitakin kuin fysikaaliset, eli 3 banaania jne.
+
+\begin{esimerkki}
+Täysin perusteltuna ja aukikirjoitettuna kahden mielivaltaisen massan, $1,2$ grammaa ja $2,6$ grammaa, summa olisi:
+\begin{align*}
+&1,2\,\text{g}+2,6\,\text{g} && \\
+&=1,2\cdot \text{g}+2,6\cdot \text{g} && \text{merkattu yksiköt selvästi tuloina} \\
+&=(1,2+2,6)\cdot \text{g} && \text{vaihdantalaki ja osittelulaki} \\ %FIXME todo, varmista, että tämä on selvennetty aiemmin
+&=(1,2+2,6)\,\text{g} && \text{merkitty yksikkö taas vain lyhyen välin avulla} \\
+&=3,8\,\text{g} && \text{laskettiin summa} \\
+\end{align*}
+
+Näiden useiden vaiheiden tarkoitus oli vain perustella, miten laskut suureilla toimivat. Yleensä näitä tarkkoja merkitsemiskäytäntöjä esille tuovia välivaiheita ei kirjoiteta, vaan käytännössä lyhyt lasku riittää: $1,2\,\text{g}+2,6\,\text{g}=3,8\,\text{g}$.
+\end{esimerkki}
+
+%§ Suorakulmion muotoisen pöydän pituus (karkeasti mitattuna) on $5,9$\,m, ja pöydän leveydeksi saadaan tarkalla mittauksella $1,7861$\,m. Pöydän pinta-ala saadaan tällöin kertolaskulla $5,9\,\textrm{m} \cdot 1,7861\,\textrm{m}=10,53799\,\textrm{m}^2$. Ei ole perusteltua olettaa pöydän pinta-alan olevan karkean mittauksen vuoksi todellakin noin tarkasti tiedossa; pyöristys tehdään epätarkimman lähtöarvon mukaisesti kahteen merkitsevään numeroon: \[ 5,9\,\textrm{m} \cdot 1,7861\,\textrm{m} = 10,53799\,\textrm{m}^2 \approx 11\,\textrm{m}^2.\]
+
+Koska yksiköitä voidaan kohdella laskuteknisesti kuin lukuja, niin niitä voi myös kertoa ja jakaa keskenään. Tutut potenssisäännöt sekä rationaalilukujen murtolukuesityksen laskusäännöt pätevät. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtoluvuiksi.
+
+%\begin{esimerkki}
+%
+%Vetyatomin halkaisija on noin 0,1 nanometriä. Kuinka monta vetyatomia tarvitaan peräkkäin, jotta saataisiin yhden senttimetrin pituinen atomijono?
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%
+%\end{esimerkki}
+
+%\begin{esimerkki}
+%
+%Paperiarkkipinossa, jonka korkeus on 10 senttimetriä, on yksi riisi eli\ldots arkkia. Mikä on yhden paperiarkin paksuus? Kuinka monta arkkia on pinossa, jonka korkeus on metri? Tehtävässä ei huomioida paperiarkkien puristumista muiden papereiden painon vuoksi.
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%\end{esimerkki}
+
+\begin{esimerkki}
+Koska kaikilla eliöillä ei ole samanlaista aineenvaihduntaa, ja jotkin ravintoaineet, jotka toiselle ovat välttämättömiä, voivat olla toiselle hyvin myrkyllistä. Myrkyllisyys ei ole koskaan vain aineen tai yhdisteen ominaisuus, vaan myrkyllisyys on aina riippuvaista annoksesta. Siinä, missä ihminen sietää suklaata hyvin, on se verrattain pieninäkin annoksina haitallista esimerkiksi kissoille ja koirille. Suklaan olennaisin koirille haitallinen yhdiste on kofeiinille sukua oleva teobromiini (kaakaopavun sisältävän kasvisuvun \textit{Theobroma}, kreikk. ''jumalten ruoka'', mukaan), jota saattaa yhdessä kilogrammassa tummaa suklaata olla enemän kuin $14$ grammaa. Teobromiinipitoisuutta voidaan siis merkitä $14\,\frac{\text{g}}{\text{kg}}$, missä johdannaissuureen yksikön nimittäjä viittaa teobromiinin massaan ja osoittajan yksikkö tumman suklaan massaan. (Tarvittaessa tämä tietenkin sievenee dimensiottomaan muotoon $14\,\frac{\text{g}}{\text{kg}}=14\,\frac{\text{g}}{1\,000\,\text{g}}=\frac{14}{1\,000}\,\frac{\text{g}}{\text{g}}=\frac{14}{1\,000}\cdot 1=\frac{14}{1\,000}=0,014$.)
+
+Eri aineiden myrkyllisyyttä eläimille kuvataan yleensä niin sanottulla $LD_{50}$-arvolla (engl. \textit{lethal dose}) eli annoksella, jolla puolet ($50$ prosenttia) sille altistuneista kuolee. $LD_{50}$-arvot annetaan yleensä aineen massan ja eläimen massan suhteena; suurempi eläin kestää suuremman annoksen, koska myrkky jakautuu laajemmalle alueelle ja laimenee. Vertailuarvon yhteydessä kerrotaan myös, mistä eläinlajista oli kyse ja millä tavalla -- syömällä, hengittämällä, \ldots -- altistus tapahtui. Koirien ja syödyn teobromiinin tapauksessa $LD_{50}=300\,\frac{\text{mg}}{\text{kg}}$. Toinen tärkeä myrkyllisyyden indikaattori on $T\!D_\text{Lo}$ eli pienin koskaan dokumentoitu annos, joka on johtanut kuolemaan. Koirille $T\!D_\text{Lo}=16\,\frac{\text{mg}}{\text{kg}}$.
+
+Sinulla on kotona cavalierkingcharlesinspanielinarttu ($6$\,kg), ja unohdat kauppaan lähtiessäsi sängylle suklaapatukan ($45$ grammaa tumma suklaata). Kotiin palatessasi huomaat koirasi syöneen koko patukan. Onko koirasi akuutissa myrkytysvaarassa? Entä jos koirasi olisi suurikokoinen bernhardinkoira (jopa $120$\,kg)?
+	\begin{esimratk}
+	Lasketaan ensin, kuinka paljon syödyssä suklaassa oli teobromiinia. Suhteutetaan se sitten koiran massaan ja verrataan myrkyllisyyden vertailuarvoihin.
+	
+	Tummassa suklaassa on teobromiinia $14\,\frac{\text{g}}{\text{kg}}$ ja suklaata syötiin $45\,\text{g}$. Huomaa, että edeltävän suureen yksikön \textit{nimittäjä} kuvaa suklaan massaa. Kertolaskulla suklaan massa supistuu pois ja jäljelle jää teobromiinin massa:
+	\begin{align*}
+	& 14\,\frac{\text{g}}{\text{kg}}\cdot 45\,\text{g} \\
+	&= 14\cdot 45\,\frac{\text{g}}{10^3\,g}\,\text{g} \\
+	&= 630\cdot10^{-3}\,\text{g} \\
+	&= 630\,\text{mg} \\
+	\end{align*}
+	Koirasi söi teobromiinia siis yhteensä $630$ milligrammaa. Suhteutetaan tämä nyt koiran massaan; yksiköt täsmäävät jo valmiiksi myrkyllisyyden vertailuarvoihin: $\frac{630\,\text{mg}}{6\,\text{kg}}=\frac{630}{6}\,\frac{\text{mg}}{\text{kg}}=105\,\frac{\text{mg}}{\text{kg}}$. Saatu $105\,\frac{\text{mg}}{\text{kg}}$ ei yllä vielä $LD_{50}$:n tasolle, mutta ylittää $T\!D_\text{Lo}$-arvon. (Käytännössä kannattaa olla välittömästi yhteydessä eläinlääkäriin ja yrittää saada koira oksentamaan.)
+	
+	Suuremman koiran tapauksessa teobromiinin ja koiran massan suhteeksi saadaan $\frac{630\,\text{mg}}{120\,\text{kg}}=\frac{630}{120}\,\frac{\text{mg}}{\text{kg}}=5,25\,\frac{\text{mg}}{\text{kg}}$, joka on selvästi alle molempien vertailuarvojen. (Kuitenkin kannattaa olla yhteydessä eläinlääkäriin.)
+	\end{esimratk}
+\end{esimerkki}
+
+%FIXME, \todo selitetään Delta tässä luvussa, eikä vasta prosenttilaskennassa?
+
+\begin{esimerkki}
+Keskinopeus $v_\mathrm{k}$ voidaan laskea kaavasta $v_\mathrm{k}=\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut tai kuluva aika: $t=s/v_\mathrm{k}$, missä $s$ on matkan pituus ja $v_\mathrm{k}$ on nopeus. Lasketaan, kuinka kauan kestää $300$ metrin matka nopeudella $7$\,m/s.
+
+Sijoitetaan kaavaan yksikköineen $s=300$\,m ja $v_k= 7$\,m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
+\[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
+= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
+= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
+=\frac{100}{7}\,\textrm{s} \approx 14\,\textrm{s}.\]
+\end{esimerkki}
+%Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut\ldots olisi hyvä. Saisi vielä kerran kerrattua sanallisesti, mitä rationaalilukujen ominaisuuksia käytettiin ja mitä potenssisääntöjä käytettiin\ldots :) T: JoonasD6
+
+Joskus kahdesta suureesta pitää saada kolmas, vaikka käytössä ei ole tunnettua tai erikseen opetettua kaavaa, joka selittäisi näiden yhteyden. Tällöin oljenkortena on, että suoritetaan suureille kertolasku tai jakolasku sen mukaan, millä saadaan vastaukseen haluttu yksikkö. (Monimutkaisissa tilanteissa -- joita arkisovellukset eivät yleisesti ottaen ole -- tämä ei takaa lukuarvoltaan oikeaa vastausta, vaan ilmiön taustalla oleva fysiikka voi antaa hyvin kaavan, joka sisältää muutakin kuin yksinkertaista kerto- ja jakolaskua. \footnote{http://xkcd.com/687/} Näin voi kuitenkin usein välttää kaavanpyörittelyn yksinkertaisissa tapauksissa kuten keskinopeuden laskemisessa.)
+
+\begin{esimerkki}
+\alakohdat{
+§ Pähkinöiden kilohinta voidaan esittää yksikössä €/kg. Jos halutaan selvittää, paljonko jokin määrä (kilogrammoissa) pähkinöitä maksaa, vastaukseen halutaan yksiköksi vain eurot. Millä laskutoimituksella päästään kilogrammoista nimittäjässä eroon? Jos pähkinöiden määrä kilogrammoina jaettaisiin kilohinnalla yksiköksi tulisi (rationaalilukujen laskusääntöjen perusteella) $\frac{\text{kg}}{\frac{\text{€}}{\text{kg}}}=\text{kg}\cdot \frac{\text{kg}}{\text{€}}=\frac{\text{kg}^2}{€}$, mikä ei ole oikein. Jos jakolasku tehtäisiin toisinpäin eli $\frac{\frac{\text{€}}{\text{kg}}}{\text{kg}}$, tulisi yksiköksi $\frac{\text{€}}{\text{kg}\cdot \frac{1}{\text{kg}}}=\frac{\text{€}}{\text{kg}^2}$, joka sekään ei ole oikein. Kertolaskulla sen sijaan onnistuu: $\text{kg}\cdot \frac{\text{€}}{\text{kg}}=\text{€}$. Kilohinta tulee siis kertoa kilogrammojen määrällä, jotta vastaukseksi saataisiin eurot.
+§ Lasketaan pähkinöiden kilohinnan (€/kg) ja käytettävissä olevan rahamäärän (€) avulla, kuinka paljon (kg) pähkinöitä saadaan ostettua. Huomataan, että vain jakolaskulla $\frac{\text{rahamäärä}}{\text{kilohinta}}$ saadaan haluttu yksikkö eli kilogrammat: $\frac{\text{€}}{\frac{\text{€}}{\text{kg}}}=\text{€}\cdot \frac{\text{kg}}{\text{€}}=\text{kg}$. Saatava pähkinöiden massa selviää siis jakamalla käytettävissä olevan rahamäärän kilohinnalla.
+%§ Veden virtaus
+%§ Lämpövirta
+}
+\end{esimerkki}
+
+%\begin{esimerkki}
+%valonnopeus, kuina pitkän matkan kulkee... +  Kuinka kauan valolta kestää matkata Auringosta Maahan? Valon nopeus on noin $3\cdot 10^8$\,m/s
+%\end{esimerkki}
+
+%tiheysesimerkki
+
+%\begin{esimerkki}
+%Eräässä vedenkulutusta esittelevässä mainoksessa kerrottiin suihkun käyttävän tavallisesti... .... kuinka kauan mainoksen tekijät olettavat tavallisen ihmisen viettävän aikaa suihkussa?
+%\end{esimerkki}
+
+%\begin{esimerkki} %palataan tähän funktioluvussa muuttujien, yleisen lausekkeen ja kuvaajien avulla
+%Miri on juuri saanut ajokortin ja ajaa neljä opiskelijakaveriansa naapurikaupungin ostoskeskukseen laserhippaan. Kaksinsuuntaisella matkalla ajamista on yhteensä $30$\,km, ja Miri perii bensarahat niin, että kaverit kattavat kaikki polttoainekustannukset. Auton keskikulutus on auton oman tietokoneen mukaan $6$ litraa ''satasella'' eli sataa kilometriä kohden, ja polttoaineen hinta $1,60$\,€/l. Kuinka paljon rahaa Mirin tulee kultakin kyytiläiseltä pyytää?
+%	\begin{esimratk}
+%Lähtötiedot ovat polttoaineen kulutus kilometriä kohden (l/km), polttoaineen litrahinta (€/l), ajetun matkan pituus (km) ja maksajien lukumäärä. Vastauksen yksikkö on euroja.
+%
+%Lasketaan ensin ajomatkan ja kulutuksen avulla, kuinka paljon polttoainetta yhteensä kuluu. Sen jälkeen jälkeen polttoaineen hinnan avulla voidaan laskea, paljonko koko matkasta koitui polttoainekuluja, ja lopulta saadut kustannukset jaetaan neljän henkilön kesken:
+%
+%\begin{align*}
+%&30\,\text{km}\cdot 6\,\frac{\text{l}}{100\,\text{km}} \\
+%&=30\cdot 6 \cdot \text{km} \cdot \frac{\text{l}}{100\,\text{km}} \\
+%&= 180\,\frac{\text{km\,l}}{\text{km}} \\
+%&= 180\,l
+%\end{align*}
+%
+%	\end{esimratk}
+%	\begin{esimvast}
+%	
+%	\end{esimvast}
+%\end{esimerkki}
+
+Joskus tehtävissä saatetaan vaatia yksiköiden pyörittelyä, vaikka tilanteen fysiikalinen tausta olisi uusi ja suureet ennestään tuntemattomia.
+%\begin{esimerkki}
+%Nestekaasupulloa käytettäessä säiliöön varastoitu neste höyrystyy, ja pullo jäähtyy. höyrystymislämpö 400 J/g, ja jäähdytysteho J/s (eli watteja). Kuinka monta kilogrammaa kaasua tunnissa voidaan pullosta saada?
+%
+%\end{esimerkki}
+
+%fermiongelmista
+
+%dimensioanalyysi

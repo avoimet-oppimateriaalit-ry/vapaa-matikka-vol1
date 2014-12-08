@@ -1,0 +1,187 @@
+Luvun $12$ \termi{tekijä}{tekijät} luonnolisten lukujen joukossa ovat luvut $1$, $2$, $3$, $4$, $6$ ja $12$. Ne ovat lukuja, joista saadaan luku $12$ kertomalla ne jollain luonnollisella luvulla. Toisin sanottuna luku $12$ voidaan jakaa millä tahansa näistä luvuista ilman jakojäännöstä.
+
+\begin{esimerkki}
+Luku $12$ voidaan kirjoittaa tekijöidensä tulona monella eri tavalla. Esimerkiksi
+\begin{align*}
+&12 = 2 \cdot 6, \\
+&12= 4 \cdot 3 \text{ tai} \\
+&12= 2 \cdot 2 \cdot 3.
+\end{align*}
+\end{esimerkki}
+
+\subsection{Polynomin jakaminen tekijöihin}
+
+\qrlinkki{http://opetus.tv/maa/maa2/polynomin-jakaminen-tekijoihin/}{Opetus.tv: \emph{polynomin jakaminen tekijöihin} (9:50 ja 5:44)}
+
+Polynomeja voidaan jakaa tekijöihin kuten lukujakin. Polynomien tapauksessa tekijöihinjako tarkoittaa polynomin esittämistä saman- tai pienempiasteisten polynomien tulona, \termi{tulomuoto}{tulomuodossa}. Aste on aina pienempi, ellei kyse ole pelkästä vakiokertoimen ottamisesta yhteiseksi tekijäksi.
+
+\subsubsection*{Yhteinen tekijä}
+
+Kun polynomin jokaisessa termissä on sama tekijä, se voidaan ottaa yhteiseksi tekijäksi.
+
+\begin{esimerkki}
+Jaa tekijöihin polynomi $10x^3-20x^2$.
+\begin{align*}
+& 10x^3-20x^2 &\emph{otetaan $10$ yhteiseksi tekijäksi}\\
+=& 10(x^3-2x^2) &\emph{otetaan $x^2$ yhteiseksi tekijäksi} \\
+=& 10x^2(x-2)  
+\end{align*}
+\end{esimerkki}
+
+\begin{esimerkki}
+Jaa tekijöihin \quad a) $x^3+x$ \quad b) $3x^2+6x.$
+\alakohdat{
+    § $x^3+x = x(x^2+1)$
+    § $3x^2+6x = 3x(x+2)$.
+}
+\end{esimerkki}
+
+\subsubsection*{Muistikaavat}
+
+\begin{esimerkki}
+Jaa tekijöihin \quad a) $x^2-4$ \quad b) $x^2+8x+16.$
+	\begin{esimratk}
+Jaetaan polynomit tekijöihin hyödyntämällä muistikaavoja
+\alakohdat{
+    § $x^2-4 = x^2-2^2 = (x+2)(x-2)$
+    § $x^2+8x+16 = x^2+ 2\cdot 4 \cdot x + 4^2 = (x+4)^2$
+}
+	\end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki}
+Jaa tekijöihin polynomi $5x^3-20x^2+20x$.
+\begin{align*}
+& 5x^3-20x^2+20x \ \ \ \ &\emph{otetaan $5$ yhteiseksi tekijäksi}\\
+=& 5(x^3-4x^2+4x)&\emph{otetaan $x$ yhteiseksi tekijäksi}  \\
+=& 5x(x^2-4x+4) &\emph{sovelletaan muistikaavaa} \\
+=& 5x(x^2-2\cdot 2x+2^2)  \\
+=& 5x(x-2)^2
+\end{align*}
+\end{esimerkki}
+
+%On suositeltavaa tarkistaa itse, että yllä esitetyt tekijöihinjaot todella toimivat. Polynomien tekijöihinjaon toimivuus
+%on helppoa tarkistaa -- täytyy vain laskea väitettyjen tekijöiden tulo ja katsoa, onko se alkuperäinen polynomi. Vaikka
+%tarkistus onkin helppoa, tässä vaiheessa ei luultavasti vielä ole selvää, miten tekijöihinjaon voisi saada selville
+%-- paitsi toisinaan arvaamalla, mutta tähän kysymykseen vastataan myöhemmin tällä kurssilla.
+
+%Polynomien tekijöihinjako ei ole yksiselitteinen, mutta monesti hyödyllisintä on jakaa polynomi tekijöihin samoin kuin
+%esimerkkitapauksissa eli niin, että ensimmäisenä on vakiotermi ja kaikissa muissa tekijäpolynomeissa korkeimman asteen
+%termin kerroin on 1.
+%
+%Esimerkki selkeyttänee asiaa. Polynomi $6x^2+30x+36$ voidaan jakaa tekijöihin vaikkapa seuraavilla tavoilla:
+%
+%\begin{esimerkki}
+%\qquad \\
+%\luettelo{
+%    § $6(x+2)(x+3)$
+%    § $3(2x+4)(x+3)$
+%    § $3(x+2)(2x+6)$
+%    § $2(3x+6)(x+2)$
+%    § $(6x+12)(x+3)$
+%    § $(\frac12 x+1)(12x+36)$
+%}
+%\end{esimerkki}
+%
+%Kaikki nämä tavat ovat ''oikein,'' mutta lähes aina ensimmäinen muoto $6(x+2)(x+3)$ on kätevin.
+%
+%Toisinaan polynomeille voi löytää tekijöitä soveltamalla joitakin seuraavista keinoista:
+%
+%\luettelo{
+%§ Otetaan korkeimman asteen termin kerroin yhteiseksi tekijäksi: \\
+%$5x^4+3x^2+x-9 = 5(x^4+\frac{3}{5} x^2+\frac{1}{5} x-\frac{9}{5})$
+%§ Otetaan $x$ tai sen potenssi yhteiseksi tekijäksi, jos mahdollista: \\
+%$x^5+x^3+3x = x(x^4+x^2+3)$
+%$x^7+x^6+5x^4+2x^2 = x^2(x^5+x^4+5x^2+2)$
+%§ Sovelletaan muistikaavaa käänteisesti \\
+%$x^2-5=x^2-\sqrt{5}^2=(x+\sqrt{5})(x-\sqrt{5})$ \\
+%$x^2+8x+16=x^2+2\cdot 4x+4^2=(x+4)^2$ \\
+%$x^2+x+\frac14=x^2+2\cdot \frac12 x+(\frac12)^2=(x+\frac12)^2$
+%}
+
+%Kaikkien polynomien tekijöihinjako ei kuitenkaan näillä menetelmillä onnistu. Myöhemmin tässä kirjassa opitaan, miten toisen asteen polynomin voidaan jakaa tekijöihin nollakohtiensa avulla.
+
+\subsubsection*{Ryhmittely}
+
+Seuraavassa esimerkissä tekijöihin jako on toteutettu termien ryhmittelyn avulla. Se on joissain tapauksissa näppärä tapa jakaa polynomi tekijöihin, mutta oikean ryhmittelyn keksimiseen ei ole helppoa sääntöä.
+
+\begin{esimerkki}
+Jaa tekijöihin $x^3+3x^2+x+3$.
+\begin{align*}
+x^3+3x^2+x+3 &=x^2(x+3)+1(x+3) \\ &=(x^2+1)(x+3)
+\end{align*}
+\end{esimerkki}
+
+\begin{esimerkki}
+Jaa tekijöihin $x^{11}+2x^{10}+3x+6$.
+\begin{align*}
+& x^{11}+2x^{10}+3x+6\\
+& =x^{10}(x+2)+3(x+2)\\
+&=(x^{10}+3)(x+2)
+\end{align*}
+\end{esimerkki}
+
+\subsection{Yhtälön ratkaisu tekijöihin jakamalla}
+
+Tulon nollasääntö on yksi tärkeimmistä syistä siihen, miksi polynomien tekijöihinjako on hyödyllistä.
+
+Jos vaikkapa haluamme ratkaista yhtälön $2x^3-14x^2+32x-24=0$ ja satumme tietämään, että $2x^3-14x^2+32x-24=2(x-3)(x-2)^2$, voimme helposti päätellä, että polynomi saa arvon $0$ jos ja vain jos $x-3=0$ tai $x-2=0$. Yhtälön ainoat ratkaisut ovat siis $x=3$ ja $x=2$.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^3-2x^2=0$ tulon nollasäännön avulla.
+\begin{esimratk}
+\begin{align*}
+x^3-2x^2 &= 0 && \ppalkki \text{ otetaan } x^2 \text{ yhteiseksi tekijäksi} \\
+x^2\cdot(x-2) &= 0 && \ppalkki \text{ tulon nollasääntö} \\
+x^2=0 \textrm{\quad tai}& \quad x-2=0 \\
+x=0 \textrm{\quad tai}& \quad x=2 \\
+\end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=0$ tai $x=2$.
+\end{esimvast}
+\end{esimerkki}
+
+%\begin{esimerkki}
+%Ratkaise yhtälö $6x^3-36x^2+54x=0$ tulon nollasäännön avulla.
+%\begin{esimratk}
+%\begin{align*}
+%6x^3-36x^2+54x &= 0 \\
+%6(x^3-6x^2+9x) &= 0 && \ppalkki \text{ otetaan } 6 \text{ yhteiseksi tekijäksi} \\
+%6x(x^2-6x+9) &= 0 && \ppalkki \text{ otetaan } x \text{ yhteiseksi tekijäksi} \\
+%6x(x^2-2\cdot 3\cdot x+3^2)  &= 0 \\
+%6x(x-3)^2 &= 0 & \\
+%6x(x-3)(x-3) &= 0 && \ppalkki \text{ tulon nollasääntö}\\
+%6x=0 \textrm{\quad tai}& \quad x-3=0 \\
+%x=0 \textrm{\quad tai}& \quad x=3 \\
+%\end{align*}
+%\end{esimratk}
+%\begin{esimvast}
+%$x=0$ tai $x=3$.
+%\end{esimvast}
+%\end{esimerkki}
+
+Myöhemmin tällä kurssilla esitellään polynomien jakolause, joka antaa syvällisemmän yhteyden polynomien nollakohtien ja tekijöiden välille.
+
+\subsubsection*{Murtolausekkeiden sieventäminen}
+
+Kun murtolausekkeen osoittaja ja nimittäjä jaetaan tekijöihinsä, kummassakin esiintyvät tekijät voidaan supistaa pois.
+
+\begin{esimerkki}
+    Sievennä \quad 
+    a) $\dfrac{4x+2y}{6}$ \quad
+    b)$\dfrac{x^2+x}{2x+2}$ \quad
+    c) $\dfrac{x^2-16}{x+4}$
+    \begin{esimratk}
+        \alakohdat{
+            § $\dfrac{4x+2y}{6}=\dfrac{2(2x+y)}{2\cdot 3}=\dfrac{2x+y}{3}$
+            § $\dfrac{x^2+x}{2x+2}=\dfrac{x(x+1)}{2(x+1)}=\dfrac{x}{2}$
+            § Käytetään muistikaavaa: $\dfrac{x^2-16}{x+4}=\dfrac{(x+4)(x-4)}{x+4} = x-4$.
+        }
+    \end{esimratk}
+    \begin{esimvast}
+        a) $\dfrac{2x+y}{3}$ \quad
+        b) $\dfrac{x}{2}$ \quad
+        c) $x-4$.
+    \end{esimvast}
+\end{esimerkki}

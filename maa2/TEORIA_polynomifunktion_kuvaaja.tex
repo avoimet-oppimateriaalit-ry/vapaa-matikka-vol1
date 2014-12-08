@@ -1,0 +1,216 @@
+Polynomifunktion käyttäytymistä eri muuttujan arvoilla voi havainnollistaa koordinaatistoon piirretyn kuvaajan avulla:
+
+%\begin{kuvaajapohja}{1.5}{-2}{2}{-3}{3}
+%\kuvaaja{-x-1}{$P(x) = -x-1$}{red}
+%\kuvaaja{x**2+x}{$Q(x) = x^2+x$}{blue}
+%\kuvaaja{x**3-3*x-1}{$R(x) = x^3-3x-1$}{green}
+%\end{kuvaajapohja}
+
+% \begin{kuvaajapohja}{1.5}{-2}{2}{-3}{3}
+% %\kuvaaja{-x-1}{$P(x) = -x-1$}{red}
+% \kuvaaja{x**2+x}{$Q(x) = x^2+x$}{black}
+% \kuvaaja{x**3-3*x-1}{$R(x) = x^3-3x-1$}{black}
+% \end{kuvaajapohja}
+% %
+
+\begin{kuva}
+kuvaaja.pohja(-2, 2, -3, 3, korkeus = 9, nimiX = '$x$')
+kuvaaja.piirra("x**2+x", nimi = "$Q(x) = x^2+x$", kohta = 1, suunta = -45)
+kuvaaja.piirra("x**3-3*x-1", nimi = "$R(x) = x^3-3x-1$", kohta = 1.8)
+\end{kuva}
+
+%psytyakselin nimeäminen jne. :/
+
+\newpage
+
+\subsection{Kuvaajan piirtäminen}
+
+\qrlinkki{http://opetus.tv/maa/maa2/suoran-piirtaminen/}{Opetus.tv: \emph{suoran piirtäminen} (5:47)}
+
+Funktioiden kuvaajia voi piirtää tietokoneella, graafisella laskimella tai käsin. Kussakin tapauksessa periaate on sama: valitaan joitakin muuttujan arvoja, lasketaan funktion arvot ja merkitään pisteet $(x,y)$-koordinaatistoon. Tietokoneet ja laskimet laskevat funktion arvoja niin tiheään, että näyttää syntyvän yhtenäinen kuvaaja. Käsin piirrettäessä tyydytään muutamaan pisteeseen ja hahmotellaan kuvaaja niiden avulla.
+
+% Esimerkin kuvat.
+\begin{luoKuva}{esimkuva1}
+kuvaaja.pohja(-4, 4, -3, 6, leveys = 3.5, nimiX = "$x$")
+piste((-3, 5.5))
+piste((-2, 2))
+piste((-1, -0.5))
+piste((0, -2))
+piste((1, -2.5))
+piste((2, -2))
+piste((3, -0.5))
+\end{luoKuva}
+\begin{luoKuva}{esimkuva2}
+kuvaaja.pohja(-4, 4, -3, 6, leveys = 3.5, nimiX = "$x$")
+piste((-3, 5.5))
+piste((-2, 2))
+piste((-1, -0.5))
+piste((0, -2))
+piste((1, -2.5))
+piste((2, -2))
+piste((3, -0.5))
+kuvaaja.piirra("0.5*x**2-x-2")
+\end{luoKuva}
+
+\begin{esimerkki}
+Hahmotellaan polynomifunktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ kuvaaja. Lasketaan ensin joitakin funktion $f(x) = \dfrac{1}{2}x^2 - x - 2$ arvoja ja piirretään niitä vastaavat pisteet koordinaatistoon. Lopuksi hahmotellaan kuvaaja, joka kulkee pisteiden kautta.
+
+\begin{tabular}{c c c}
+	\begin{tabular}{|c|r @{,} l|}
+	\hline $x$ & \multicolumn{2}{c|}{$f(x)$} \\
+	\hline
+	-3 & 5&5 \\
+	-2 & 2&0 \\
+	-1 & -0&5 \\
+	0 & -2&0 \\
+	1 & -2&5 \\
+	2 & -2&0 \\
+	3 & -0&5 \\
+	\hline
+	\end{tabular}
+	&
+	\vcent{\naytaKuva{esimkuva1}}
+	&
+	\vcent{\naytaKuva{esimkuva2}}
+\end{tabular}
+% 
+% \begin{tabular}{c c c}
+% 	\begin{tabular}{|c|r @{,} l|}
+% 	\hline $x$ & \multicolumn{2}{c|}{$f(x)$} \\
+% 	\hline
+% 	-3 & 5&5 \\
+% 	-2 & 2&0 \\
+% 	-1 & -0&5 \\
+% 	0 & -2&0 \\
+% 	1 & -2&5 \\
+% 	2 & -2&0 \\
+% 	3 & -0&5 \\
+% 	\hline
+% 	\end{tabular}
+% 	&
+% 	\vcent{\begin{kuvaajapohja}{0.6}{-4}{4}{-3}{6}
+% 	\kuvaajapiste{-3}{5.5}
+% 	\kuvaajapiste{-2}{2}
+% 	\kuvaajapiste{-1}{-0.5}
+% 	\kuvaajapiste{0}{-2}
+% 	\kuvaajapiste{1}{-2.5}
+% 	\kuvaajapiste{2}{-2}
+% 	\kuvaajapiste{3}{-0.5}
+% 	\end{kuvaajapohja}}
+% 	&
+% 	\vcent{\begin{kuvaajapohja}{0.6}{-4}{4}{-3}{6}
+% 	\kuvaajapiste{-3}{5.5}
+% 	\kuvaajapiste{-2}{2}
+% 	\kuvaajapiste{-1}{-0.5}
+% 	\kuvaajapiste{0}{-2}
+% 	\kuvaajapiste{1}{-2.5}
+% 	\kuvaajapiste{2}{-2}
+% 	\kuvaajapiste{3}{-0.5}
+% 	\kuvaaja{0.5*x**2-x-2}{}{black}
+% 	\end{kuvaajapohja}}
+% \end{tabular}
+
+\end{esimerkki}
+\newpage
+\subsection{Kuvaajan tulkintaa}
+
+%Ensimmäisen asteen polynomin kuvaaja on luonnollisesti aina suora. 
+%miten niin luonnollisesti?
+
+Kuvaajan avulla voidaan tehdä johtopäätöksiä funktion ominaisuuksista. Esimerkiksi funktion arvoja voidaan lukea kuvaajasta.
+
+\begin{esimerkki}
+Seuraavassa on esitetty polynomifunktion $P(x)=-3x^2+2x+4$ kuvaaja.
+
+\begin{kuvaajapohja}[\kuvaajaAsetusEiRuudukkoa]{0.7}{-3}{3}{-5}{5}
+\kuvaajapiste{2}{-4}
+\kuvaajakohtaarvo{2}{-4}{}{}
+\kuvaaja{-3*x**2+2*x+4}{$P(x)$}{black}
+\end{kuvaajapohja}
+
+Kuvaajasta voi lukea funktion arvoja tai ainakin niiden likiarvoja. Kuvaajan perusteella näyttää siltä, että $P(2)=-4$. Näin todellakin on, sillä \\ $P(1)=-3\cdot 1^2+2\cdot 1+4=1$.
+\end{esimerkki}
+
+\newpage
+
+\begin{esimerkki}
+Kuvaajasta ei välttämättä näe tarkkoja arvoja. Seuraavassa on esitetty erään polynomifunktion $P(x)$ kuvaaja. Kuvaajan perusteella näyttäisi siltä, että $P(1)=1$, mutta tarkkaa arvoa kuvaajasta ei voi päätellä.
+
+\begin{kuva}
+kuvaaja.pohja(-1.9, 1.7, -1.4, 2, leveys = 4, nimiX = "$x$", ruudukko = False)
+kuvaaja.piirra("19./20*x**2+19./20*x-1", nimi = "$P(x)$", kohta = 1)
+\end{kuva}
+% \begin{kuvaajapohja}[\kuvaajaAsetusEiRuudukkoa]{1}{-2}{2}{-2}{2}
+% \kuvaaja{19./20*x**2+19./20*x-1}{$P(x)$}{black}
+% \end{kuvaajapohja}
+ 
+Itse asiassa edellinen kuvaaja kuuluu funktiolle $P(x)=\dfrac{19}{20} x^2+\dfrac{19}{20} x-1$. Nyt tiedetään, että funktion $P(x)$ arvo kohdassa $x=1$ on
+$$\dfrac{19}{20}\cdot 1^2+\dfrac{19}{20} \cdot 1-1=\dfrac{9}{10}$$
+eikä $1$, kuten kuvaajan perusteella voisi luulla. Kuvaajasta ei siis voi lukea tarkkoja tietoja funktiosta.
+\end{esimerkki}
+
+
+\subsubsection*{Funktion nollakohta}
+
+Funktion \termi{nollakohta}{nollakohta} on sellainen muuttujan arvo, jolla funktio saa arvon nolla. Esimerkiksi funktiolla $Q(x)=x^2-1$ on nollakohdat $-1$ ja $1$, sillä $Q(-1)=0$ ja $Q(1)=0$.
+
+Funktion kuvaaja antaa tietoa nollakohdista. Niiden kohdalla kuvaaja leikkaa muuttuja-akselin. (Yleensä $x$-akselin.)
+
+\newpage
+
+\begin{esimerkki}
+Funktion $P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5}{2}$ kuvaajasta nähdään, että funktiolla on ainakin kaksi nollakohtaa. Toinen niistä on lähellä lukua $1$ ja toinen lukua $11$.
+
+\begin{kuva}
+kuvaaja.pohja(-5, 15, -10, 5, korkeus = 6, nimiX = "$x$")
+piste((0.66146, 0))
+piste((11.3385, 0))
+kuvaaja.piirra("1./3*x**2-4*x+5./2", nimi = "$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5}{2}$", kohta = 11, suunta = -45)
+\end{kuva}
+% \begin{kuvaajapohja}{0.3}{-5}{15}{-10}{5}
+% \kuvaajapiste{0.66146}{0}
+% \kuvaajapiste{11.3385}{0}
+% \kuvaaja{1./3*x**2-4*x+5./2}{$P(x) = \dfrac{1}{3}x^2-4x+\dfrac{5}{2}$}{black}
+% \end{kuvaajapohja}
+\end{esimerkki}
+
+%kohta VS piste
+%$xy$-koordinaatiston tapauksessa funktion nollakohdat ovat täsmälleen ne
+%$x$-koordinaatit, joilla funktion kuvaaja leikkaa $x$-akselin.
+
+%\subsection{Taylorin sarja}
+%Eräs mielenkiintoinen ja hyvin tunnettu potenssisarja on Taylorin sarja.
+%Se on päättymätön potenssisarja, jolla voidaan approksimoida muiden funktioiden
+%arvoja.
+%
+%Yleisesti Taylorin sarjalla saadaan (rajatta derivoituvan) funktion $f$ arvo
+%pisteessä $x_0$:
+%
+%\begin{align*}
+%	f(x_0) = \sum\limits_{n=0}^\infty a_n(x-x_0)^n
+%\end{align*}
+%
+%missä
+%
+%\begin{align*}
+%a_n = \frac{f^n(x_0)}{n!}
+%\end{align*}
+%
+%Koska sarja on äärettömän pitkä, sarjan arvoja edelleen arvioidaan Taylorin
+%polynomilla, joka on muotoa
+%
+%\begin{align*}
+%	P_k(x) = \sum\limits_{n=0}^k a_k(x-x_0)^k
+%\end{align*}
+%
+%Polynomin avulla voidaan laskea esimerkiksi likiarvo funktiolle
+%$(1-x)^{-1} = \frac{1}{1-x}$ pisteen a ympäristössä, kun $a \neg 1$:
+%
+%\begin{align*}
+%	\frac{1}{1-x} \approx \frac{1}{1-a} + \frac{x-a}{(1-a)^2} +
+%\frac{(x-a)^2}{(1-a)^3} + \frac{(x-a)^3}{(1-a)^4} ...
+%\end{align*}
+%
+%\missingfigure{Funktion $(x-1)^-1$ kuvaaja}
+%\missingfigure{Funktion $\frac{1}{1-a} + \frac{x-a}{(1-a)^2} +
+%\frac{(x-a)^2}{(1-a)^3} +$ kuvaaja}

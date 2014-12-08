@@ -1,0 +1,198 @@
+Siirrymme nyt tarkastelemaan tärkeää yhtälöiden erikoistapausta, ensimmäisen asteen yhtälöitä.
+
+\laatikko[Ensimmäisen asteen yhtälö]{Ensimmäisen asteen yhtälöksi kutsutaan yhtälöä, joka on esitettävissä muodossa $ax+b=0$, missä $a \neq 0$.}
+
+Yhtälötyypin nimi tulee siitä, että korkein potenssi, johon tuntematon $x$ yhtälössä korotetaan, on $1$. ($x^1=x$)
+
+\begin{esimerkki}
+Seuraavat yhtälöt ovat kaikki ensimmäisen asteen yhtälöitä:
+\alakohdat{
+§ $2x = 4$
+§ $5x+3 = 0$
+§ $x+2 = 3x-4$
+}
+\end{esimerkki}
+
+%useista kirjaimista
+
+%pitää työstää tätä selitystä\ldots
+%\laatikko[Yhtälöiden muokkaaminen]{
+%	\begin{description}
+%		\item[Laskutoimitukset], joita ovat
+%		
+%			\luettelo{
+%				§ Puolittain lisääminen ja vähentäminen: yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku tai muuttuja. 
+%				Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.
+%				§ Puolittain kertominen tai jakaminen: yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla, muuttujalla tai lausekkeella. Muuttujalla tai lausekkeella jakaessa täytyy ottaa huomioon ja merkitä, että yhtälö ei ole määritelty, kun jakaja on nolla.
+%				Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.
+%				§ Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], 
+%				ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]				
+%		\item[Sieventäminen laskusääntöjä käyttäen] Yhtälön lausekkeista voi esimerkiksi hakea yhteistä tekijää, avata sulkuja tai supistaa, 
+%		ja pyrkiä täten saamaan lauseke yksinkertaisempaan muotoon. Esimerkiksi yhtälöä $3(x-2)=5(x+6)$ kannattaa lähteä ratkaisemaan avaamalla ensin 
+%		sulut soveltamalla tuttuja laskusääntöjä. Näin yhtälö saadaan muotoon $3x-6=5x+30$, jonka jälkeen on helppoa jatkaa käyttämällä laskutoimituksia 
+%		tuntemattoman $x$ ratkaisemiseksi. Yhtälön ratkaisu on $x=-18$.
+%	\end{description}
+
+Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä. Tämä voidaan todistaa seuraavasti:
+
+\begin{align*}
+ax+b &= cx+d & &| \, \text{Vähennetään molemmilta puolilta $cx+d$}. \\
+ax+b - (cx+d) &= 0 & &| \, \text{Avataan sulut ja järjestellään termejä uudelleen.} \\
+ax - cx + b - d &= 0 & &| \, \text{Otetaan yhteinen tekijä.} \\
+(a-c)x + (b-d) &= 0 & &
+\end{align*}
+
+Tämä on määritelmän mukainen ensimmäisen asteen yhtälö, koska $a \neq c$, eli $a-c \neq 0$.
+
+Ensimmäisen asteen yhtälöt ratkaistaan kuten edellisessä kappaleessa esitettiin, eli tekemällä yhtälön molemmille puolille  samoja toimenpiteitä, kunnes $x$ saadaan selvitettyä. 
+
+\begin{esimerkki}
+Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
+\begin{align*}
+7x+4 &= 4x+7 & &| \, \text{Vähennetään molemmilta puolilta $4x$.} \\
+3x+4 &= 7 & &| \, \text{Vähennetään molemmilta puolilta 4.} \\
+3x &= 3 & &| \, \text{Jaetaan molemmat puolet luvulla 3.} \\
+x &= 1 & & \\
+\end{align*}
+
+	\begin{esimvast}
+$x=1$
+	\end{esimvast}
+\end{esimerkki}
+
+\laatikko[Ratkaisujen lukumäärä]{Ensimmäisen asteen yhtälöllä on aina täsmälleen yksi ratkaisu.}
+
+\begin{esimerkki}
+Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun:
+\alakohdat{
+§ Vähennetään molemmilta puolilta $cx$ ja otetaan $x$ yhteiseksi tekijäksi. Saadaan yhtälö $(a-c)x + b = d$.
+§ Vähennetään molemmilta puolilta $b$. Saadaan yhtälö $(a-c)x = d-b$.
+§ Jaetaan molemmat puolet lausekkeella $(a-c)$. Saadaan yhtälö ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
+}
+\end{esimerkki}
+
+Vaikka yhtälössä olisi nimittäjiä, saattaa kyseessä silti olla ensimmäisen asteen yhtälö. Kerro aina yhtälön molemmat puolet nimittäjillä, jolloin niistä päästää eroon, ja yhtälö sievenee lopulta usein yksinkertaisemmaksi.
+
+\begin{esimerkki}
+\alakohdat{
+§ Yhtälössä $2/x=4$ ainoana nimittäjänä on $x$. Kun sillä kerrotaan yhtälön molemmat puolet, $x$ supistuu pois vasemmalta ja saadaan muoto $2=4x$, josta on helppo todeta,että kyseessä on ensimmäisen asteen yhtälö.
+§ Yhtälössä $\frac{0,9}{x+1}=3$ ainoana nimittäjä on lauseke $x+1$. Kun sillä kerrotaan yhtälön molemmat puolet, $x+1$ supistuu vasemmalta pois ja saadaan muoto $0,9=3(x+1)$ eli $0,9=3x+3$, joka selvästi on ensimmäisen asteen yhtälö.
+§ Yhtälössä $(2x+1)/(x^2+3)=0$ ainoana nimittäjänä lauseke $x^2+3$. Kun yhtälö kerrotaan puolittain sillä, $x^2+3$ supistuu pois vasemmalta puolelta, ja oikealle puolelle jää edelleen nolla (koska mikä tahansa luku kertaa nolla on nolla). Saadaan yhtälö muotoon $2x+1=0$, mikä on selvästi ensimmäisen asteen yhtälö.
+%§ Yhtälössä voi olla useita eri nimittäjiä/jakajia.... \frac{3x}{7}=1-\frac{4}{3}x
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+Myös kaikki seuraavat ovat ensimmäisen asteen yhtälöitä. (Huomaa kuitenkin, että nimittäjä ei voi olla nolla.)
+\alakohdat{
+§ $\frac{2}{x}=5$
+§ $v=\frac{s}{t}$
+§ $\mathrm{tiheys}=\frac{\mathrm{massa}}{\mathrm{tilavuus}}$
+}
+\end{esimerkki}
+
+Ensimmäisen asteen yhtälöllä voidaan mallintaa monia yksinkertaisia käytännön tilanteita, ja kyseiset yhtälöt tulevat vastaan ihan vain matemaattisiain työkaluina, joiden hallitseminen on välttämätön taito.
+
+%\begin{esimerkki}
+%Kuinka mones parillinen positiivinen kokonaisluku $5\,000$ on?
+%	\begin{esimratk}
+%	Parillisia positiivisia kokonaislukuja voidaan merkitä lausekkeella $2n$, missä $n$ ...
+
+
+%huomataan myös, että yksinkertaisia 1. asteen yhtälöitä joskus hyvin intuitiivistesti. On silti mhyödyllistä opetella esittämään yksinkertaisetkin ongelmat yhtälönä
+%	\end{esimratk}
+%	\begin{esimvast}
+%	
+%	\end{esimvast}
+%\end{esimerkki}
+
+\begin{esimerkki}
+Huvipuiston aluemaksu on neljä euroa, ja laitelippu maksaa myös viisi euroa. Ranneke, jolla pääsee rajatta laitteisiin ja joka sisältää aluemaksun, maksaa $34$ euroa. Kuinka monessa laitteessa olisi käytävä, jotta ranneke olisi edullisempi ostos kuin yksittäiset laiteliput ja aluemaksu erikseen? Oletetaan,että jokaiseen laitteeseen tarvitaan vain yksi laitelippu.
+	\begin{esimratk}
+	Kyseessä on kaksi toisistaan poikkeavaa maksusuunnitelmaa. Selvitämme yhtälön avulla, millä laitekäyntien lukumäärällä (merkitään tätä esimerkiksi kirjaimella $n$) molemmat tavat ovat yhtä kalliita. Mallinnamme sopivalla lausekkeella molempia: Jos käytetään vain yksittäisiä laitelippuja, jolloin täytyy maksaa myös aluemaksu, kokonaishinnaksi tulee $4+5n$, missä $n$ on ostettujen laitelippujen määrä. Jos ostaa rannekkeen, kävijän maksama rahamäärä ei riipu laitekäyntien määrästä, vaan se on aina mainittu $34$ euroa. Merkitään nämä maksusuunnitelmat yhtäsuuriksi, jolloin saadaan ensimmäisen asteen yhtälö $4+5n=34$.
+	
+Ratkaistaan tästä $n$:
+\begin{align*}
+4+5n&=34 &&|-4\\
+4+5n-4&=34-4 && \\
+5n&=30 &&|:5 \\
+\frac{5n}{5}&=\frac{30}{5} && \\
+n&=6 &&
+\end{align*}
+
+Jos siis käydään kuudessa laitteessa (eli ostetaan kuusi laitelippua), on samantekevää, ostetaanko ranneke vai yksittäisiä lippuja (ja maksetaan aluemaksu). Jos käytäisiin laitteissa enemmän kuin kuusi kertaa, rannekkeen hinta ei kasva, mutta lippujen yhteishinta kasvaa. Kävijän tulisi siis käydä laitteissa vähintään seitseän kertaa, jotta ranneke olisi edullisempi.
+	\end{esimratk}
+	\begin{esimvast}
+	Vähintään seitsemän kertaa
+	\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki}
+Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia. $10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia. Jyväskylään on Helsingistä maanteitse $272$ kilometriä. Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
+	\begin{esimratk}
+		Lasketaan aluksi junan nopeus
+		\[3\,\text{h} \; 23\,\text{min} \; = 12\,180\,\text{s} \]
+		\[\frac{342\,000\,\text{m}}{12\,180\,\text{s}} \approx  28,0788\,\frac{\text{m}}{\text{s}} \]
+		%SIEVENNETYT MURTOLUVUT + HUOMAUTUS LIKIARVOISTA!
+		Muunnetaan lisäksi auton nopeus yksikköön $\frac{\text{m}}{\text{s}}$ (muuntokerroin $3,6$).
+		\[100\,\frac{\text{km}}{\text{h}} \approx 27,7778 \frac{\text{m}}{\text{s}} \]
+		
+		$10$ minuuttia on $600$ sekuntia.
+		
+		Voidaan nyt muotoilla yhtälö käyttäen yksiköitä metri ja sekunti. Tuntemattomaksi valitaan $t$, joka kuvaa aikaa sekunteina auton lähdöstä.
+		\[ \frac{28,0788(t+600)}{342\,000} = \frac{27,7778t}{272\,000} \]
+		
+		Ratkaistaan yhtälö
+		\begin{align*}
+			\frac{27,7778t}{272\,000} &= \frac{28,0788(t+600)}{342\,000} &&\text{| $\cdot{272\,000}$} &&\text{| $\cdot{342\,000}$}  \\
+			342\,000 \cdot 27,7778t &= 272\,000 \cdot 28,0788(t+600) \\
+			9\,500\,007,6t &= 7\,637\,433,6(t+600) \\
+			9\,500\,007,6t &= 7\,637\,433,6t + 4\,582\,460\,160 &&\text{| $-7\,637\,433,6t$} \\ 
+			1\,862\,574t &= 4\,582\,460\,160 &&\text{| $:{1\,862\,574}$} \\
+			t &\approx 2\,460,28 \approx 2\,460
+		\end{align*}
+		
+		Muutetaan yksiköksi minuutit:
+		\[2\,460\,\text{s}=41\,\text{min}.\]
+	\end{esimratk}
+	\begin{esimvast}
+		$41$ minuuttia
+	\end{esimvast}
+\end{esimerkki}
+
+%\begin{esimerkki} %nopeustutkaesimerkki by JoonasD6
+%Poliisin nopeustutka ei suoraan mittaa nopeutta, vaan aikaa, mikä infrapunasäteeltä kestää kulkea laitteesta ajoneuvon pinnalle ja sieltä takaisin tutkaan.
+%
+%\end{esimerkki}
+%myöhemmin prosenttilaskentaan kysymys, kuinka monen prosentin virhe tulee, kun nopeustutka heilahtaa etulaidasta ikkunan yläosaan
+
+% hinnoitteluesimerkki,kumpi maksutapa halvempi jne.
+
+\begin{esimerkki} 
+Matti ja Teppo ovat veljeksiä. Teppo on $525$ päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun Teppo täyttää $50$ vuotta. Oletetaan nyt, että vuodessa on $365$ päivää.
+
+Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on $525$ päivää vanhempi kuin Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen yhtälöä hieman:
+
+      \begin{align*}
+	   x &= y+525 & &| \, \text{Vähennetään puolittain 525.} \\
+	   x-525 &= y & &| \, \text{Tiedetään, että jos $a=b$, niin $b=a$.} \\
+	   y &= x-525 & &
+      \end{align*}
+      
+Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat veljesten iät päivinä, muunnetaan hieman yksiköitä. $50$ vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
+
+      \begin{align*}
+	  y &= x-525 & &| \, \text{Sijoitetaan $x$:n paikalle Tepon ikä $18\,250$ päivää.} \\
+	  y &= 18\,250-525 & & \\
+	  y &= 17\,725 & &| \, \text{Muokataan vastausta informatiivisempaan muotoon.} \\
+	  y &= 17\,520+205 & & \\
+	  y &= 48 \cdot 365 +205 & &
+      \end{align*}
+      
+      Siis kysytty Matin ikä on $48$ vuotta ja $205$ päivää.
+  
+\end{esimerkki}
+%räpelsi jaakko viertiö 23.3.2014 
+
+
+%esim. millä parametrin $a$ arvolla yhtälöllä on ratkaisuja

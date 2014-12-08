@@ -1,0 +1,203 @@
+\qrlinkki{http://opetus.tv/maa/maa2/polynomien-peruskasitteet/}
+{Opetus.tv: \emph{polynomien peruskäsitteet} ($9.00$)}
+
+\subsection{Polynomit}
+
+\termi{polynomi}{Polynomit} ovat matematiikassa ryhmä erittäin tärkeitä lausekkeita.
+
+%sivuviite Vapaa matikka 1:een, lausekkeen määritelmä kirjoitettuna laskutoimituksena
+
+\luettelolaatikko{Polynomin määritelmä}{
+§ Lauseke, jossa esiintyy vain
+§§ muuttujien potensseja (eksponentti luonnollinen luku, mukaan lukien $0$)
+§§ kerrottuna jollakin vakiolla sekä
+§§ näiden potenssien summia.
+}
+
+Polynomissa voi olla yksi tai useampia muuttujia, tai se voi olla muuttujaton vakiopolynomi. Vakiopolynomin tapauksessa muuttujan eksponentin ajatellaan olevan $0$, sillä $x^0=1$, jolloin muuttuja -- oli se mikä hyvänsä -- katoaa.
+\newpage
+\begin{esimerkki}
+Kaikki seuraavat lausekkeet ovat polynomeja:
+\begin{tabular}{ll}
+$4$ &  ei muuttujia ($4=4\cdot 1 = 4x^0$)\\
+$2x+1$ &  muuttujana $x$ ($x=x^1$)\\
+$5x^2+x-7$ &   muuttujana $x$\\
+$-3t^{100}$& muuttujana $t$\\
+$y$& muuttujana $y$\\
+$y^2+1$& muuttujana $y$\\
+$xy^2+x^2y$& muuttujina $x$ ja $y$
+\end{tabular}
+\end{esimerkki}
+
+\begin{esimerkki}
+Miksi muuttujan $t$ lausekkeet 
+\alakohdat{
+§ $\frac{2}{t}$
+§ $\pi^t$
+§ $\sqrt{t}+2$ ja
+§ $t^\pi$
+}
+\emph{eivät ole} polynomeja?
+	\begin{esimratk}
+\alakohdat{
+§ $\frac{2}{t}$ ei ole polynomi, sillä muuttujan $t$ eksponentti ei ole luonnollinen luku: $\frac{2}{t}=2 \cdot \frac{1}{t}= 2t^{-1}$, ja $-1 \notin \mathbb{N}$.
+§ $\pi^t$ ei ole polynomi, sillä muuttuja on eksponentissa eikä potenssin kantalukuna.
+§ $\sqrt{t}+2$ ei ole polynomi, sillä neliöjuuri ei ole esitettävissä potenssina, jonka eksponentti olisi luonnollinen luku: $\sqrt{t}+2=t^{\frac{1}{2}}+2$, ja $\frac{1}{2} \notin \mathbb{N}$.
+§ $t^{\pi}$ ei ole polynomi, sillä muuttujan eksponentti ei ole luonnollinen luku: $\pi \notin \mathbb{N}$. ($\pi$ on irrationaaliluku.)
+}
+	\end{esimratk}
+\end{esimerkki}
+
+Polynomi on summalauseke, joiden yhteenlaskettavia kutsutaan \termi{termi}{termeiksi}. Puhumme vain yhteenlaskusta, vaikka polynomissa esiintyykin miinusmerkkejä, sillä jokaisen erotuksen voi esittää summana vähennyslaskun määritelmän $x-y=x+(-y)$ mukaisesti (ks. Vapaa matikka 1).
+
+Termien \termi{kerroin}{kertoimet} on tapana kirjoittaa muuttujan potenssin vasemmalle puolelle. (Tietenkin esimerkiksi $2x$ tarkoittaa samaa kuin $x2$, koska reaalilukujen kertolasku on vaihdannainen.) Jos erillistä kerrointa ei näy, se on $1$, sillä $1\cdot x=x$. Miinusmerkkinen termi tulkitaan niin, että sen kerroin on $-1$. Ensimmäisen eli vasemmanpuoleisimman termin kertoimen positiivisuutta ei tarvitse erikseen näyttää plusmerkillä.
+
+Termejä, jotka eivät sisällä muuttujaa, kutsutaan \termi{vakiotermi}{vakiotermeiksi}. Vakiotermit voivat koostua mistä tahansa luvuista. Vakiotermin kerroin on kyseinen vakio itse, sillä mikä tahansa luku voidaan ajatella olevan muuttujan nollannen potenssin kerroin.
+
+\begin{esimerkki}
+Kirjoita polynomi $t^4-t^3-\frac{1}{2}t^2-9\,001$ muodossa, missä ei esiinny vähennyslaskua. Mitkä ovat polynomin termit? Mitkä ovat näiden termien kertoimet? 
+
+	\begin{esimratk}
+Vähennyslaskun määritelmän perusteella $$t^4-t^3-\frac{1}{2}t^2-9\,001 = t^4+(-t^3)+(-\frac{1}{2}t^2)+(-9\,001).$$ Tästä muodosta nähdään helposti, polynomin termit eli yhteenlaskettavat osat ovat $t^4$, $-t^3$, $-\frac{1}{2}t^2$ ja $-9\,001$. Termin $t^4$ kerroin on $1$, termin $-t^3$ kerroin on $-1$, termin $-\frac{1}{2}t^2$ kerroin on $-\frac{1}{2}$, ja vakiotermin kerroin on vakio itse eli $-9\,001$.
+	\end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki}
+Polynomissa $-2x^3-5x^2+x-\sqrt{2}$ on neljä termiä: $-2x^3$, $-5x^2$, $x$ ja $-\sqrt{2}$.
+\end{esimerkki}
+
+Polynomi-sanan 'poly' on kreikkaa ja tarkoittaa montaa. Erityisesti yhden termin polynomeja kutsutaan \termi{monomi}{monomeiksi}, kahden termin polynomeja \termi{binomi}{binomeiksi}, kolmen termin polynomeja \termi{trinomi}{trinomeiksi} ja niin edelleen kreikkalaisten lukusanojen mukaan. %kreikkalaiset lukusanat sivun laitaan?
+
+\begin{esimerkki}
+Esimerkkejä polynomeista, joissa on eri määrä termejä:
+\begin{center}\begin{tabular}{ccc}
+monomi	& binomi 	&	trinomi \\
+$-3x^2$   & $x^2-5$	& $y^2+3y-x$ \\
+$42$		& $x+y$ 	& $1-z-z^2$ \\
+ \end{tabular} \end{center}
+ \end{esimerkki}
+
+Muuttujan eksponenttia kutsutaan termin \termi{aste}{asteeksi} tai \termi{asteluku}{asteluvuksi}. Vakiotermin aste on nolla. \termi{polynomin aste}{Polynomin aste} on suurin sen sievennetyn muodon termien asteista.
+
+\begin{esimerkki}
+    Mitkä ovat polynomin $x^4-2x^3+42$ termit ja niiden asteet? Mikä on polynomin aste?
+    \begin{esimvast}
+        Polynomin $x^4-2x^3+42$ termit ovat $x^4$, $-2x^3$ ja $42$ ja niiden asteet ovat neljä, kolme ja nolla. Polynomin aste on sama kuin sama kuin korkein termien asteista eli neljä.
+    \end{esimvast}
+\end{esimerkki}
+
+Polynomin todellisen asteen saaminen selville voi vaatia polynomin sieventämistä.
+
+\begin{esimerkki}
+Trinomi $x^2-x^2+1$ ei ole toisen, vaan nollannen asteen polynomi, sillä sievennettynä $x^2-x^2+1=1=1x^0$. Sieventäminen muutti trinomin monomiksi.
+\end{esimerkki}
+
+Useamman muuttujan tapauksessa polynomin termien asteet lasketaan muuttujien potenssien summana.
+
+\begin{esimerkki}
+	\alakohdat{
+    § Monomin $x^3y^2z$ aste on $6$, sillä muuttujien eksponenttien summa on $3+2+1=6$.
+    § Trinomin $x^6+x^2y^5-1$ aste on $7$, sillä korkea-asteisin termi on $x^2y^5$, ja sen aste on $2+5=7$.
+    }
+\end{esimerkki}
+
+Koska yhteenlasku on vaihdannainen ja liitännäinen, polynomin termit voi kirjoittaa missä tahansa järjestyksessä. Esimerkiksi polynomi $y^4+y^2-1$ voidaan kirjoittaa täysin yhtenevästi myös järjestyksessä $-1+y^4+y^2$. Yleensä polynomien termit kirjoitetaan niiden asteen perusteella laskevaan järjestykseen niin, että korkeimman asteen termi kirjoitetaan ensin. Termit on joskus tapana ryhmitellä -- jos mahdollista -- myös muuttujittain.
+
+%Useaa muuttujaa sisältävät termit on tapana kirjoittaa ennen yhtä muuttujaa sisältäviä termejä – kuitenkin niin, että potenssijärjestys on tärkeämpi. Jos termissä on useampi samanasteinen muuttuja, nämä on tapana kirjoittaa aakkosjärjestyksessä.
+
+\begin{esimerkki}
+	Mikä on polynomin $3t^2-1+t^3$ aste? Mikä on korkeimman asteen termin kerroin?
+\begin{esimratk}
+Aloitetaan järjestämällä polynomin termit asteluvun mukaiseen laskevaan järjestykseen: \\
+	  \[\textcolor{blue}{3t^2}\textcolor{red}{-1}+t^3= t^3\textcolor{blue}{+3t^2}\textcolor{red}{-1}\]
+\end{esimratk}
+
+\begin{esimvast}
+Polynomi on kolmatta astetta. Korkeimman (eli kolmannen) asteen termin kerroin on $1$.
+\end{esimvast}
+
+\end{esimerkki}
+\newpage
+\begin{esimerkki}
+Kuinka monetta astetta on (kahden muuttujan) polynomi $x^2+2xy^2+xy$?
+	\begin{esimratk}
+Merkitään selkeyden vuoksi molempien muuttujien kaikki eksponentit näkyviin: \\
+\[x^2+2x^1y^2+x^1y^1\]
+
+Kun termissä on kaksi eri muuttujaa, niin termin asteluku on näiden muuttujien eksponenttien summa. Näin ollen ensimmäisen termin aste on kaksi, toisen termin aste on $1+2=3$ ja kolmannen termin aste on $1+1=2$. Järjestetään termit vielä asteiden mukaiseen laskevaan järjestykseen:
+\[\textcolor{blue}{x^2}+\textcolor{red}{2x^1y^2}+x^1y^1\]
+\[\textcolor{red}{2x^1y^2}+x^1y^1+\textcolor{blue}{x^2}\]
+	\end{esimratk} 
+	\begin{esimvast}
+		Polynomin asteluku on kolme.
+	\end{esimvast}
+\end{esimerkki}
+
+\subsection{Polynomin yleinen muoto}
+
+\qrlinkki{http://opetus.tv/maa/maa2/polynomin-tasmallinen-maaritelma/}
+{Opetus.tv: \emph{polynomin täsmällinen määritelmä} (6:10)}
+
+Formaalisti kirjoitettuna yhden muuttujan polynomin yleinen muoto on
+\[a_n x^n + a_{n-1} x^{n-1} + \ldots + a_1 x + a_0 \] 
+jollakin $n\in\nn$. Muuttuja $n$ kertoo polynomin asteen, ja kertoimet $a_0, a_1, \ldots, a_{n-1}, a_n$ ovat reaalilukuvakioita. Kertoimen symbolilla $a$ on juoksevana alaindeksinä sama luku $n$ siksi, että vakioita on yhtä monta kuin on polynomin aste. Jos jokin kertoimista on $0$, kyseinen termi katoaa nollan kertolaskuominaisuuksien vuoksi.
+
+\begin{esimerkki}
+
+Polynomi $-3x^{13}-\frac{3}{4}x^2-17$ on polynomin yleistä muotoa siten, että $n=13$, $a_{13}=-3$, $a_2=-\frac{3}{4}$ ja $a_0=-17$, ja kaikki muut kertoimet ovat nollia.
+
+\end{esimerkki}
+ 
+Jokainen lauseke, joka on esitettävissä polynomin yleisessä muodossa, on polynomi.
+
+\begin{esimerkki}
+
+Lauseke $\frac{2x^3+x^2}{x}$ ei ensi näkemältä näytä polynomilta murtolausekkeen nimittäjässä olevan $x$:n vuoksi. Lauseketta on kuitenkin mahdollista sieventää esimerkiksi jakamalla murtolauseke kahteen yksinkertaisempaan samannimiseen murtolausekkeeseen ja tämän jälkeen supistamalla termeittäin: \\
+
+$\frac{2x^3+x^2}{x} = \frac{2x^3}{x}+\frac{x^2}{x} = 2x^2+x $ \\
+
+Nyt nähdään selvästi, että kyseessä on toisen asteen kaksiterminen yhden muuttujan polynomi. (Huomataan kuitenkin, että alkuperäisen esitysmuodon vuoksi $x \neq 0$, koska nollalla jakamista ei ole määritelty.)
+
+\end{esimerkki}
+
+\subsection{Polynomifunktion arvo}
+
+\qrlinkki{http://opetus.tv/maa/maa2/polynomiesimerkkeja/}
+{Opetus.tv: \emph{polynomiesimerkkejä} (6:59 ja 7:43)}
+
+Polynomi reaalilukujen laskutoimituksena määrittää funktion, jota kutsutaan \termi{polynomifunktio}{polynomifunktioksi}. Oletusarvoisesti kaikkien lukiomatematiikassa käsiteltävien polynomifunktioiden määrittelyjoukko on koko reaalilukujen joukko $\mathbb{R}$, ja tällöin myös funktion arvot reaalilukuja. (Numeeristen ja algebrallisten menetelmien syventävällä kurssilla tarkastellaan polynomifunktioita myös reaalilukujoukkoa laajemmalla kompleksilukualueella $\mathbb{C}$.)
+
+% sulkeet ^ sivuhuomautukseksi?
+
+Polynomifunktioita nimetään tyypillisesti suuraakkosin kuten $P$, $Q$ tai $R$. Niin kuin ensimmäisellä kurssilla opittiin, funktion arvoja lasketaan sijoittamalla funktion lausekkeessa muuttujan paikalle eri määrittelyjoukkoon kuuluvia lukuja.
+\newpage
+\begin{esimerkki}
+Polynomi $5x^2-3x+2$ määrittää funktion $P:\mathbb{R}\rightarrow \mathbb{R}$, jonka arvot voidaan laskea kaavalla $P(x)=5x^2-3x+2$. Lasketaan funktion arvoja sijoittamalla joitakin (mielivaltaisia) lukuja muuttujan $x$ paikalle:
+\begin{align*}
+    P(\textcolor{blue}{2}) & = 5\cdot \textcolor{blue}{2}^2-3\cdot \textcolor{blue}{2}+2 = 20 - 6 + 2 = 16 \\
+    P(\textcolor{blue}{-1}) & = 5(\textcolor{blue}{-1})^2-3(\textcolor{blue}{-1})+2 = 5 + 3 + 2 = 10 \\
+    P(\textcolor{blue}{-3}) & = 5(\textcolor{blue}{-3})^2-3(\textcolor{blue}{-3})+2 = 45 + 9 + 2 = 56.
+\end{align*}
+\end{esimerkki}
+
+\begin{esimerkki}
+Polynomi $x^2-x$ määrittää reaalifunktion $Q$, jonka arvot voidaan laskea yhtälöstä $Q(x)=x^2-x$. Laske funktion arvo muuttujan arvolla $x=-1$. 
+		\begin{esimratk}
+			Sijoitetaan funktion laskulakiin $x^2-x$ muuttujan $x$ paikalle haluttu uusi arvo $-1$. Tällöin funktion arvoksi kohdassa $x=-1$ saadaan $Q(-1)=(-1)^2-(-1)=1+1=2$.
+		\end{esimratk}
+		\begin{esimvast}
+		$Q(-1)=2$
+		\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki} $\star$ Määritellään kahden muuttujan polynomifunktion $R$ arvot kaavalla $R(x,y)=xy-y^2$. Lasketaan funktion arvot $R(0,0)$, $R(1,-1)$ ja $R(-1,1)$:
+
+Merkintä $R(0,0)$ tarkoittaa, että molemmat muuttujat saavat arvon $0$. Tällöin suoralla sijoituksella saadaan $R(0,0)=0\cdot 0-0^2=0$.
+
+$R(1,-1)$ tarkoittaa, että funktion ensimmäinen muuttuja $x$ saa arvon $1$ ja jälkimmäinen muuttuja $y$ saa sarvon $-1$. Sijoituksella lasketaan $R(1,-1)=1\cdot (-1)-(-1)^2=-1-1=-2$.
+
+Samoin $R(-1,1)=-1\cdot1-1^2=-1-1=-2$.
+
+\end{esimerkki}
+
+Polynomeja ja polynomifunktioita käsitellään usein yhtäläisesti; voidaan esimerkiksi sanoa ''polynomi $P(x)=2x+1$'', vaikka tarkoitetaan vastaavaa polynomifunktiota. Usein on yksinkertaisesti kätevää nimetä käsiteltäviä polynomeja, vaikkei alettaisi määritellä tarkasti niiden ominaisuuksia funktioina (määrittelyjoukko, arvojoukko jne.; ks. Vapaa matikka 1). %pitää vielä täsmentää

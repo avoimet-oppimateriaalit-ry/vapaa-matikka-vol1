@@ -1,0 +1,104 @@
+Kaksi muuttujaa voivat riippua toisistaan monin eri tavoin. Monissa käytännön tilanteissa ja erityisesti luonnontieteissä tavallisia riippuvuuden tyyppejä ovat suoraan ja kääntäen verrannollisuus. Suoraan verrannollisuudessa muuttujat muuttuvat samassa suhteessa, ja kääntäen verrannollisuudessa käänteisessä suhteessa.
+
+\laatikko{
+Kaksi muuttujaa $x$ ja $y$ ovat suoraan verrannolliset, jos niiden suhde on aina vakio, eli pätee $\frac{x}{y}=k$, missä vakiota $k$kutsutaan \termi{verrannollisuuskerroin}{verrannollisuuskertoimeksi}. Yhteys kirjoitetaan yleensä muodossa $y = kx$. Jos suureet $x$ ja $y$ ovat suoraan verrannolliset, niin tätä merkitään $x\propto y$.}
+
+Suoraan verrannollisuus voidaan tunnistaa esimerkiksi laskemalla muuttujien suhde ja toteamalla, että se on muuttujista riippumaton vakio.
+
+\begin{esimerkki}
+Banaanien kilohinta on $2,00$ euroa. Seuraavassa taulukossa on niiden banaanien paino, jotka saa ostettua tietyllä rahamäärällä:
+\begin{center} 
+\begin{tabular}{|l|r|r|}
+\hline
+Paino (kg) & Hinta (euroa) & Hinta/paino (euroa/kg) \\
+\hline
+$0,50$ & $1,00$ & $2,00$ \\
+$1,00$ & $2,00$ & $2,00$ \\
+$1,50$ & $3,00$ & $2,00$ \\
+$2,00$ & $4,00$ & $2,00$ \\
+\hline
+\end{tabular}
+\end{center}
+Hinnan ja painon suhde on vakio, $2,00$\,€/kg, joten ostettujen banaanien paino ja niihin käytetty rahamäärä ovat suoraan verrannolliset.
+\end{esimerkki}
+
+Suoraan verrannollisuutta voidaan kuvata myös niin, että jos toinen muuttujista kaksinkertaistuu, niin toinenkin kaksinkertaistuu. Samoin jos toisen muuttujan arvo puolittuu, toisenkin arvo puolittuu.
+
+Jos suoraan verrannollisista muuttujista piirretään kuvaaja, pisteet asettuvat suoralle:
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(0, 3, 0, 5, korkeus = 7, nimiX = "paino (kg)", nimiY = "hinta (euroa)")
+    piste((0.5, 1))
+    piste((1, 2))
+    piste((1.5, 3))
+    piste((2, 4))
+    kuvaaja.piirra(lambda x: 2*x)
+\end{kuva}
+\end{center}
+
+Suoraan verrannollisia muuttujia ovat myös esimerkiksi
+\alakohdat{§ aika ja kuljettu matka, kun liikutaan vakionopeudella, tai
+    § kappaleen massa ja painovoiman kappaleeseen aiheuttama voima.
+}
+
+Jos suoraan verrannolliset muuttujat $x$ ja $y$ saavat toisiaan vastaavat arvot $x_1$ ja $y_1$, $x_2$ ja $y_2$, niin voidaan muodostaa \termi{verranto}{verrantoyhtälö}:
+
+$$ k = \frac{x_1}{y_1} = \frac{x_2}{y_2}$$
+
+%\begin{esimerkki}
+%
+%
+%
+%\end{esimerkki}
+
+Suoraan verrannollisuutta monimutkaisempi riippuvuus on kääntäen verrannollisuus.
+
+\laatikko{
+Muuttujat $x$ ja $y$ ovat kääntäen verrannolliset, jos toinen saadaan toisella
+jakamalla jokin vakio sillä, eli $y = \frac{a}{x}$.
+}
+
+\section*{Kääntäen verrannollisuus}
+
+Kääntäen verrannollisuus voidaan tunnistaa esimerkiksi kertomalla muuttujien arvoja keskenään ja huomaamalla, että tulo on muuttujista riippumaton vakio. Jos kääntäen verrannolliset muuttujat $x$ ja $y$ saavat toisiaan vastaavat arvot $x_1$ ja $y_1$, $x_2$ ja $y_2$, niin voidaan muodostaa verranto
+
+$$ k = x_1y_1 = x_2y_2$$
+
+\begin{esimerkki}
+	Nopeus ja matkaan tarvittava aika ovat kääntäen verrannolliset. Jos kuljettavana matkana on $10$ km, voidaan nopeudet ja matka-ajat kirjoittaa taulukoksi:
+	\begin{center} 
+		\begin{tabular}{|l|r|r|}
+			\hline
+			Nopeus (km/h) & Matka-aika (h) & Nopeus$\cdot$matka-aika (km) \\
+			\hline
+			$5$ & $2$ & $10$ \\
+			$10$ & $1$ & $10$ \\
+			$12$ & $0,8333$ & $10$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	Tulo on aina $10$\,km, joten nopeus ja matka-aika ovat kääntäen verrannolliset.
+\end{esimerkki}
+
+Kääntäen verrannollisuutta voidaan kuvata myös niin, että jos toinen muuttujista kaksinkertaistuu, toinen puolittuu. Jos kääntäen verrannollisista muuttujista piirretään kuvaaja, pisteet muodostavat laskevan käyrän:
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(0, 13, 0, 5, leveys = 8, korkeus = 5, nimiX = "matka-aika (h)", nimiY = "nopeus (km/h)")
+    piste((5, 2))
+    piste((10, 1))
+    piste((12, 0.8333))
+    kuvaaja.piirra(lambda x: 10.0/x, a = 1e-10)
+\end{kuva}
+\end{center}
+
+\begin{esimerkki}
+Kääntäen verrannollisia muuttujia ovat myös esimerkiksi
+\alakohdat{
+§ kaivamistyön suorittamiseen kuluva aika ja työntekijöiden lukumäärä
+§ äänenpaine ja äänilähteen etäisyys
+§ kappaleiden välinen vetovoima ja niiden etäisyys
+§ irtomakeisten kilohinta ja viiden euron irtokarkkipussin massa.
+}
+\end{esimerkki}

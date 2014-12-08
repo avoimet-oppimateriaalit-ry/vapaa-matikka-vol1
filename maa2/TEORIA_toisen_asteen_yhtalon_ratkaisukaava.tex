@@ -1,0 +1,143 @@
+\qrlinkki{http://opetus.tv/maa/maa2/toisen-asteen-yhtalon-ratkaisukaava/}{Opetus.tv: \emph{toisen asteen ratkaisukaava} ($9.03$, $11.06$ ja $10.09$)}
+
+Edellisessä kappaleessa opittiin, että toisen asteen yhtälö voidaan aina ratkaista täydentämällä se neliöksi.
+Neliöksi täydentämistä käytetään kuitenkin harvoin, sillä saman ajatuksen voi ilmaista valmiina kaavana.
+Johdetaan seuraavassa toisen asteen yhtälön ratkaisukaava.
+
+Lähdetään liikkeelle täydellisestä toisen asteen yhtälöstä $ax^2+bx+c=0$. Kuten edellisen kappaleen esimerkeissä, haluamme muokata sen muotoon, josta se on helppo täydentää binomin neliöksi. Huomataan binomin neliön muistikaavan sovelluksena, että $(\alpha x + \beta)^2 = \alpha^2 x^2 + 2\alpha\beta x +\beta^2$; verrataan tätä toisen asteen yhtälöön:
+\begin{align*}
+ax^2+bx+c &= 0 \\
+\alpha^2 x^2 + 2\alpha\beta x +\beta^2 &= \text{?}
+\end{align*}
+(Tässä käytetään kreikkalaisia kirjaimia sekaannuksen välttämiseksi, sillä $a$ muistikaavassa $(a + b)^2$ ei välttämättä ole sama kuin toisen asteen yhtälön kerroin $a$.)
+
+Nähdään että yhtälöt muistuttavat hieman toisiaan. Haluamme kuitenkin toisen asteen yhtälön vasemman puolen samanlaiseen muotoon kuin alemman:
+\begin{align*}
+ax^2+bx+c&=0 &&\textnormal{\footnotesize{vähennetään puolittain}} \ c \\
+ax^2+bx &= -c &&\textnormal{\footnotesize{kerrotaan puolittain termillä}} \ 4a\\
+4a^2 x^2 + 4abx &= -4ac \\
+(2a)^2 x^2 +4abx &= -4ac 
+\end{align*}
+%\begin{align*}
+%ax^2+bx+c&=0 &&\textnormal{\footnotesize{kerrotaan molemmat puolet termillä}} \ 4a \\
+%4a \cdot ax^2+4a \cdot bx + 4a \cdot c&=0 \\
+%4a^2x^2+4abx+4ac&=0 &&\textnormal{\footnotesize{vähennetään puolittain termi}} \ 4ac  \\
+%4a^2x^2+4abx&=-4ac
+%\end{align*}
+Nyt voidaan täydentää vasen puoli neliöksi, mistä saadaan esimerkkien tapaan ratkaisu $x$:n suhteen.
+\begin{align*}
+(2a)^2 x^2 +4abx &=-4ac &&\textnormal{\footnotesize{lisätään puolittain termi}} \ b^2 \\
+(2a)^2 x^2 +2\cdot 2a\cdot bx +b^2&=b^2-4ac &&\textnormal{\footnotesize{neliö:}} \ (2a)^2 x^2 +2\cdot 2a\cdot bx+b^2=(2ax+b)^2 \\
+(2ax+b)^2&=b^2-4ac &&\textnormal{\footnotesize{otetaan puolittain neliöjuuri, jos}} \ b^2 -4ac \geq 0 \\
+2ax+b&= \pm \sqrt[]{b^2-4ac} &&\textnormal{\footnotesize{vähennetään puolittain termi}} \ b \\
+2ax&=-b \pm \sqrt[]{b^2-4ac} &&\textnormal{\footnotesize{jaetaan puolittain termillä}} \ 2a \neq 0 \\
+x&= \frac{-b \pm \sqrt[]{b^2-4ac}}{2a}
+\end{align*}
+Toisen asteen yhtälön ratkaisukaava on siis \[x= \frac{-b \pm \sqrt[]{b^2-4ac}}{2a}\] oletuksella, että $b^2-4ac \geq 0$. Oletus tarvitaan, koska negatiivisille luvuille ei ole reaaliluvuilla määriteltyä neliöjuurta.\\
+\laatikko[Toisen asteen yhtälön ratkaisukaava]{
+Yhtälön
+$ax^2+bx+c=0$, missä $a \neq 0$ ja $b^2 - 4ac \geq 0$, ratkaisut ovat
+muotoa \\
+\[ x=\frac{-b \pm \sqrt{b^2-4ac}}{2a}.\]
+}
+\begin{esimerkki}
+Ratkaise yhtälö $x^2-8x+16=0$.
+	\begin{esimratk}
+Yhtälö on muodossa $ax^2+bx+c=0$:
+\begin{align*}
+\underbrace{1}_{=a}x^2 +\underbrace{(-8)}_{=b}x+\underbrace{16}_{=c}=0
+\end{align*}
+Sijoitetaan vakioiden $a=1$, $b=-8$ ja $c=16$ arvot toisen asteen yhtälön
+ratkaisukaavaan.
+\begin{align*}
+x&=\frac{-(-8)\pm \sqrt[]{(-8)^2-4\cdot 1 \cdot 16}}{2 \cdot 1} \\
+x&=\frac{8 \pm \sqrt{64- 64}}{2} \\
+x&=\frac{8 \pm 0}{2} \\
+x&=4
+\end{align*}
+	\end{esimratk}
+\begin{esimvast}
+$x=4$
+\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki}
+Ratkaise yhtälö $15x^2+24x=-10$.
+\begin{esimratk}
+Siirretään kaikki termit samalle puolelle yhtälöä:
+\begin{align*}
+\underbrace{15}_{=a}x^2+\underbrace{24}_{=b}x+\underbrace{10}_{=c}=0
+\end{align*}
+Sijoitetaan  $a=15$, $b=24$ ja $c=10$ toisen asteen yhtälön ratkaisukaavaan.
+\begin{align*}
+x&=\frac{-24 \pm \sqrt[]{24^2-4 \cdot 15 \cdot 10}}{2 \cdot 15} \\
+x&=\frac{-24 \pm \sqrt[]{576-600}}{30} \\
+x&=\frac{-24 \pm \sqrt[]{-24}}{30}
+\end{align*}
+Koska juurrettava on negatiivinen ($-24<0$), niin yhtälöllä ei ole reaalilukuratkaisuja.
+\end{esimratk}
+\begin{esimvast}
+Ei ratkaisua.
+\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^2+2x-3=0$.
+\begin{esimratk}
+Sijoitetaan  $a=1$, $b=2$ ja $c=-3$ ratkaisukaavaan.
+\begin{align*}
+x&=\frac{-2 \pm \sqrt[]{2^2-4 \cdot 1 \cdot (-3)}}{2 \cdot 1} \\
+x&=\frac{-2 \pm \sqrt[]{4+12}}{2} \\
+x&=\frac{-2 \pm \sqrt[]{16}}{2} \\
+x&=\frac{-2 \pm 4}{2} \\
+x&=-1 \pm 2 \\
+x&= -1+2 \text{ tai } x = -1-2 \\
+x&=1 \text{ tai } x=-3 
+\end{align*}
+\end{esimratk}
+\begin{esimvast}
+$x=1$ tai $x=-3$.
+\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki}
+Kahden luvun erotus on $7$ ja tulo $330$. Mitkä luvut ovat kyseessä?
+\begin{esimratk}
+Olkoon pienempi luvuista $x$, jolloin suurempi on $x+7$. Saadaan yhtälö
+\begin{align*}
+x(x+7) &= 330 && \ppalkki -330 \\
+x^2+7x-330 &= 0 && \ppalkki \text{ 2. asteen yhtälön ratkaisukaava}\\
+x&=\frac{-7 \pm \sqrt{7^2-4\cdot 1 \cdot 330}}{2\cdot 1} \\
+x&=\frac{-7 \pm \sqrt{1\,369}}{2}  &&	\ppalkki \sqrt{1\,369} = 37\\
+x&=\frac{-7 \pm 37}{2}  \\
+x&=\frac{-7 + 37}{2}\  \text{ tai } \  x = \frac{-7 - 37}{2}  \\
+x&=15\  \text{ tai } \ x = -21
+\end{align*}
+Koska $x$ oli pienempi alkuperäisistä luvuista, suurempi on $15+7=22$ tai
+$-21+7=-14$.
+\end{esimratk}
+\begin{esimvast}
+Luvut ovat $15$ ja $22$ tai $-21$ ja $-14$.
+\end{esimvast}
+\end{esimerkki}
+
+%\begin{tehtava}
+%Ratkaise $y$ yhtälöstä $y^{2n}-y^n=2$.
+%	\begin{vastaus}
+%$y=(-1)^{\frac{1}{n}}$ (Tämä ei ole välttämättä reaalinen -- riippuu $n$:n arvosta.) tai $y=2^{\frac{1}{n}}$
+%	\end{vastaus}
+%\end{tehtava}
+
+%\begin{esimerkki}
+%Ratkaistaan yhtälö $-\sqrt{2}x+\frac{1}{2}=x^2$.
+%\end{esimerkki}
+
+%Yleinen toisen asteen yhtälö on muotoa $ax^2+bx+c=0$.
+%Kerrotaan yhtälön molemmat puolet vakiolla $4a$: $4a^2x^2+4abx+4ac=0$.
+%Siirretään termi $4ac$ toiselle puolelle: $4a^2x^2+4abx=-4ac$.
+%Pyritään täydentämään vasen puoli neliöksi.
+%Lisätään puolittain termi $b^2$: $4a^2x^2+4abx+b^2=b^2-4ac$.
+%Havaitaan vasemmalla puolella neliö: $(2ax+b)^2=b^2-4ac$.
+%Otetaan puolittain neliöjuuri: $2ax+b=\pm\sqrt{b^2-4ac}$.
+%Vähennetään puolittain termi $b$: $2ax=-b\pm\sqrt{b^2-4ac}$.
+%Jaetaan puolittain vakiolla $2a$: $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.

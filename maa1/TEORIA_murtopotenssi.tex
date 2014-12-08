@@ -1,0 +1,78 @@
+Seuraavaksi tutkitaan potenssin käsitteen laajentamista tilanteeseen, jossa eksponenttina on rationaaliluku – erityisesti murtoluku. Esimerkiksi voidaan pohtia, mitä tarkoittaa merkintä $2^\frac{1}{3}$. Potenssin laskusääntöjen perusteella
+\[
+(2^{m})^n = 2^{mn},\textrm{ kun }m,n\in \zz.
+\]
+Siten on luonnollista ajatella, että \termi{murtopotenssi}{murtopotenssille} $2^\frac{1}{3}$ pätee
+\[
+(2^\frac{1}{3})^3 = 2^\frac{3}{3} = 2^1=2.
+\]
+Koska luvun $2$ kuutiojuuri toteuttaa yhtälön $(\sqrt[3]{2})^3=2$, täytyy siis asettaa $2^\frac{1}{3}=\sqrt[3]{2}$. Yleisemmin asetetaan $a^\frac{1}{n} =\sqrt[n]{a}$, kun $n$ on positiivinen kokonaisluku ja $a\ge 0$.
+
+Kaavan on edelleen luontevaa ajatella yleistyvän niin, että esimerkiksi
+\[
+(2^{\frac{1}{3}})^2 = 2^{\frac{2}{3}}.
+\]
+Yleisemmin otetaan murtopotenssin $a^\frac{m}{n}$ määritelmäksi
+\[
+a^\frac{m}{n} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m,
+\]
+kun $m$ ja $n$ ovat kokonaislukuja ja $n>0$. 
+
+\laatikko[Murtopotenssimerkinnät]{
+\[
+a^\frac{1}{n} = \sqrt[n]{a},\textrm{ kun }a\geq 0. 
+\]
+Erityisesti $a^\frac{1}{2}=\sqrt{a}$.
+\[
+a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a > 0.
+\]
+}
+
+Kun murtolukueksponentit määritellään näin, kaikki aikaisemmat potenssien laskusäännöt ovat sellaisenaan voimassa myös niille. Esimerkiksi kaavat
+\[ a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q \]
+pätevät kaikille rationaaliluvuille $p$ ja $q$.
+
+\laatikko[Huomautus määrittelyjoukosta]{Murtopotenssimerkintää käytettäessä vaaditaan, että $a>0$ myös silloin, kun $n$ (eli juuren kertaluku) on pariton. Syy tähän on seuraava: Esimerkiksi $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta $(-1)^\frac{1}{3}$ ei ole tällöin määritelty. Murtopotenssimerkinnän määrittelystä voi tällöin seurata yllättäviä ongelmia:
+\[
+ -1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6}
+= ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1. 
+\]
+Luvun $\frac{1}{3}$ lavennus muotoon $\frac{2}{6}$ on ongelman ydin, mutta murtolukujen lavennussäännöistä luopuminen olisi myös hankalaa. Siksi sovitaan, ettei murtopotenssimerkintää käytetä, jos kantaluku on negatiivinen.
+
+Nolla kantalukuna taas aiheuttaa ongelmia, jos eksponentti on negatiivinen. Esimerkiksi
+\[
+ 0^{-\tfrac{1}{2}}=\frac{1}{0^\frac{1}{2}}=\frac{1}{0},
+\]
+jota ei ole määritelty.}
+
+\begin{esimerkki}
+Muuta lausekkeet murtopotenssimuotoon.
+\alakohdat{
+§ $\sqrt[5]{3}$
+§ ${\sqrt[4]{a}}^7, a > 0$
+}
+	\begin{esimratk}
+\alakohdat{
+§ $\sqrt[5]{3} = 3^\frac{1}{5}$
+§ $(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
+}
+	\end{esimratk}
+\end{esimerkki}
+
+\begin{esimerkki}
+Sievennä lausekkeet.
+\alakohdat{
+§ $8^\frac23$
+§ $\left( \frac12 \right)^{-\frac12}$
+}
+	\begin{esimratk}
+	\alakohdat{
+§ $8^\frac23 = (\sqrt[3]{8})^2 = 2^2 = 4$
+§ $\left( \frac14 \right)^{-\frac12}=4^{\frac{1}{2}}=2$
+}
+ 	\end{esimratk}
+\end{esimerkki}
+
+Sieventämiskäytäntö (mikä pitää samalla huolta määrittelyjoukosta) on, että jos alkuperäinen lauseke on annettu juurimuodossa, niin myös lopetetaan juurimuotoon, ja toisinpäin: jos alkuperäinen lauseke on murtopotenssi, niin lopputulosta ei kirjoiteta juurena.
+
+%esim. + tehtäviä vastaavia esimerkkejä

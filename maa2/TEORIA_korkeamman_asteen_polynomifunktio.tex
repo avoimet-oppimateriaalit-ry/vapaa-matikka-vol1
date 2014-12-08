@@ -1,0 +1,87 @@
+\qrlinkki{http://opetus.tv/maa/maa2/n-asteinen-polynomifunktio/}{Opetus.tv: \emph{N-asteinen polynomifunktio} ($10.40$)}
+
+Kaikki toisen asteen polynomien kuvaajat ovat aina paraabelejä, mutta korkeamman asteen polynomien kuvaajissa on enemmän vaihtelua. Yleisesti pätee kuitenkin seuraava tulos:
+
+\luettelolaatikko{Polynomien ominaisuuksia}{
+§ Asteen $n$ polynomilla on korkeintaan $n$ nollakohtaa.
+§ Jos polynomin aste on pariton, sillä on vähintään yksi nollakohta.
+% ??
+%§ Kaikki polynomit voidaan jakaa tekijöihin, jotka ovat korkeintaan toista astetta. 
+}
+
+Todistetaan näistä ensimmäinen tulos:
+
+\begin{todistus}
+Jos $n$ asteen polynomilla $P$ olisi yli $n$ eri nollakohtaa, sillä olisi yli $n$ ensimmäisen asteen tekijää. Polynomin $P$ aste olisi siis yli $n$, mikä on ristiriita. Nollakohtia on siis korkeintaan $n$.
+\end{todistus}
+
+Toista tulosta ei todisteta tässä täsmällisesti, mutta valoitetaan asiaa esimerkin kautta. Tutkitaan esimerkiksi polynomia 
+$$P(x)=x^3+bx^2+cx+d.$$
+Polynomia on kätevintä tarkastella muodossa, jossa $x^3$ on otettu yhteiseksi tekijäksi:
+$$P(x) = x^3\left(1+\frac{a}{x}+\frac{b}{x^2}+\frac{d}{x^3}\right)$$
+Kun $x$ on hyvin suuri positiivinen tai hyvin pieni negatiivinen luku,
+termit $\frac{b}{x}$, $\frac{c}{x^2}$ ja $\frac{d}{x^3}$ ovat hyvin pieniä, eli
+\begin{align*}
+P(x)&= x^3\left(1+\frac{b}{x}+\frac{c}{x}+\frac{d}{x^3}\right) \\
+	& \approx  x^3\left(1+0+0+0\right) = x^3
+\end{align*}
+Voidaan siis päätellä, että riippumatta kertoimista $b$, $c$, $d$ polynomin $P$ arvo on positiivinen, kun $x$ on suuri positiivinen luku ja negatiivinen, kun $x$ on pieni negatiivinen luku.
+
+Koska $P$ saa sekä positiivisia että negatiivia arvoja, sillä on jossakin niiden välissä nollakohta. (Tämän takaa jatkuvuus, josta lisää kurssilla 7.) Esimerkin mukaisilla kolmannen asteen polynomeilla on siis aina nollakohta. Yleisesti pätee, että kaikilla paritonasteisille polynomeilla on ainakin yksi nollakohta.
+
+\begin{esimerkki} Kolmannen asteen polynomilla on 1--3 nollakohtaa.
+
+\begin{lukusuora}{-2.5}{3}{3.6}
+\lukusuoraisobbox
+\lukusuorakuvaaja{(x**3-x-1)/2}
+\lukusuorapienipiste{1.32472}{}
+\end{lukusuora}
+\begin{lukusuora}{-2.8}{2.5}{3.6}
+\lukusuoraisobbox
+\lukusuorakuvaaja{(x**3-x+0.3849)/2}
+\lukusuorapienipiste{-1.1547}{}
+\lukusuorapienipiste{0.577028}{}
+\end{lukusuora}
+\begin{lukusuora}{-2}{2}{3.6}
+\lukusuoraisobbox
+\lukusuorakuvaaja{1.4*(x**3-x)}
+\lukusuorapienipiste{-1}{}
+\lukusuorapienipiste{0}{}
+\lukusuorapienipiste{1}{}
+\end{lukusuora}
+\end{esimerkki}
+
+
+\begin{esimerkki} Neljännen asteen polynomilla on $0--4$ nollakohtaa.
+\begin{lukusuora}{-4}{4}{3.6}
+\lukusuorabboxy{-0.5}{1.5}
+\lukusuorakuvaaja{(x**4-5*x**2+12)/14}
+\end{lukusuora}
+\begin{lukusuora}{-4}{4}{3.6}
+\lukusuorabboxy{-0.5}{1.5}
+\lukusuorakuvaaja{(x**4-5*x**2+3*x+11.2)/14}
+\lukusuorapienipiste{-1.71394}{}
+\end{lukusuora}
+\begin{lukusuora}{-4}{4}{3.6}
+\lukusuorabboxy{-0.5}{1.5}
+\lukusuorakuvaaja{(x**4-5*x**2-3)/14}
+\lukusuorapienipiste{2.354}{}
+\lukusuorapienipiste{-2.354}{}
+\end{lukusuora}
+
+\begin{lukusuora}{-4}{4}{3.6}
+\lukusuorabboxy{-0.5}{1.5}
+\lukusuorakuvaaja{(x**4-5*x**2+3*x+1.75842)/14}
+\lukusuorapienipiste{-2.43622}{}
+\lukusuorapienipiste{-0.367327}{}
+\lukusuorapienipiste{1.402}{}
+\end{lukusuora}
+\begin{lukusuora}{-2.8}{2.8}{3.6}
+\lukusuorabboxy{-0.5}{1.5}
+\lukusuorakuvaaja{0.6*(x+1.5)*(x+0.5)*(x-0.5)*(x-1.5)}
+\lukusuorapienipiste{1.5}{}
+\lukusuorapienipiste{0.5}{}
+\lukusuorapienipiste{-1.5}{}
+\lukusuorapienipiste{-0.5}{}
+\end{lukusuora}
+\end{esimerkki}

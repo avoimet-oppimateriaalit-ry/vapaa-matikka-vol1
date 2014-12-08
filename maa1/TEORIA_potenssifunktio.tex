@@ -1,0 +1,143 @@
+Kahden muuttujan välinen riippuvuus ei monesti ole suoraan tai kääntäen verrannollista. Potenssifunktion käyttäminen on eräs keino kuvata tällaisia yleisempiä riippuvuuksia.
+
+\laatikko[Potenssifunktio]{Potenssifunktiot ovat muotoa $ f(x) = ax^n $ olevat funktiot, jossa $a \neq 0$.}
+
+Eksponenttia $n$ kutsutaan potenssifunktion \termi{asteluku}{asteluvuksi} tai \termi{aste}{asteeksi}. Potenssifunktion eksponentti voi olla mikä tahansa reaaliluku, mutta rajoitumme ensin käsittelemään tapauksia, jossa $n = 1, 2, 3\ldots $.
+
+\begin{esimerkki}
+Jos neliön sivun pituus on $x$, neliön pinta-ala voidaan laskea funktiolla $A(x)=x^2$. Esimerkiksi jos $x = 3$\,cm, saadaan neliön pinta-alaksi $A(x) = 9$\,cm$^2$. Vastaavasti kuutiolle: jos $x$ kuvaa kuution särmän pituutta, funktiolla $V(x)=x^3$ voidaan laskea kuution tilavuus. Sekä $A(x)$ että $V(x)$ ovat esimerkkejä potenssifunktioista.
+\end{esimerkki}
+
+Potenssifunktion aste vaikuttaa funktion kuvaajan muotoon:
+\luettelolaatikko{Kuvaajan muoto}{
+§ Jos aste on parillinen, kuvaaja on U-kirjaimen muotoinen ja funktio saa $a$:n merkistä riippuen joko pelkästään positiivisia tai pelkästään negatiivisia arvoja.
+§ Jos aste on pariton, kuvaaja muodostaa ''kaksoismutkan'' ja potenssifunktio saa sekä positiivisia että negatiivisia arvoja.
+}
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(-4, 4, -4, 4, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: 0.2*x**2, kohta = -3, nimi = r"$y=\frac{1}{5}x^2$")
+    with vari("blue"): kuvaaja.piirra(lambda x: 0.2*x**3, kohta = -2.5, nimi = r"$y=\frac{1}{5}x^3$")
+\end{kuva}
+\end{center}
+
+Potenssifunktion tärkeitä erikoistapauksia ovat asteluvut $n = 1$ ja $n = -1$. Kun $n = 1$, saadaan edellisessä luvussa esitelty suoraan verrannollinen riippuvuus $x$:n ja $f(x)$:n välillä, ja kun $n = -1$, muuttuja $x$ ja funktion arvo $f(x)$ ovat kääntäen verrannolliset.
+
+Potenssifunktiota voidaan laajentaa sallimalla eksponentille $n$ myös negatiiviset arvot. Tällöin funktion muoto muuttuu merkittävästi. Funktio ei myöskään ole enää määritelty kohdassa $x = 0$, vaan funktion arvot ''räjähtävät äärettömyyteen'', kun y-akselia lähestytään: %oliko y määritelty/nimetty aiemmin?
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(-4, 4, -4, 4, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    def f(x):
+      if(abs(x) < 10**-10): return 10**10
+      return x**-1
+    def g(x):
+      if(abs(x) < 10**-10): return 10**10
+      return x**-2
+    with vari("red"): kuvaaja.piirra(f, kohta = 2, suunta = 45, nimi = r"$y=x^{-1}$")
+    with vari("blue"): kuvaaja.piirra(g, kohta = 0.75, nimi = r"$y=x^{-2}$")
+\end{kuva}
+\end{center}
+
+Aiemmin määriteltiin murtopotenssi $x^{\frac{m}{n}}$, missä kantaluku $x\geq0$. Murtopotenssifunktiota määritellessä pitää myös muistaa kantaluvun positiivisuus, joten murtopotenssifunktion $f(x)=x^{\frac{m}{n}}$ määrittelyjoukko on positiivisten reaalilukujen joukko, eli $x\geq0$.
+
+Huomaa, että koska murtopotensseilla pätee $x^{\frac{m}{n}}={\sqrt[n]{x}}^m$, funktio $f(x)=x^{\frac{1}{2}}$ on itse asiassa sama kuin funktio $g(x)=\sqrt{x}$. Kuitenkin, koska murtopotensseja ei määritellä negatiivisilla kantaluvuilla, funktio $h(x)=x^{\frac{1}{3}}$ on määritelty ainoastaan kun $x\geq0$, mutta funktion $w(x)=\sqrt[3]{x}$ määrittelyjoukko on koko reaalilukujen joukko. Alla jotain murtopotenssifunktioita ja juurifunktioita esitettynä koordinaatistossa.
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -3, 3, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: x**(5./3), a = 0, nimi=r"$y=x^\frac{5}{3}$")
+    with vari("blue"): kuvaaja.piirra(lambda x: x**(1./2), a = 0, nimi=r"$y=x^\frac{1}{2}$")
+\end{kuva}
+\end{center}
+
+Juurifunktioiden kuvaajissa huomataan määrittelyjoukko ja yhteys murtopotenssifunktioihin. Parillisen juurifunktion kuvaajaa ei voida piirtää negatiivisille muuttujan arvoille:
+
+\begin{center}
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -3, 3, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: copysign(abs(x)**(1./3), x), suunta = -45, nimi=r"$y=\sqrt[3]{x}$")
+    with vari("blue"): kuvaaja.piirra(lambda x: sqrt(x), a = 0, suunta = 45, nimi=r"$y=\sqrt{x}$")
+\end{kuva}
+\end{center}
+
+Kuvaajista voidaan nähdä yhteys potenssin ja kuvaajan tyypin välillä. Tarkastellaan potenssifunktiota $f(x)=x^a$.
+
+\luettelolaatikko{Kuvaajan tyyppi}{
+		§ Jos potenssi $a>1$, kuvaajan kasvu kiihtyy kun $x$ kasvaa.
+		§ Jos potenssi $a<1$, kuvaaja kasvaa aluksi nopeasti, mutta funktioiden arvojen kasvu hidastuu todella vähäiseksi $x$:n kasvaessa.
+		§ Jos potenssi $a=1$, funktio $f$ saa muodon $f(x)=x^1=x$, ja funktion kuvaaja on suora $y=x$.
+		§ Jos potenssi $a<0$, funktiota $f(x)=x^{-a}=\frac{1}{x^a}$ ei ole määritelty kun $x=0$, ja funktio käyttäytyy origon ympäristössä erikoisesti.
+}
+
+%Tämä laitetaankin harjoitustehtäväksi t. Jaakko Viertiö
+%\begin{center}
+%	\begin{kuvaajapohja}{1.0}{-5}{5}{-5}{5}
+%	
+%	\newcommand{\kuvaajaneg}[3]{
+%\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+%}
+%\newcommand{\kuvaajapos}[3]{
+%\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+%}
+%	 \kuvaaja{x**10}{$x^{10}$}{blue}
+%	 \kuvaaja{x**1.5}{$x^{\frac{3}{2}}$}{blue}
+%	 \kuvaaja{x}{$x$}{black}
+%	 \kuvaaja{x**0.1}{$\sqrt[10]{x}=x^{\frac{1}{10}}$}{red}
+%	 \kuvaajapos{x**0.33333333333}{$\sqrt[3]{x}$}{red}
+%	 \kuvaajaneg{-(-x)**0.33333333333}{}{red}
+%	 \kuvaajaneg{x**(-1)}{}{violet}
+%	 \kuvaajaneg{x**(-8)}{$x^{-8}=\frac{1}{x^8}$}{violet}
+%	 \kuvaajapos{x**(-1)}{$x^{-1}=\frac{1}{x}$}{violet}
+%	 \kuvaajapos{x**(-8)}{}{violet}
+%	\end{kuvaajapohja}
+%\end{center}
+
+Tässä kurssissa on tarkoitus vain sivuta erilaisia funktioita ja niiden kuvaajia, ja tutustua niiden käyttäytymiseen alustavasti. Asiaan palataan useaan otteeseen myöhemmillä kursseilla. Esimerkiksi funktioita kokonaislukupotenssilla tarkastellaan lähemmin kurssilla MAA2 ja juuri- ja murtopotenssifunktioita kurssilla MAA8.
+
+\subsection{Yleinen verrannollisuus}
+
+Suoraan ja kääntäen verrannollisuus ovat tärkeitä erikoistapauksia yleisestä verrannollisuudesta, jossa muuttuja $y$ on verrannollinen muuttujan $x$ johonkin potenssiin:
+
+\laatikko[Yleinen verrannollisuus]{$y\propto x$ siten, että $y=kx^r$, missä ja $k$ ja $r$ ovat reaalilukuja.}
+
+\begin{esimerkki}
+\alakohdat{
+§ Kokeellisesti on havaittu, että auton jarrutusmatka $x$ on likimain verrannollinen vauhdin $v$ neliöön: $x \propto v^2$.
+§ Newtonin painovoimalain mukaan kahden massan välisen vuorovaikutuksen (vetovoiman) suuruus on verrannollinen käänteisesti niiden etäisyyden neliöön: $F=\gamma \frac{m_1m_2}{r^2}$, missä $\gamma$ on universaali painovoimavakio ja $r$ on massojen välinen etäisyys. Vetovoima on myös suoraan verrannollinen kummankin kappaleen massaan. Siis $F \propto m_1, F \propto m_2$ ja $F \propto r^{-2}$.
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+Hehkulamput ovat herkkiä jännitteen ($V$) muutoksille. Lampun tuottama valomäärä $I$ ($\approx$ kirkkaus) on verrannollinen jännitteen $3,4$:nteen potenssiin ($I\propto V^{3,4}$), ja hehkulampun käyttöikä $t$ on kääntäen verrannollinen jännitteen $16$:nteen potenssiin ($t \propto V^{-16}$). Käyttöjännitettä alennetaan $5$\,\%. Mitä käy lampun
+\alakohdat{
+§ kirkkaudelle
+§ käyttöiälle?
+}
+	\begin{esimratk}
+	\alakohdat{
+	§ Hehkulampun kirkkaudelle pätee verrannollisuuden perusteella yhtälö $I(V)=kV^{3,4}$, missä $k$ on verrannollisuuskerroin. Jos jännitettä alennetaan $5$\,\%, se tarkoittaa, että alkuperäinen jännite $V$ korvataan jännitteellä $0,95V$. Sijoittamalla uusi jännite kirkkauden antavaan lausekkeeseen $kV^{3,4}$ saadaan $k(0,95V)^{3,4}$, josta sieventämällä $k\cdot 0,95^{3,4}V^{3,4}=0,95^{3,4}kV^{3,4}$. Koska $kV^{3,4}=I$, saadaan uudeksi kirkkaudeksi $0,95^{3,4}I\approx 0,84I$. Viiden prosentin jännitteen pudotus saa siis kirkkauden vähenemään $1-0,84=0,16=16\,\%$.
+	§ Hehkulampun eliniälle pätee verrannollisuuden perusteella yhtälö $t(V)=\frac{k}{V^{16}}$. Jos jännitettä alennetaan $5$\,\%, se tarkoittaa, että alkuperäinen jännite $V$ korvataan jännitteellä $0,95V$. Sijoittamalla uusi jännite eliniän antavaan lausekkeeseen $\frac{k}{V^{16}}$ saadaan $\frac{k}{(0,95V)^{16}}$, josta saadaan sieventämällä $\frac{k}{0,95^{16}V^{16}}=\frac{1}{0,95^{16}}\cdot \frac{k}{V^{16}}$. Muoto on kerrointa $\frac{1}{0,95^{16}}$ vaille sama kuin alkuperäinen elinikä, eli uusi elinikä on $\frac{1}{0,95^{16}}t\approx 2,27t$. Jännitteen pudotus viidellä prosentilla siis yli kaksinkertaistaa lampun eliniän! (Vanhin vielä toiminnassa oleva hehkulamppu on toiminut yli sata vuotta -- juurikin sen vuoksi, että se loistaa aliteholla.)
+	}
+	\end{esimratk}
+\end{esimerkki}
+
+%Erityisen yleinen verrannollisuus luonnonilmiöissä on kääntäen verrannollisuus muuttujan toiseen potenssiin. %Fysiikka-esimerkki, säteilyn leviäminen, painovoima.
+%power law, inverse-square
+%jarrutusmatka
+%
+%+ luonnontieteissä huomataan kokemuksesta-... 'Newtoninpainovoimalaki
+%
+
+%Potenssifunktiota käsitellään samalla lailla riippumatta eksponentin
+%etumerkistä. Huomaa kuitenkin, että $\frac{1}{x^n} \neq 0 $ kaikilla $x$:n %arvoilla.
+
+%\luettelolaatikko{}{
+%§
+%Olkoon $n$ pariton. Tällöin potenssifunktio $f(x)=x^n$ on kaikkialla %aidosti kasvava ja jatkuva. Tästä seuraa, että yhtälöllä $y=f(x)$ on aina tasan %yksi ratkaisu kaikilla $y$.    
+%§
+%Olkoon $n$ parillinen. Tällöin potenssifunktio $f(x)=x^n$ on positiivinen, %symmetrinen, jatkuva ja aidosti kasvava, kun $x$ on positiivinen.  %Positiivisuudesta seuraa, että yhtälöllä $y=f(x)$ ei ole ratkaisuja, jos $y$ on %negatiivinen. Symmetriasta $f(x)=f(-x)$ seuraa, että jos $x$ on ratkaisu, niin %myös $-x$ on ratkaisu.  
+%}
+
+% potenssiyhtälöiden tarkastelu graafisesti

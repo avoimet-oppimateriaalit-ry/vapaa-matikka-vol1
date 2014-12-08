@@ -1,0 +1,325 @@
+Eräs tärkeä yhtälöiden tyyppi on \termi{potenssiyhtälö}{potenssiyhtälöt}.
+\laatikko[Potenssiyhtälö]{Potenssiyhtälö on muotoa $x^n=a$ oleva yhtälö, jossa $n$ on jokin rationaaliluku. ($n$ voi ilman ongelmia olla mikä tahansa reaalilukukin, mutta rationaalitarkastelu riittää tälle kurssille.)}
+
+Huomaa miinus- ja murtopotenssiyhtälöissä tarkistaa, millä kantaluvuilla $x$ potenssit on määritelty. Murtopotenssia määriteltäessä vaadittiin, että kantaluku $x\geq0$ ja negatiivisen potenssin tapauksessa on huomioitava, että kantaluku $x\neq0$, sillä $x^{-a}=\frac{1}{x^a}$, eikä nimittäjässä sallita olevan lukua $0$.
+
+Eksponentin $n$ ollessa kokonaisluku sen arvoa kutsutaan potenssiyhtälön \termi{aste (potenssiyhtälö)}{asteeksi}.
+\begin{esimerkki}
+\alakohdat{
+§ Potenssiyhtälön $x^2=0$ aste on $2$.
+§ Potenssiyhtälön $x^9=-34,5$ aste on $9$.
+§ Yhtälö $27x^3=7$ on potenssiyhtälö, sillä jakamalla se puolittain luvulla $27$ saadaan $x^3 = \frac{7}{27}$. Tämän potenssiyhtälön aste on $3$.
+§ Yhtälö $2x^{4}-7=3$ on potenssiyhtälö, sillä se voidaan muokata muotoon $x^n = a$, ja sen aste on $4$. 
+§ Yhtälö $\frac{1}{x^2}=3$ on potenssiyhtälö, sillä se voidaan kirjoittaa muodossa $x^n=a$, ja sen aste on $-1$.
+}
+\end{esimerkki}
+Potenssiyhtälöitä tarvitaan esimerkiksi tilanteissa, joissa lasketaan korolle korkoa. Myös pinta-ala- ja tilavuuslaskuissa esiintyy potenssiyhtälöitä.
+
+\luettelolaatikko{Potenssiyhtälön ratkaiseminen}{
+	§ Jos potenssiyhtälön aste $n$ on parillinen ja $a \ge 0$, yhtälöllä on kaksi ratkaisua: $$ x = \pm \sqrt[n]{a} \textrm{.} $$
+	§ Jos aste on parillinen, sillä on yksi ratkaisu vain kun $a = 0$, sillä $ x = \pm \sqrt[n]{0} = \pm 0 = 0$
+	§ Jos aste on parillinen ja $a < 0$, potenssiyhtälöllä ei ole yhtään ratkaisua.
+	§ Siis parillisen asteen potenssifunktiolla voi olla yksi, kaksi tai ei yhtään ratkaisua.
+	§ Jos aste on pariton, ja $a \neq 0$  yhtälöllä on aina täsmälleen yksi ratkaisu, $x = \sqrt[n]{a}.$
+}
+
+\begin{esimerkki}
+Ratkaise yhtälöt.
+\alakohdat{
+§ $x^2 = 0$
+§ $x^2 - 9 = 0$
+§ $x^2 + 9 = 0$
+}
+	\begin{esimratk}
+	\alakohdat{
+§ \begin{align*}
+	x^2 &= 0 \\
+	x &= 0
+	\end{align*}
+
+§ \begin{align*}
+	x^2 - 9 &= 0 \\
+	x^2 &= 9 \\
+	x &= \pm 3
+	\end{align*}
+
+§	\begin{align*}
+	x^2 + 9 &= 0 \\
+	x^2 &= -9 \\
+	x &= \pm \sqrt{-9}
+	\end{align*}
+	}
+	\end{esimratk}
+	\begin{esimvast}
+\alakohdat{
+§ Yhtälöllä on yksi ratkaisu: $x = 0$.
+§ Yhtälöllä on kaksi ratkaisua: $x = 3$ ja $x = -3$.
+§ Yhtälöllä ei ole reaalista ratkaisua (koska minkään reaaliluvun neliö ei ole negatiivinen).
+}
+	\end{esimvast}
+\end{esimerkki}
+
+\laatikko[Paritonasteisen potenssiyhtälön ratkaisut]{Mikäli potenssiyhtälön asteluku $n$ on pariton, yhtälöllä on aina tasan yksi reaalilukuratkaisu (kun $a \neq 0$).}
+
+\begin{esimerkki}
+Ratkaise yhtälöt.
+\alakohdat{
+§ $2x^3 + 16 = 0$
+§ $2x^4 -7 = 3$
+}
+
+	\begin{esimratk}
+	\alakohdat{
+§	\begin{align*}
+	2x^3 + 16 &= 0 \\
+	2x^3 &= -16 \\
+	x^3 &= -8  \\
+	x = \sqrt[3]{-8} &= -2
+	\end{align*}
+	
+	§		\begin{align*}
+	2x^4 -7 &= 3 \\
+			2x^4 &= 3+7 \\
+				x^4 &= \frac{10}{2} \\
+				x^4 &= 5 \\
+				x &= \pm \sqrt[4]{5}
+				\end{align*}
+				}
+	\end{esimratk}	
+\end{esimerkki}
+
+\begin{luoKuva}{potenssiyhtaloratk}
+	kuvaaja.pohja(-4, 6, -50, 110, leveys = 9, korkeus = 6, nimiX = "$x$", nimiY = "$y$")
+	with vari("red"): kuvaaja.piirra(lambda x: x**3, kohta = -3, suunta = -45, nimi = r"$y = x^3$")
+	with vari("green!70!black"): kuvaaja.piirra(lambda x: x**4, kohta = -2.86, suunta = -180, nimi = r"$y = x^4$")
+	with vari("blue"): kuvaaja.piirra(lambda x: x**6, kohta = -2, suunta = 45, nimi = r"$y = x^6$")
+	A1 = geom.piste(-50**0.25, 50, suunta = -135, nimi = "\\tiny$(-\sqrt[4]{50}, 50)$")
+	A2 = geom.piste(50**0.25, 50, suunta = 45, nimi = "\\tiny$(\sqrt[4]{50}, 50)$")
+	B = geom.piste(100**(1./3), 100, suunta = -20, nimi = "\\tiny$(\sqrt[3]{100}, 100)$")
+	
+	def xproj(p): return (p[0], 0)
+	def yproj(p): return (0, p[1])
+	def kulma(p):
+		geom.jana(xproj(p), p)
+		geom.jana(yproj(p), p)
+	
+	kulma(A1)
+	kulma(A2)
+	kulma(B)
+\end{luoKuva}
+\begin{esimerkki}
+	\alakohdat{
+		§ Potenssiyhtälön $x^3 = 100$ ratkaisu on $x=\sqrt[3]{100}$.
+		§ Potenssiyhtälöllä $x^6 = -1$ ei ole ratkaisua, sillä $x^6 = (x^3)^2 \ge 0$ kaikilla $x\in \mathbb{R}$.
+		§ Potenssiyhtälöllä $x^4=50$ on kaksi ratkaisua $x=\sqrt[4]{50}=2,6591\ldots$ ja $x=-\sqrt[4]{50}=-2,6591\ldots$.
+	}
+	\begin{center}
+		\naytaKuva{potenssiyhtaloratk}
+	\end{center}
+\end{esimerkki}
+
+\begin{esimerkki}
+Etsitään luku $x$, joka toteuttaa yhtälön $\frac{x^3}{3}=\frac{x^2}{2}$. Tehdään tämä kahdella tapaa vaiheittain
+
+		\begin{align*}
+			\frac{x^3}{3}&=\frac{x^2}{2} && \text{| Kerrotaan molemmat puolet kolmella.} \\
+			x^3 &=\frac{3x^2}{2}   && \text{| Kerrotaan molemmat puolet kahdella.} \\
+			2x^3 &=3x^2 && \text{| Vähennetään puolittain oikean puolen termillä.} \\
+			2x^3 -3x^2&=0 && \text{| Jaetaan $x^2$. Huomataan ja merkitään, että $x\neq0$.} \\
+			2x -3&=0 && \text{| Lisätään molemmille puolille $3$ ja jaetaan kahdella.} \\ 
+			x&=\frac{3}{2} && \\
+		\end{align*}
+Tutkitaan vielä erikseen tilanne $x=0$, joka ei ole määritelty yllä olevassa osamäärässä. Sijoitetaan $x=0$ yhtälöön $\frac{x^3}{3}=\frac{x^2}{2}$ ja saadaan $\frac{0^3}{3}=\frac{0^2}{2}$, joka pätee sillä $0=0$. Näin ollen siis myös $x=0$ on ratkaisu. 
+
+Toinen tapa
+\begin{align*}
+\frac{x^3}{3}&=\frac{x^2}{2} && \text{| Jaetaan molemmat puolet oikean puolen termillä. } \\
+\frac{x^3}{3}:\frac{x^2}{2}&=1 && \text{| Kerrotaan jakajan käänteisluvulla.} \\
+\frac{x^3\cdot2}{3\cdot x^2}&=1 && \text{| Sievennetään. Huomataan ja merkitään, että nyt $x\neq0$.} \\
+\frac{x\cdot2}{3}&=1 && \text{| Jaetaan puolet kahdella ja kerrotaan kolmella.} \\
+x&=\frac{3}{2} && \\
+\end{align*}
+
+Tutkitaan vielä erikseen tilanne $x=0$, joka ei ole määritelty yllä olevassa osamäärässä. Sijoitetaan $x=0$ yhtälöön $\frac{x^3}{3}=\frac{x^2}{2}$ ja saadaan $\frac{0^3}{3}=\frac{0^2}{2}$, joka pätee, sillä $0=0$. Näin ollen siis myös $x=0$ on ratkaisu.
+
+Eli molemmin tavoin saatiin sama tulos, vaikka yhtälöä muokattiin eri keinoin.
+
+\end{esimerkki}
+
+Joskus potenssiyhtälössä potenssiin on korotettu jokin laajempi lauseke kuin pelkästään ratkaistava tuntematon. Tällöin sulkeita ei välttämättä kannata avata kertomalla potenssi auki, vaan potenssiin korotus kumotaan suoraan sopivalla juurenotolla.
+
+\begin{esimerkki}
+Ratkaistaan yhtälö $(2x+1)^3=27$:
+	\begin{align*}
+	(2x+1)^3&=27 &&|\sqrt[3]{} \\
+	\sqrt[3]{(2x+1)^3}&=\sqrt[3]{27} \\
+	2x+1&=3 \\
+	\end{align*}
+Nyt alkuperäinen yhtälö on palautunut (eli ns. redusoitu) aivan tavalliseksi ensimmäisen asteen yhtälöksi, joka on helppo ratkaista.
+\end{esimerkki}
+
+\begin{esimerkki}
+Ratkaistaan yhtälö $1+x=\frac{1}{1+x}$, missä nollalla jakamisen välttämiseksi $x\neq-1$:
+	\begin{align*}
+	1+x&=\frac{1}{1+x} &&| \cdot(1+x) \\
+	(1+x)\cdot(1+x)&=\frac{1}{1+x}\cdot(1+x) \\
+	(1+x)^2&=1 && |\sqrt{ } \\
+	\sqrt{(1+x)^2}&=\sqrt{1} &&\\
+	\pm (1+x)&=1&& \\
+	1+x &= \pm 1 &&|-1 \\
+	x &=\pm 1 -1	 && \\
+	\end{align*}
+
+Eli $x=-2$ tai $x=0$.
+\end{esimerkki}
+
+\subsection*{Korkolaskuja}
+
+\begin{esimerkki} %jos sukupolven kesto..., niin kuinka suuren osan talletuksesta hänen ... .... .... -lapsensa käyttää,kun ostaa yhden ES vuonna 2013?
+	Juudas tallettaa $30$ hopearahaa pankkiin. Rahamäärä kasvaa vuodessa $1$ prosentin korkoa. Kuinka paljon rahaa on tilillä $2\,000$ vuoden kuluttua?
+	\begin{esimratk}
+		Tutkitaan, miten Juudaksen talletuksen suuruus lähtee kasvamaan.
+		\begin{tabular}{c|c|c}
+			Pääoma & Korko / & Pääoma / \\
+			vuoden alussa / &  & vuoden lopussa / \\
+			hopearahaa & hopearahaa & hopearahaa \\
+			$30$ & $0,01 \cdot 30 = 0,3$ & $30+0,3 = 30,3$ \\
+			$30,3$ & $0,01 \cdot 30,3 = 0,303$ & $30,3 + 0,303 =30,603$ \\
+			$30,603$ & $0,01 \cdot 30,603 = 0,30603$ & $30,603+ 0,30603 = 30,90903$ \\
+			$30,90903$ & $0,01 \cdot 30,90903 = 0,3090903$ & $30,90903+0,3090903 = 31,2181203$
+		\end{tabular}
+		Huomataan, että pääoma kertautuu aina vakiolla. Nimittäin, jos pääoma on alussa $P_0$, se kasvaa $\frac{p}{100}P_0$, missä $p$ on korkoprosentti. Nyt vuoden lopussa talletettuna on $P_1 = P +\frac{p}{100}P_0 = (1+\frac{p}{100})P_0$, eli uusi pääoma saadaan kertomalla vanha luvulla $1+\frac{p}{100}$. Lisäksi toisen vuoden jälkeen tilillä on siis 
+		\[
+		P_2 = \left(1+\frac{p}{100}\right)P_1 = \left(1+\frac{p}{100}\right)\left(1+\frac{p}{100}\right)P_0 = \left(1+\frac{p}{100}\right)^2P_0,
+		\]
+		ja siis yleisesti $n$:n vuoden jälkeen
+		\[
+		P_n = \left(1+\frac{p}{100}\right)^nP_0.
+		\]
+		Tämä on ns. \termi{korkoa korolle}{korkoa korolle} -kaava. Nyt voidaan laskea, että Juudaksen lopullinen pääoma on $2\,000$ vuoden jälkeen hopearahoissa
+		\[
+		P_{2\,000} = \left(1+\frac{1}{100}\right)^{2\,000}\cdot 30 \approx 13\,178\,586\,151.5 \approx 13\,000\,000\,000.
+		\]
+		Tilille kertyi siis kutakuinkin $13$ miljardia hopearahaa.
+	\end{esimratk}
+\end{esimerkki}
+
+\laatikko[Korkoa korolle -periaate]{
+Kun korkoprosentti on $p$, pääoma $P_0$ kasvaa $n$:n vuoden aikana arvoon
+\[
+	P_n = \left(1+\frac{p}{100}\right)^nP_0.
+\]
+}
+
+\begin{esimerkki}
+Suursijoittaja Nalle Mursulla on $5\,000$ euroa ylimääräistä rahaa, jonka hän aikoo sijoittaa $30$ vuodeksi.  Nalle Mursu haluaa sijoittamansa pääoman kasvavan $100\,000$ euroksi $30$ vuodessa.  Kuinka suuren vuotuisen korkokannan Nalle Mursu tarvitsee sijoitukselleen? 
+	\begin{esimratk}
+		Olkoon vuotuinen korkokanta $r$. Korkoa korolle -periaatteen nojalla $5\,000$ euron sijoitus kasvaa $30$ vuodessa summaksi $5\,000\cdot(1+r)^{30}$. Merkitsemällä $x=1+r$ saamme yhtälön $5\,000\cdot x^{30} = 100\,000$. Jakamalla yhtälö puolittain luvulla $5\,000$ päädymme potenssiyhtälöön
+		\[ x^{30} = 20, \] 
+		jonka ratkaisuksi saadaan $x=20^{\frac{1}{30}} \approx 1,105$. Näin ollen suursijoittaja Nalle Mursun vaatima korkokanta sijoitukselleen on noin $r=1-x=1-1,105=0,105=10,5\,\%$.
+	\end{esimratk}
+\end{esimerkki}
+
+%\subsection*{$\star$ Pythagoraan lause} SIIRRETTY MAA3:een!
+%
+%Yksi tärkeimmistä potenssiyhtälöistä on geometrian kolmioihin liittyvissä perustehtävissä tarvittava \termi{Pythagoraan lause}{Pythagoraan lause}. Suorakulmaisen kolmion kahta toisiinsa nähden kohtisuorassa olevaa lyhyttä sivua kutsutaan kateeteiksi ja pisintä sivua hypotenuusaksi.
+%
+%\laatikko{Pythagoraan lause}{Suorakulmaiselle kolmiolle pätee: kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö:
+%
+%$$a^2+b^2=c^2$$}
+%
+%\begin{center}
+%\begin{kuva}
+%	skaalaa(2)
+%
+%	A=(0,0)
+%	B=(0,2)
+%	C=(1,0)
+%	D=(0.1,0.1)
+%	E=(0,0.1)
+%	F=(0.1,0)
+%
+%	geom.jana(B,A,"$a$")
+%	geom.jana(C,B,r"$c$")
+%	geom.jana(A,C,"$b$")
+%	geom.jana(E,D)
+%	geom.jana(D,F)
+%\end{kuva}
+%\end{center}
+%
+%Sama pätee myös kääntäen: jos kateettien neliöiden summa on hypotenuusan neliö, kolmio on varmasti suorakulmainen.
+
+%Tavallisesti kahta lyhyempää sivua, kateettia (niiden pituutta) merkataan $a$:lla ja $b$:llä, ja hypotenuusan pituutta $c$:llä kuten kuvassa. Yhtälön ratkaisun kannalta olennaista on, että geometrian sovelluksissa emme hyväksy yhtälön negatiivisia juuria, koska pituudet, pinta-alat ja tilavuudet ovat positiivisia.
+
+%\begin{esimerkki}
+%
+%Määritä oheisen suorakulmaisen kolmion hypotenuusan pituus.
+%\begin{center}
+%\begin{kuva}
+%	skaalaa(1)
+%
+%	A=(0,0)
+%	B=(0,1)
+%	C=(2,0)
+%	D=(0.1,0.1)
+%	E=(0,0.1)
+%	F=(0.1,0)
+%
+%	geom.jana(B,A,"$3$")
+%	geom.jana(C,B,"$c$")
+%	geom.jana(A,C,"$4$")
+%	geom.jana(E,D)
+%	geom.jana(D,F)
+%\end{kuva}
+%\end{center}
+%
+%\begin{esimratk}
+%Kateettien pituudet ovat $a=3$ ja $b=4$, ja tuntematonta hypotenuusaa on merkitty $c$:llä. (Sinänsä ei ole väliä, kumpaa kateettia merkataan milläkin kirjaimella.) Pythagoraan lauseesta saadaan:
+%
+%\begin{align*}
+%a^2+b^2 &= c^2  && || \text{sijoitetaan tehtävänannon arvot kaavaan} \\
+%3^2+4^2 &= c^2 && || \text{sievennetään yhtälön vasenta puolta} \\
+%9+16 &= c^2 && \\
+%25 &= c^2 && || \sqrt{} \\
+%5 &= c &&
+%\end{align*}
+%
+%Hyväksymme vain positiivisen juuren, koska pituudet eivät voi olla negatiivisia.
+%
+%\end{esimratk}
+%	\begin{esimvast}
+%Kolmion hypotenuusan pituus on $5$ (pituusyksikköä).
+%	\end{esimvast}
+%\end{esimerkki}
+%
+%\begin{esimerkki}
+%Taulutelevision kooksi (lävistäjäksi) on ilmoitettu mainoksessa $46,0$ tuumaa ($116,8$ cm) ja kuvasuhteeksi $16:9$. Kuinka leveä televisio on senttimetreinä?
+%
+%%FIXME: KIMMON KUVITUSKUVA!
+%	\begin{esimratk}
+%Taulutelevision halkaisija, alareuna ja toinen sivu muodostavat suorakulmaisen kolmion. Kolmion hypotenuusa ($c$) on television halkaisija ja kateetit ($a$ ja $b$) alareuna ja toinen sivu. Kuvasuhteen perusteella kateettien pituuksia voidaan merkitä $16x$ ja $9x$, missä $x$ esittää pienintä sivujen yhteistä mittaa. Sivuja ei voida merkitä suoraan $16$ ja $9$, koska nämä eivät ole oikeita pituuksia vaan vain suhteita. Pythagoraan lauseesta ($c^2 = a^2 + b^2$) saadaan
+%\[
+%116,8^2 = (16x)^2 + (9x)^2
+%\]
+%\[
+%13\,642,24 = (256+81)x^2.
+%\]
+%\[
+%x^2 = \frac{13\,642,24}{337}
+%\]
+%\[
+%x= \sqrt{\frac{13\,642,24}{337}} \approx 6,36.
+%\]
+%Television leveys on noin $16x = 16\cdot 6,36\approx 102$\,cm.
+%	\end{esimratk}
+%	\begin{esimvast}
+%	Noin $102$\,cm
+%	\end{esimvast}
+%\end{esimerkki}
+
+%\begin{esimerkki}
+%$\star$ Suorakulmion muotoisen levyn mitat ovat $230\,\text{cm}\times 250\,\text{cm}$. Mahtuuko se sisään oviaukosta, joka on $90$\,cm leveä ja $205$\,cm korkea?
+%
+%        Ei mahdu. Suurin mahdollinen levy, joka mahtuu ovesta sisään on Pythagoraan lauseen perusteella leveydeltään $\sqrt{90^2+205^2}\approx 224$\,cm.
+%
+%\end{esimerkkki}

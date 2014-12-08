@@ -1,0 +1,101 @@
+Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on usein yksinkertaisempi. Pyöristäminen voidaan suorittaa eri tarkkuuksiin ja myös tilanteesta riippuen erilaisin käytännöin.% Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
+
+%\subsection{Pyöristämistapoja}
+
+%\begin{tabular}{c|c|c}
+%\hline
+%Pyöristystapa & selitys & missä käytetään \\
+%\hline
+%& & & \\
+%& & & \\
+%\hline
+%\end{tabular}
+
+%luettelo pyöristysmetodeista
+
+\begin{esimerkki}
+Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$ senttimetriä, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$ senttimetriä antaa kaiken oleellisen informaation ja on mukavampi lukea.
+\end{esimerkki}
+
+Jos sellainen on tiedossa, pyöristys tehdään aina lähimpään oikeaa tarkkuutta olevaan lukuun. Siis esimerkiksi kokonaisluvuksi pyöristettäessä $2,8 \approx 3$, koska $3$ on lähin kokonaisluku. Lisäksi on usein sovitaan, että puolikkaat (kuten $2,5$) pyöristetään ylöspäin. Se, pyöristetäänkö ylös vai alaspäin (eli suurempaan vai pienempään lukuun), riippuu siis haluttua tarkkuutta seuraavasta numerosta: pienet 0, 1, 2, 3, 4 pyöristetään alaspäin, suuret 5, 6, 7, 8, 9 ylöspäin.
+
+Ellei muuta mainita, tehtävissä käytetään kaikkein yleisintä pyöristysmenetelmää, jossa viimeisen numeron perusteella pyöristetään lähimpään, ja numeroon $5$ päättyvät poispäin nollasta.
+
+\begin{esimerkki}
+Pyöristetään luku $15,0768$ sadasosien tarkkuuteen. Katkaistaan luku sadasosien jälkeen ja katsotaan seuraavaa desimaalia:\\
+$15,0768 = 15,07|68 \approx 15,08$.\\ %katkaisumerkintä
+Pyöristettiin ylöspäin, koska seuraava desimaali oli 6.
+\end{esimerkki}
+
+%+1, hinta viiden sentin tarkkuudella
+
+\subsection{Merkitsevät numerot}
+
+Matematiikan tehtävissä ovat ehdottoman tarkkoja, kun käsitellään lukuja itsessään, mutta kun puhutaan sovelluksista. mutta Luvun esitysmuodolla voidaan välittää tietoa sitä, kuinka tarkka arvo on kyseessä.
+
+Mikä on tarkin mittaus, $23$\,cm, $230$\,mm vai $0,00023$\,km? Kaikki kolme tarkoittavat täsmälleen samaa, joten niitä tulisi pitää yhtä tarkkoina. Luvun esityksessä esiintyvät kokoluokkaa ilmaisevat nollat eivät ole \emph{merkitseviä numeroita}, vain $2$ ja $3$ ovat.
+
+\laatikko[Merkitsevät numerot]{\termi{merkitsevät numerot}{Merkitseviä numeroita} ovat kaikki luvussa esiintyvät numerot, paitsi nollat kokonaislukujen lopussa ja desimaalilukujen alussa.}
+
+%lisää esimerkkejä!
+\begin{center}
+\begin{tabular}{r|l}
+Luku & Merkitseviä numeroita \\
+\hline
+$123$ & $3$ \\
+$12\,000$ & $2$ (tai enemmän)\\
+$12,34$ & $4$ \\
+$0,00123$ & $3$
+\end{tabular}
+\end{center} %lisää esimerkkejä!
+
+%vvvmiten tämä liittyy merkitseviin numeroihin? vvvv
+%Jos esimerkiksi pöydän paksuudeksi on mitattu millin tuhannesosien tarkkuudella 2\,cm, voidaan pituus ilmoittaa muodossa 2,0000\,cm, jolloin tarkkuus tulee näkyviin.
+%Samasta syystä kellonaikoja ilmoitettaessa klo 19 käsitetään siten, että kyse on tasatunnista. Klo 19.00 ei lisäinformaatiota?
+
+Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden määrässä.
+
+\begin{esimerkki}
+\alakohdat{
+§ Kasvimaalla asuvaa $100$ citykania on tuskin laskettu ihan tarkasti.
+§ $100$\,m juoksuradan todellinen pituus ei varmasti ole todellisuudessa esimerkiksi $113$\,m.
+}
+\end{esimerkki}
+
+\subsection*{Vastausten pyöristäminen sovelluksissa} %siirrä asioita yksiköihin
+
+Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan yleensä desimaalien lukumäärällä.
+
+\begin{esimerkki} Jos $175$\,cm pituinen ihminen nousee seisomaan $2,15$\,cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi $177,15$\,cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen $174,5$\,cm ja $175,5$\,cm väliltä. Lasketaan siis $175$\,cm$+2,15$\,cm$=177,15$\,cm$\approx 177$\,cm. 
+Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
+\end{esimerkki}
+
+Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan.
+
+%\begin{esimerkki}
+%Luustolihakset koostuvan lihassyistä eli pitkistä lihassoluista, jotka ovat ryhmittyneet kimpuiksi. Kutakin lihasta säätelee keskimäärin noin $100$ motorista hermosolua, ja jokainen motorinen hermosolu voi liittyä kymmenestä tuhanteen lihassyyhyn. Kuinka monta lihassyytä lihaksissa on tämän perusteella?
+%\end{esimerkki} %Muista, että vahingossa merkkaa pyöristyksiin on yhtä kuin -merkkiä, vaan \approx
+
+Tarkkuus ei ole aina hyvästä lukujen esittämisessä.
+
+\begin{esimerkki}
+$\pi = 3,141592653589793238462643383279 \ldots$, mutta käytännön laskuihin riittää usein $3,14$ riittävän vastaustarkkuuden saavuttamiseksi.
+\end{esimerkki}
+
+Muista, että kolmen pisteen käyttö desimaaliesityksen lopussa on suotavaa vain, jos on yksikäsitteisen selvää, miten desimaalit tulevat jatkumaan. Piin tapauksessa niitä voi käyttää, koska luvun desimaalikehitelmä on hyvin tunnettu ja mielivaltaisen tarkasti laskettavissa.
+
+\subsection{Tarkka arvo}
+
+Matematiikassa ei kuitenkaan ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina. Oletusarvoisesti tehtävien vastaus annetaan \textit{aina} tarkkana arvona.
+
+Käyttämällä tarkkoja arvoja ei menetetä tietoa. Jos pyöristyksiä tehdään, niin se tehdään vasta aivan lopussa. Välivaiheissa ei saa pyöristää!
+
+\begin{esimerkki}
+Sievennetään lauseke $\frac{6\pi^2}{3\pi^3}$. Supistamalla kolmella saadaan $\frac{2\pi^2}{\pi^3}$ ja supistamalla sen jälkeen $\pi^2$:lla (tämä vastaa osamäärän potenssisääntöä) saadaan $\frac{2}{pi}$. Tämä on vastaus, ja likimääräisen desimaalimuodon ilmoittaminen on ylimääräistä.
+\end{esimerkki}
+
+%\begin{esimerkki}
+%Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluku $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837\ldots$, mutta tuloksena on vain likiarvo, lasketaanpa desimaalilukua mihin tahansa tarkkuuteen hyvänsä.
+%\end{esimerkki}
+
+%MIKSI sieventäminen ei enää onnistunut?

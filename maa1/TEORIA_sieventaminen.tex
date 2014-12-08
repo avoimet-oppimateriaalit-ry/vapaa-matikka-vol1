@@ -1,0 +1,271 @@
+Tässä luvussa tutustumme lisää laskutoimitusten terminologiaan ja siihen, miten työskentelyä voidaan usein helpottaa kirjoittamalla lasku eri tavoilla.
+
+\subsection{Lauseke}
+
+Mitä tahansa kirjoitettua lukua tai laskutoimitusta kutsutaan yhteisellä nimellä \termi{lauseke}{lausekkeeksi}. Lausekkeen \termi{arvo}{arvoksi} kutsutaan sitä lukua, joka saadaan, kun lausekkeen laskutoimitukset lasketaan.
+
+\begin{esimerkki}
+\alakohdat{
+§ Lausekkeen $2$ arvo on $2$.
+§ Lausekkeen $5-3$ arvo on $2$.
+§ Lausekkeen $x:3-9$ arvo ei ole vakio, vaan sen arvo riippuu muuttujasta $x$.
+}
+\end{esimerkki}
+
+Lausekkeiden sanotaan olevan yhtäsuuria, kun niiden arvot ovat yhtä suuria.
+
+\begin{esimerkki}
+Koska lausekkeen $2+4$ arvo on $6$ ja myös lausekkeen $12:2$ arvo on $6$, voidaan merkitä $2+4=12:2$. (Tämä vastaa aiemmin määriteltyä yhtäsuuruusrelaation transitiivisuutta: Jos $2+4=6$ ja $12:2=6$, niin $2+4=12:2$ seuraa.)
+\end{esimerkki}
+
+On erittäin hyödyllistä huomata, että tietyn luvun voi itse asiassa ilmaista erilaisten lausekkeiden avulla äärettömän monella eri tavalla. Koska eri lausekkeiden välillä, joilla on sama arvo, on vain kosmeettista eroa, voidaan tilanteesta riippumatta mikä tahansa samanarvoinen lauseke \termi{sijoitus}{sijoittaa} toisen paikalle.
+
+\begin{esimerkki}
+Seuraavat merkinnät tarkoittavat kaikki samaa lukua:
+\begin{align*}
+                &42 \\ &-(-42) \\ &6 \cdot 7 \\ &(50-29) \cdot 2
+\end{align*}
+
+Niinpä luvun $42$ paikalle voi aina, poikkeuksetta ja kaikissa tilanteissa kirjoittaa esimerkiksi merkinnän $(50-29)\cdot 2$, sillä se tarkoittaa samaa lukua kuin merkintä $42$.
+\end{esimerkki}
+
+Usein lausekkeessa esiintyy myös kirjaimia. Niillä merkitään lukuja, joiden arvoa ei tiedetä tai joiden arvo voi vaihdella tilanteesta riippuen ja niitä kutsutaan muuttujiksi, tuntemattomiksi tai vakioiksi. Lausekkeella on myös tällöin lukuarvo, mutta tätä lukuarvoa ei välttämättä voi laskea, jos muuttujan, tuntemattoman tai vakion lukuarvoa ei tiedetä. %FIXME: kunnnon täsmenys sanojen muuttuja ja tuntematon käyttöön
+
+Kun lausekkeissa esiintyy tuntemattomia lukuja, sanotaan kahta lauseketta yhtä suuriksi silloin, kun ne ovat yhtä suuria riippumatta siitä, mikä lukuarvo tuntemattomilla on.
+
+\begin{esimerkki}
+Lausekkeet $x+y+2$ ja $y+2+x$ ovat yhtä suuria, koska riippumatta siitä, mitä $x$:n ja $y$:n lukuarvot ovat, kummastakin lausekkeesta saadaan sama tulos.
+\end{esimerkki}
+
+Kun lauseke muodostuu yhteenlaskusta, käytetään nimitystä \termi{termi}{termi} tarkoittamaan kutakin yhtä yhteenlaskettavaa osaa lausekkeesta. Termissä voi olla yhdistelmä vakioista ja muuttujista tulona tai se voi myös olla vain yksittäinen luku. Muista, että kaikki vähennyslaskut voi kirjoittaa yhteenlaskuina, jolloin sanaa termi voidaan käyttää myös vähennettävistä ja vähentäjästä.
+
+\begin{esimerkki}
+\alakohdat{
+§ Lausekkeen $1+2$ termit ovat $1$ ja $2$.
+§ Lausekkeen $7-3$ termit ovat $7$ ja $-3$. Tämä näkyy selvästi, kun kirjoitetaan vähennyslasku yhteenlaskuna: $7-3=7+(-3)$.
+§ Lausekkeen $-4axy-ax+1$ termit ovat $-4axy$, $-ax$ ja $1$.
+}
+\end{esimerkki}
+
+%jonnekin termi ryhmittely
+
+\subsection{Sieventäminen}
+
+Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan \termi{sieventäminen}{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi. Tähän lukuun on koottu sääntöjä, joiden avulla lauseketta voi muutaa niin, että sen arvo ei muutu. %luettele sieventämisperiaatteita
+
+Tässä luvussa on esitelty tärkeimpiä sääntöjä, joita voidaan käyttää lausekkeiden sieventämisessä. Näitä sääntöjä tulee myöhemmin paljon lisää. Monet myöhemmin vastaan tulevista säännöistä voidaan myös perustella tässä luvussa esitettyjen sääntöjen avulla.
+
+\subsubsection*{Vaihdantalaki ja liitäntälaki}
+
+\laatikko[Yhteenlaskujen järjestys]{
+Yhteenlaskut voi laskea missä järjestyksessä tahansa
+
+\begin{tabular}{ll}
+$a+b=b+a$ & (vaihdantalaki)\\
+$a+(b+c)=(a+b)+c=a+b+c$ & (liitäntälaki) \\
+\end{tabular}
+}
+
+Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3+5)$.
+
+Nämä säännöt voidaan yhdistää yleiseksi säännöksi, jonka mukaan yhteenlaskun sisällä laskujärjestystä voi vaihtaa miten tahansa.
+
+Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
+
+\laatikko[Yhteen- ja vähennyslaskujen järjestys]{
+Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee miinusmerkin kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
+}
+
+\begin{esimerkki}
+$5-8+7-2=5+(-8)+7+(-2)=(-2)+(-8)+5+7=-2-8+5+7$
+\end{esimerkki}
+
+Vastaavat säännöt pätevät kerto- ja jakolaskulle samoista syistä.
+
+\laatikko[Kertolaskujen järjestys]{
+Kertolaskut voi laskea missä järjestyksessä tahansa
+
+\begin{tabular}{ll}
+$a\cdot b=b\cdot a$ & (vaihdantalaki)\\
+$a\cdot (b\cdot c)=(a\cdot b)\cdot c=a\cdot b\cdot c$ & (liitäntälaki)
+\end{tabular}
+}
+
+\begin{esimerkki}
+\alakohdat{
+§ $5 \cdot 6 = 6 \cdot 5$
+§ $2 \cdot (1+2) = 2 \cdot 1 + 2 \cdot 2$
+}
+\end{esimerkki}
+
+\laatikko[Kerto- ja jakolaskujen järjestys]{
+Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee jakolaskun käänteisluvulla kertomisena.
+}
+
+\begin{esimerkki}
+$5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
+\end{esimerkki}
+
+\subsubsection*{Osittelulaki}
+
+Yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava sääntö:
+
+\laatikko[Osittelulaki]{
+$a(b+c)=ab+ac$
+
+Luettaessa annettua kaavaa vasemmalta oikealle puhutaan \termi{sulkeiden avaaminen}{sulkujen avaamisesta}. Oikealta vasemmalle päin luettaessa puhutaan \termi{yhteinen tekijä}{yhteisen tekijän ottamisesta}.
+}
+
+Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinnalla. Kun vähennyslasku ajatellaan vastaluvun lisäämisenä ja jakolasku ajatellaan käänteisluvulla kertomisena, voidaan osittelulaki laajentaa koskemaan myös jakolaskua. Seuraavassa on esimerkkejä tällaisista osittelulain sovelluksista:
+
+\begin{esimerkki}
+\begin{align*}
+&(b+c)a = a(b+c) = ab+ac = ba+ca \\
+&\text{ (Sovellettu vaihdantalakia)} \\
+&a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad \\
+&\text{ (Sovellettu liitäntälakia)} \\
+&a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac \\
+&\text{ (Sovellettu kertolaskun merkkisääntöä)} \\
+&(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a \\
+&\text{ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla.) }
+\end{align*}
+\end{esimerkki}
+
+Tärkeää on huomata osittelulain toimivan myös, vaikka sulkeissa olisi vähennyslasku, eli osittelulaki voidaan yleistää muotoon $a(b\pm c)=ab \pm c$, missä lausekkeiden molemmille puolille valitaan aina sama merkki -- plus tai miinus.
+
+Tämä voidaan johtaa vastaluvun ominaisuuksia käyttämällä:
+\begin{align*}
+	a(b-c)
+	&=a(b+(-c)) && \text{vähennyslaskun määritelmä} \\
+	&=ab+a\cdot (-c) && \text{osittelulaki} \\
+	&=ab+ (-c)a && \text{vaihdantalaki} \\
+	&=ab+ (-1)ca && \text{tulkitaan miinusmerkki $-1$:llä kertomiseksi} \\
+	&=ab+ (-ca)&& \text{} \\
+	&=ab-ca && \text{vähennyslaskun määritelmä} \\
+	\end{align*}	
+	
+Tilanteessa $a(-b-c)$ toimitaan seuraavasti:
+
+\begin{align*}
+	a(-b-c)
+	&=a((-1)b+(-1)c) && \text{tulkitaan miinusmerkkit $-1$:llä kertomiseksi} \\
+	&=a((-1)(b+c)) && \text{osittelulaki} \\
+	&=(a(-1))(b+c) && \text{kertolaskun liitännäisyys} \\
+	&=-a(b+c) && \text{} \\
+	\end{align*}	
+
+Sievennyksen lisäksi osittelulaki on kätevä työkalu luvuilla laskemisessa ja päässälaskussa, kuten seuraavat esimerkit osoittavat:
+
+\begin{esimerkki}
+\alakohdat{
+§     \begin{align*}
+7\,777\cdot 542-7\,777\cdot 541 &= 7\,777\cdot (542-541) \\ &= 7\,777\cdot 1 \\ &= 7\,777
+     \end{align*}
+
+§    \begin{align*}
+46\cdot 9 &= 46\cdot (10-1) \\ &= 46\cdot 10 - 46\cdot 1 \\ &= 460-46 \\ &= 414
+    \end{align*}
+    }
+\end{esimerkki}
+
+Osittelulakia käytetään usein tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa.
+
+\begin{esimerkki}
+\alakohdat{
+§ $2(x+5)=2x+2\cdot5=2x+10$
+§ $-x(y+1)=-xy-x$
+§ $3(x+y)a=(3x+3y)a=3ax+3ay$ %fixme: tarkennusta
+}
+\end{esimerkki}
+
+Joissakin tilanteissa osittelulakia tarvitaan useamman kerran, jotta sulkeet saadaan poistettua.
+
+%\begin{esimerkki}
+%\alakohdat{
+%§
+%§
+%§
+%}
+%
+%\end{esimerkki}
+
+%ryhmittely + esimerkkejä
+
+\subsubsection*{Käänteistoimitukset} %tarkista, onko jo käsitelty
+
+Luvun ja sen vastaluvun summa on nolla. Yhteen- ja vähennyslasku ovat toistensa käänteistoimituksia, joten saman luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
+
+\luettelolaatikko{Käänteistoimitukset I}{
+§ $a-a=0$
+§ $-a+a=0$
+§ $a+b-b=a$
+§ $a-b+b=a$
+}
+
+Vastaavasti luvun ja sen käänteisluvun tulo on nolla. Kerto- ja jakolasku ovat toistensa käänteistoimituksia, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
+
+\luettelolaatikko{Käänteistoimitukset II}{
+§ $a\cdot \frac1a=1$
+§ $\frac1a\cdot a=1$
+§ $a\cdot b:b=a$
+§ $a:b\cdot b=a$
+}
+s
+Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla ylimääräisiä termejä ja tulontekijöitä lausekkeista.
+
+\begin{esimerkki} 
+    Sievennetään $2+c-c$, missä $c$ on mikä tahansa kokonaisluku.\vspace*{11pt}
+   
+    Koska $-c$ on $c$:n vastaluku, niin niiden summa $c+(-c)$ on $0$. Tällöin lausekkeen arvo on $2+0$. Huomaa, että vastaus on $2$ riippumatta $c$:n arvosta.
+%    § Esimerkki kerto- ja jakolaskun keskinäisestä kumoamisvaikutuksesta
+%    § Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. 
+\end{esimerkki}
+
+\subsection{Laskujärjestys}
+
+Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon. Aritmeettisten operaatioiden laskujärjestys on luonnostaan yksikäsitteinen -- jos tähän halutaan tehdä muutoksia, käytetään sulkumerkkejä ilmaisemaan haluttua laskujärjestystä.
+
+Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
+
+\numerointilaatikko{Suoritusjärjestys}{
+§ Suluissa olevat lausekkeet sisemmistä suluista ulompiin sulkuihin
+§ Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)
+§ Kerto- ja jakolaskut vasemmalta oikealle
+§ Yhteen- ja vähennyslaskut vasemmalta oikealle
+}
+
+%Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
+
+Tässä kannattaa huomata lisäksi, että vaikka laskujärjestyssääntöjen mukaan kerto- ja jako- sekä yhteen- ja vähennyslaskut lasketaan vasemmalta oikealle, on tiettyjä tilanteita, joissa järjestys ei vaikuta laskun lopputulokseen ja laskut voidaan laskea myös vaikka oikealta vasemmalle. %Tästä puhutaan tarkemmin vähän myöhemmin vaihdanta- ja liitäntälain yhteydessä.
+
+\begin{esimerkki}
+Lasketaan lausekkeen $2+(3+1)\cdot 5$ arvo.
+
+Koska lausekkeessa on useita eri laskutoimituksia, joudumme tarkastelemaan laskujärjestystä vähän tarkemmin. Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Tulo $4\cdot5$ sen sijaan tarkoittaa määritelmänsä mukaan yhteenlaskua $4+4+4+4+4$ (tai $5+5+5+5$). Tämän voi helposti yhdistää ensimmäiseen termiin $2$, koska yhteenlasku on vaihdannainen ja liitännäinen.
+
+\begin{align*}
+   &2+(3+1)\cdot 5&\textrm{Lasketaan ensin } (3+1)
+\\= &2+4\cdot5&\qquad\textrm{sen jälkeen tulo } 4\cdot 5
+\\= &2+20& \textrm{lopuksi vielä summa}
+\\= &22&
+\end{align*}
+\end{esimerkki}
+
+%\begin{esimerkki}
+%Lasketaan laskutoimitus $-(8+3)+3+1-2\cdot 5$.
+%
+%Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
+%koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen.
+%%"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
+%
+%Laskun $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
+%laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
+%koska yhteenlaskut voi laskea missä järjestyksessä vain.
+%
+%\begin{align*}
+%   &-(8+3)+4-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
+%\\=&-11+4-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
+%\\=&-7-10&
+%\\=&-17&
+%\end{align*}
+%\end{esimerkki}

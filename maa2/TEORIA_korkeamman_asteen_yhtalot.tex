@@ -1,0 +1,122 @@
+\qrlinkki{http://opetus.tv/maa/maa2/n-asteinen-polynomiyhtalo/}{Opetus.tv: \emph{N-asteinen polynomiyhtälö} ($8.38$, $6.20$ ja $15.53$)}
+
+Jos toisen asteen polynomiyhtälöllä on reaalilukuratkaisuja, ne löytyvät ratkaisukaavalla. Myös kolmannen ja neljännen asteen yhtälöille on olemassa ratkaisukaavat. Ne ovat kuitenkin niin monimutkaisia, että ne eivät juuri sovellu käsin laskettaviksi, eikä niitä siksi esitellä tässä. Korkeamman kuin neljännen asteen yhtälöille sen sijaan ei edes ole olemassa yleistä ratkaisukaavaa. Tämän osoitti norjalainen matemaatikko Niels Henrik Abel vuonna 1823.
+
+Korkeamman kuin toisen asteen yhtälöt ratkaistaan käytännössä yleensä tietokoneen avulla. Niille yhtälöille, joille ei ole ratkaisukaavaa, ratkaiseminen onnistuu vain numeerisesti eli likiarvoja käyttäen. Joissain erikoistapauksissa korkeamman asteen yhtälön ratkaiseminen onnistuu nopeasti myös käsin. Seuraavassa tarkastellaan tällaisia yksinkertaisia erikoistapauksia.
+
+\subsection{Potenssiyhtälö}
+
+Jos yhtälössä esiintyy vain yhtä muuttujan $x$ potenssia, yhtälö ratkeaa lopulta potenssi vastaavan juuren avulla.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^5+7=0$.
+
+	\begin{esimratk}
+\begin{align*}
+x^5+7 &= 0 && \ppalkki -7 \\
+x^5 &= -7 && \ppalkki \sqrt[5]{ \ } \\
+x &= \sqrt[5]{-7} \\
+x &= -\sqrt[5]{7}
+\end{align*} 
+	\end{esimratk}
+
+	\begin{esimvast} $x = -\sqrt[5]{7}$.
+	\end{esimvast}
+\end{esimerkki}
+
+\subsection{Tekijöihinjako}
+
+Polynomiyhtälöitä voidaan toisinaan ratkaista jakamalla polynomi tekijöihin.
+
+%Jos polynomiyhtälössä $P(x) = 0$ polynomi $P(x)$ voidaan jakaa tekijöihin, ratkaisu saadaan etsimällä näiden tekijöiden nollakohdat.
+%Esimerkiksi vakiotermittömässä polynomissa voidaan ottaa muuttuja yhteiseksi tekijäksi ja riittää ratkaista yhtä pienemmän asteen %polynomiyhtälö.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^3 - 3x^2 + x = 0$.
+\begin{esimratk}
+Polynomissa $x^3 - 3x^2 + x$ ei ole vakiotermiä. Voidaan siis ottaa yhteiseksi tekijäksi $x$, jolloin polynomi tulee muotoon $x(x^2 - 3x + 1)$. Nyt yhtälön ratkaiseminen voidaan aloittaa soveltamalla tulon nollasääntöä:
+\begin{align*}
+x^3 - 3x^2 + x & =0 \\
+x(x^2 - 3x + 1) & =0 \\
+x=0 \quad & \text{tai} \quad x^2 - 3x + 1 = 0 \\
+\end{align*}
+
+Jäljelle jäävään toisen asteen yhtälöön $x^2 - 3x + 1 = 0$ voidaan käyttää ratkaisukaavaa:
+\[
+x =\frac{3\pm\sqrt{3^2-4\cdot 1\cdot 1}}{2\cdot 1}=\frac{3\pm \sqrt{5}}{2}.
+\]
+\end{esimratk}
+\begin{esimvast} $x=0$ tai $x=\dfrac{3\pm \sqrt{5}}{2}$
+\end{esimvast}
+\end{esimerkki}
+
+Jos polynomi siis osataan jakaa tekijöihin, yhtälön voi ratkaista tulon nollasäännön avulla. Sopiva tekijöihinjako voi kuitenkin olla vaikea löytää. Tarkastellaan vielä toista esimerkkiä.
+%Aiemmin esitellyn polynomien jakolauseen mukaan kaikki polynomit voidaan jakaa tekijöihin, jotka ovat korkeintaan toista astetta.
+%Periaatteessa tällä tavalla voidaan siis ratkaista kaikki polynomiyhtälöt. Tekijöihin jakaminen on kuitenkin yleensä vaikeaa.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^3-17x^2-x+17 = 0$.
+
+\begin{esimratk}
+Yhtälön vasemmalla puolella olevan polynomin voi jakaa tekijöihin ryhmittelemällä:
+
+\begin{align*}
+x^3-17x^2-x+17=x^2(x-17)+(-1)(x-17)=(x^2-1)(x-17).
+\end{align*}
+
+Nyt yhtälö ratkeaa tulon nollasäännöllä:
+\begin{align*}
+x^3-17x^2&-x+17=0 \\
+(x^2-1)&(x-17)=0 \\
+x^2-1 = 0 \quad &\text{tai} \quad x - 17 = 0 \\
+x^2 = 1 \quad &\text{tai} \quad x = 17 \\
+x =\pm 1 \quad &\text{tai} \quad x = 17 \\
+\end{align*}
+\end{esimratk}
+
+\begin{esimvast}
+$x = 17$, $x = 1$ tai $x=-1$
+\end{esimvast}
+\end{esimerkki}
+
+\subsection{Sijoitukset}
+
+Joskus yhtälöt ratkeavat, kun niihin sijoitetaan jokin apumuuttuja. Tällöin puhutaan muuttujanvaihdosta.
+
+%Esimerkiksi muotoa $ax^4+bx^2+c=0$ olevissa yhtälöissä huomataan, että merkitsemällä lauseketta $x^2$ kirjaimella $y$, yhtälö voidaan kirjoittaa muotoon $ay^2+by+c=0$. Uudesta yhtälöstä voidaan ratkaista $y$ toisen asteen yhtälön ratkaisukaavalla, ja sijoituksesta $y = x^2$ voidaan ratkaista $x$.
+
+\begin{esimerkki}
+Ratkaise yhtälö $2x^4+14x^2-36=0$.
+
+\begin{esimratk}
+Koska $x^4=(x^2)^2$, ratkaistava yhtälö voidaan kirjoittaa myös muodossa $2(x^2)^2+14x^2-36=0$. Kun nyt sijoitetaan lausekkeen $x^2$ paikalle $y$, eli merkitään $y=x^2$, saadaankin muuttujan $y$ yhtälö
+\[
+2y^2+14y-36=0.
+\]
+Tämä on toisen asteen yhtälö, joka osataan ratkaista esimerkiksi ratkaisukaavalla. Tällä tavoin saadaan
+\[
+y=\frac{-14\pm\sqrt{14^2-4\cdot 2\cdot(-36)}}{2\cdot 2}=\frac{-14\pm 22}{4}.
+\]
+Ratkaisut ovat siis $y=2$ ja $y=-9$.
+
+On kuitenkin vielä selvitettävä alkuperäisen muuttujan $x$ arvot. Koska $x^2=y$, saadaan $y$:lle löydetyistä arvoista yhtälöt $x^2=2$ ja $x^2=-9$. Reaaliluvun neliö ei kuitenkaan voi olla negatiivinen, joten ainoat ratkaisut ovat yhtälön $x^2 = 2$ ratkaisut. Ne ovat $x=\pm\sqrt{2}$.
+\end{esimratk}
+	\begin{esimvast}
+$x=\sqrt{2}$ tai $x=-\sqrt{2}$
+	\end{esimvast}
+\end{esimerkki}
+
+Muotoa $ax^4+bx^2+c=0$ oleva yhtälö (eli ns. \termi{bikvadraattinen yhtälö}{bikvadraattinen yhtälö}) voidaan aina ratkaista sijoittamalla $y=x^2$. Yleisemmin muotoa $ax^{2n}+bx^n+c=0$ olevat yhtälöt voidaan ratkaista sijoituksella $y = x^n$.
+
+\begin{esimerkki}
+Ratkaise yhtälö $x^{10}+x^5=2$.
+
+\begin{esimratk}
+Muutetaan yhtälö muotoon $(x^5)^2+x^5-2=0$ ja tehdään sijoitus $y = x^5$. Nyt yhtälö saa muodon $y^2+y-2 = 0$. Toisen asteen yhtälön ratkaisukaavalla saadaan yhtälön ratkaisuiksi $y = -2$ ja $y = 1$.
+
+Nyt alkuperäisen yhtälön ratkaisut saadaan yhtälöistä $x^5=-2$ ja $x^5=1$. Siten ratkaisut ovat $x = \sqrt[5]{-2}$ ja $x = 1$.
+\end{esimratk}
+	\begin{esimvast}
+$x = \sqrt[5]{-2}$ tai $x = 1$
+	\end{esimvast}
+\end{esimerkki}

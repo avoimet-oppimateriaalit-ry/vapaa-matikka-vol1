@@ -1,0 +1,428 @@
+\begin{tehtavasivu}
+
+%PALJON LISÄÄ KUVAAJIA!!! (sekä tehtäviin että VASTAUKSIIN!!!!!!!!!!! MUR VASTAUKSIIN!)
+
+\subsubsection*{Opi perusteet}
+\begin{tehtava}
+Määritä kuvaajasta katsomalla funktion $f$ nollakohdat. Saako funktio $f$ negatiivisia ja positiivisia arvoja?
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -2, 2)
+    kuvaaja.piirra("x**3-x", nimi = "$f$")
+\end{kuva}
+\begin{vastaus}
+Funktion $f$ nollakohdat ovat $x$-koordinaatiston kohdissa $-1$, $0$ ja $1$. Funktio saa sekä positiivisia että negatiivisia arvoja.
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Määritä kuvaajasta katsomalla funktion $f$ nollakohdat. Saako funktio $f$ sekä negatiivisia ja positiivisia arvoja?
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -4, 2)
+    kuvaaja.piirra("2*x**4-5*x**2+1", nimi = "$f$")
+\end{kuva}
+	\begin{vastaus}
+Funktion $f$ nollakohdat ovat suunnilleen $x$:n pisteissä: $-1,5$, $-0,5$, $0,5$ ja $1,5$. Funktio saa sekä positiivisia että negatiivisia arvoja.
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Määritä kuvaajasta funktion $f$ arvot muuttujan arvoilla $0$ ja $1$. Millä muuttujan arvoilla $f$ saa arvon $3$? Entä arvon $0$?
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -2, 4)
+    kuvaaja.piirra("x**2-1", nimi = "$f$")
+\end{kuva}
+\begin{vastaus}
+ $f(0)=-1$, $f(1)=0$, $f(x)=3$ kun $x=-2$ tai $x=2$, ja $f(x)=0$, kun $x=-1$ tai $x=1$
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Hahmottele funktion kuvaaja koordinaatistoon. Voit myös käyttää tietokonetta.
+\alakohdatm{
+§ $f(x) = 2$
+§ $f(x) = 3x+2$
+§ $f(x) = x^2$
+§ $f(x) = \frac{2}{x}$
+}
+\end{tehtava} %VASTAUKSET!
+
+\begin{tehtava}
+  Laske taulukkoon funktion arvo pisteissä $x=-2$, $x=-1$, $x=0$, $x=1$ ja $x=2$. Hahmottele näiden tietojen avulla funktion kuvaaja.
+  \alakohdatm{
+    § $f(x)= x^2+x+1$
+    § $f(x)= 3x^2$
+    § $f(x)= x^3 +2x+2$
+  }
+  \begin{vastaus}
+    \alakohdat{
+      § $f(-2)=3$, $f(-1)=1$, $f(0)=1$, $f(1)=3$ ja $f(2)=7$
+      § $f(-2)=12$, $f(-1)=3$, $f(0)=0$, $f(1)$ ja $f(2)=12$
+      § $f(-2)=6$, $f(-1)=1$, $f(0)=2$, $f(1)=5$ ja $f(2)=14$
+    }
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} %Laatinut Emilia Välttilä 9.11.2013
+Mikä on funktion $f(x)=\frac{x+1}{2x+5}$ laajin reaalinen määrittelyjoukko?
+  \begin{vastaus}
+   $\mathbb{R} \backslash \lbrace \frac{5}{2} \rbrace$ eli reaaliluvut pois lukien rationaaliluku $\frac{5}{2}$.
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013
+	Olkoon $f(x) = 2x-1$ ja $g(x) = 2-x$. Millä muuttujan $x$ arvolla $f(x) = g(x)$? Piirrä funktioiden kuvaajat ja tarkista vastauksesi kuvasta.
+    \begin{vastaus}
+    $x=1$
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013
+	Missä pisteessä funktio $P(t)=-2t+4$ saa arvon
+	\alakohdatm{
+	  § $4$
+	  § $-2$
+	  § $8$?
+	 }
+	 Mikä on funktion $P$ nollakohta?
+	 \begin{vastaus}
+	  \alakohdat{
+	   § pisteessä $(0,4)$
+	   § pisteessä $(3,-2)$
+	   § pisteessä $(-2,8)$
+	   Funktiolla on nollakohta $t$:n arvolla $2$, eli pisteessä $(2,0)$.
+	  }
+	 \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 10.11.2013
+	Tuuli ostaa joka viikko pussin vadelmaveneitä. Yksi pussi maksaa $2,5$ euroa. Tuulin rahatilannetta euroina havainnollistaa funktio $f(x) = -2,5x+20$, jossa muuttuja $x$ kuvaa aikaa viikkoina.
+	  \alakohdat{
+	  § Kuinka paljon rahaa Tuulilla on aluksi?
+	  § Kuinka paljon rahaa Tuulilla on viiden viikon jälkeen?
+	  § Milloin Tuulilla on jäljellä enää $5$ euroa?
+	  § Milloin rahat loppuvat?
+	  § Piirrä funktion $f$ kuvaaja ja tarkista vastauksesi siitä.
+	  } 
+  \begin{vastaus}
+	\alakohdat{
+	  § $20$ euroa ($f(0)=20$)
+	  § $7,5$ euroa
+	  § Kuuden viikon jälkeen. (Kun $f(x)=5$, $x=6$)
+	  § Kahdeksan viikon jälkeen. (Kun $f(x)=0$, $x=8$)
+	% §
+}
+  \end{vastaus} 
+\end{tehtava}
+
+\subsubsection*{Hallitse kokonaisuus}
+
+%Laatinut V-P Kilpi 2013-11-09
+\begin{tehtava}
+  Olkoon $f(x)=\frac{x}{3}-4$ ja $g(x)=3x-7$. Millä $x$:n arvolla pätee $ f(x)=g(x)$?
+  \begin{vastaus}
+$x=\frac{9}{8}$
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+%Laatinut Emilia Välttilä 9.11.2013
+  Mikä on funktion määrittelyehto?
+  \alakohdatm{
+    § $f(x)= \sqrt{x+6}$
+    § $f(x)= \frac{2x}{\sqrt{x+1}}$
+    § $f(x)= \sqrt{x-\frac{1}{2}}$
+  }
+  \begin{vastaus}
+  \alakohdatm{
+  § $x\geq-6$
+  § $x>-1$
+  §$x\geq\frac12$
+  }
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Määritä funktion $g$ arvojoukko, kun
+	\alakohdatm{
+		§ $g(x)=x-\sqrt{2}$
+		§ $g(x)=\frac{3}{x-2}$
+		§ $g(x)=\sqrt[4]{x}$
+		§ $g(x)=\sqrt[3]{x}$.
+	}
+	\begin{vastaus}
+	\alakohdat{
+	§ $\mathbb{R}$
+	§ $\mathbb{R}$ $\setminus {0}$
+	§ $\mathbb{R}+$ (mukaan lukien nolla)
+	§ $\mathbb{R}$
+	}
+	\end{vastaus}
+\end{tehtava}
+%laatinut Jaakko Viertiö 14.12.2013
+
+\begin{tehtava}
+	Lääketieteen valintakoneessa on monivalintatehtävä, jossa kustakin oikeasta vastauksesta saa $0,25$ pistettä ja kustakin väärästä vastauksesta pistemäärästä vähennetään $0,5$ pistettä. Monivalintakohtia on $28$. Olettaen kokelaan vastaavan jokaiseen tehtävään, esitä kokonaispistemäärä $p$ väärien vastauksien määrän $v$ funktiona. Kuinka moneen kohtaan kokelas on korkeintaan vastannut väärin, jos hän saa positiivisen kokonaispistemäärän?
+	\begin{vastaus}
+		$p(v) = 7-3v/4$. Kokelas voi antaa korkeintaan $9$ väärää vastausta menemättä nollille.
+	\end{vastaus}
+\end{tehtava}
+
+%\begin{tehtava}
+%Mitä epämääräisyyksiä on seuraavissa ilmaisuissa?
+%\alakohdat{
+%§ ''Funktion ratkaisu on $3$.''
+%§ ''Yhtälön nollakohta on $4$.''
+%§ ''Funktio on nouseva.''
+%§ ''Funktio leikkaa vaaka-akselin kohdassa $80$.''
+%}
+%	\begin{vastaus}
+%	\alakohdat{
+%	§
+%	§
+%	§
+%	§
+%	}
+%	\end{vastaus}
+%\end{tehtava}
+
+\begin{tehtava}
+%Laatinut Emilia Välttilä 10.11.2013
+Suorakaiteen muotoisen aitauksen toinen sivu on $2$\,m pidempi kuin toinen. Muodosta aitauksen pinta-alan funktio $A(x)$. Mikä on aitauksen pinta-ala, kun lyhyemmän sivun pituus on
+  \alakohdat{
+    § $0$\,m
+    § $5$\,m
+    § $20$\,m?
+    § Mikä on funktion $A(x)$ määrittelyehto?
+  }
+  \begin{vastaus}
+    $A(x) = x(x+2)=x^2+2x$
+      \alakohdat{
+	§ $0$\,m
+	§ $35$\,m
+	§ $440$\,m
+	§ $x\geq0$ (Pinta-ala on epänegatiivinen.)
+      }
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+%Laatinut Emilia Välttilä 10.11.2013
+  Olkoon $f(x) = \frac{7s + 5x}{6} + 2s - 1$ ja $g(x) = -2x + \frac{1}{2}$. Määritä vakio $s$, kun
+  \alakohdat{
+    § $f(0)=g(0)$
+    § $f\left(\frac{1}{2}\right) = g\left(\frac{1}{2}\right)$.
+   }
+   Määritä vielä $f(6)$ ja $g(f(6))$, kun $s=1$. 
+  \begin{vastaus}
+      \alakohdat{
+      § $s = -\frac{3}{19}$ 
+      § $s = \frac{1}{38}$
+      }
+   Jos $s=1$, niin $f(6) = 3$ ja $g(3) = -\frac{11}{2}$
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013
+	Olkoon $f(x)=-2x$. Mitä on
+	\alakohdatm{
+	  § $f(x+3)$
+	  § $f(x)+3$
+	  § $f(3x)$
+  	  § $3f(x)$?
+	 }
+	\begin{vastaus}
+		\alakohdatm{
+	  	§ $-2x-6$
+	  § $-2x+3$
+	  § $-6x$
+  	  § $-6x$
+	 }
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013
+	Olkoon $z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5$. Määritä
+	\alakohdat{
+	  § $z\left(\frac{1}{2}\right)$
+	  § $z(-1)$
+	  § $z(2\,013)$.
+	 }
+	 Osoita, ettei funktion $z$ arvo riipu muuttujan arvosta.
+  \begin{vastaus}
+	\alakohdatm{
+	  § $\frac{11}{2}$
+	  § $\frac{11}{2}$
+	  § $\frac{11}{2}$
+	}
+	Vihje: Voit supistaa. $z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5 = \frac{x(x+\frac{1}{2})}{x}-x+5 = \frac{1}{2}+5 = \frac{11}{5}$
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013
+	Millä vakion $a$ arvolla funktio $g(x) = \frac{2x+1+a}{5x}$ saa arvon $5$ kohdassa $x = 3$?
+\begin{vastaus}
+$a=68$
+\end{vastaus}
+\end{tehtava}
+	 
+\subsubsection*{Lisää tehtäviä}
+
+\begin{tehtava}
+	Olkoon $f(x)=\frac{x^2+3x+1}{x^2-x}$. Laske, mikäli mahdollista:
+	\alakohdatm{
+		§ $f(2)$
+		§ $f(1)$
+		§ $f(0)$
+		§ $f(-1)$
+	}
+	\begin{vastaus}
+		\alakohdatm{
+			§ $\frac{11}{3}$
+			§ ei määritelty
+			§ ei määritelty
+			§ $\frac{-1}{2}$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Olkoon $f(x)=\frac{2^x+4}{x}$. Laske, mikäli mahdollista:
+	\alakohdatm{
+		§ $f(2)$
+		§ $f(\frac{1}{3})$
+		§ $f(0)$
+		§ $f(-1)$
+	}
+	\begin{vastaus}
+		\alakohdat{
+			§ $4$
+			§ $3\sqrt[3]{2}+12$
+			§ Ei määritelty, koska nollalla jakaminen ei ole määritelty
+			§ $\frac{-9}{2}$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
+	Olkoon $f(x) = \frac{x^2+3}{x}$. Laske
+	\alakohdatm{
+		§ $f(2)$
+		§ $f(a)$
+		§ $f(2a)$
+		§ $2f(x^2)$
+		§ $f(\sqrt{x+1})^2$.
+	}
+  \begin{vastaus}
+	\alakohdatm{
+		§ $\frac{7}{2}$
+		§ $a + \frac{3}{a}$
+		§ $2a + \frac{3}{2}a$
+		§ $2x^2 + \frac{6}{x^2}$
+		§ $\frac{x^2 + 8}{x + 1}$
+	} 
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+$\star$ Millä muuttujan $x$ arvoilla yhtälö $f(f(x)) = x$ pätee, kun
+	\alakohdatm{
+		§ $f(x) = 1$
+		§ $f(x) = x$
+		§ $f(x) = x+1$
+		§ $f(x) = 2x+1$?
+	}
+	\begin{vastaus}
+		\alakohdatm{
+			§ $x = 1$
+			§ kaikilla $x\in\rr$
+			§ ei ratkaisuja
+			§ $x = -1$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+%Laatinut V-P Kilpi 2013-11-09
+\begin{tehtava}$\star$
+  Olkoon $f(x)=\frac{x}{5}$ ja $g(x)=2x-3$. Laske
+  %Muodosta yhdistetyt funktiot ja laske minkä arvon ne saavat kohdassa $ x=4 $.
+\alakohdatm{
+			§ $f(f(4))$
+			§ $f(g(4))$
+			§ $g(f(4))$
+			§ $g(f(x))$
+			§ $f(g(x))$.
+
+%			§ $f(f(x))$
+%			§ $f(g(x))$
+%			§ $g(f(x))$
+		}
+  \begin{vastaus}
+\alakohdatm{
+    § $\frac{4}{25}$
+	§ $1$
+	§ $-\frac{7}{5}$	
+	§ $2x/5-3$
+	§ $2x/5-3/5$			
+}
+  \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}$\star$ % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
+	Olkoon $f(x) =\sqrt{x} $ ja 
+	\begin{equation*}
+	g(x)=
+		\begin{cases}
+		  0, & x \in \mathbb{Q},\\
+		  1, & x \notin \mathbb{Q}.
+		\end{cases}
+	\end{equation*}
+	Laske
+	\alakohdat{
+			§ $g(f(2))$
+			§ $g(f(0))$.
+	}
+    \begin{vastaus}
+	\alakohdat{
+		§ $1$
+		§ $0$
+	}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Määritellään funktio $f$ lausekkeella \[f(x)=\frac{1}{2}x^2+2x-1.\] Funktion $f$ kuvaaja löytyy alta. Oletetaan lisäksi, että $a>1$. Päättele lukujen suuruusjärjestys.
+	\alakohdat{
+		§ $f(a)$ ja $f(a+2)$
+		§ $f(-a)$ ja $f(a)$
+	}
+	\begin{center}
+	\begin{kuvaajapohja}{0.7}{-3}{7}{-5}{3}
+		\kuvaaja{-0.5*x**2+2*x-1}{\qquad$f(x)=-\frac{1}{2}x^2+2x-1$}{black}
+	\end{kuvaajapohja}
+\end{center}
+    \begin{vastaus}
+	\alakohdat{
+		§ $f(a)>f(a+2)$
+		§ $f(-a)<f(a)$
+	}
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} Keksi jokin sellainen funktio, joka toteuttaa annetun ehdon. Jonkinlaisen kuvan hahmottelusta on apua.
+	\alakohdat{
+		§ $f(3)=2$ ja $f(24)=16$
+		§ Jos $f(a)=b$, niin $f(a+1)=b+1$
+		§ Jos $f(a)=b$, niin $f(a+1)=b-1$
+		§ Jos $f(0)=0$ ja $z>0$, niin $f(\pm z)=z$. (Vinkki: $|\pm a|=a$)
+	}
+    \begin{vastaus}
+	\alakohdatm{
+		§ $f(x)=\frac{2}{3}x$
+		§ $f(x)=x$
+		§ $f(x)=-x$
+		§ $f(x)=|x|$
+	}
+    \end{vastaus}
+\end{tehtava}
+
+\end{tehtavasivu}
