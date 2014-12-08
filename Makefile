@@ -1,3 +1,3 @@
-TARGET = vm2003-nide1
+TARGET = vol1
 
 include commons/Makefile.include
