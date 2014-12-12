@@ -1,6 +1,7 @@
 Seuraavissa harjoituskokeissa on kussakin kahdeksan tehtävää, jotka on suunniteltu niin, että jokaisesta (alakohtineen) saa korkeintaan kuusi pistettä. %tulevaisuudessa täydet ratkaisut pisteytysohjeineen %tarkista pisteytykset % puuttuu kuvia vastauksista
 
 \subsection*{Harjoituskoe 1} %prosenttilaskuja pitäisi ympätä...
+\begin{multicols}{2}
 
 \begin{tehtava}
 	\alakohdat{
@@ -47,7 +48,7 @@ Ratkaise epäyhtälöistä $x$.
 	§ $(\frac{1}{2}x-1)^2<1-(x-1)^2$
 	}
 	\begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $x\leq -\frac{6}{5}$
 	§ $\frac{2}{5}<x<2$
 	}
@@ -109,6 +110,9 @@ Yhdistämällä osatulokset päädytään päätelmään, että alkuperäisen ep
 	}
 	\end{vastaus}
 \end{tehtava}
+
+\end{multicols}
+
 \newpage
 \subsection*{Harjoituskoe 2}
 
@@ -180,7 +184,7 @@ Reaaliluvuista $a$ ja $b$ tiedetään, että $a<b$. Osoita kyseistä epäyhtäl�
 	\begin{align*}
 	a&<b && ||+b \\
 	a+b&<2b && ||:2 \\
-	\frac{a+b}{2}<b &&
+	\frac{a+b}{2}&<b &&
 	\end{align*}
 	
 	Koska keskiarvo on suurempi kuin $a$ mutta pienempi kuin $b$, on se $a$:n ja $b$:n välissä. (Todistuksen kannalta ei ole väliä, minkä merkkisiä $a$ ja $b$ ovat.) 
@@ -271,11 +275,13 @@ Olkoot $a$, $b$, $c$, $d$ ja $n$ lukuja. Osoita, että $$(a^2+nb^2)(c^2+nd^2)=(a
 	\begin{vastaus}
 	Puretaan sulkeet auki ja täydennetään binomien neliöiksi.
 		\begin{align*}
-		(a^2+nb^2)(c^2+nd^2) \\
+		&(a^2+nb^2)(c^2+nd^2) \\
 		&=a^2c^2+na^2d^2+nb^2c^2+n^2b^2d^2 \\
 		&= a^2c^2+n^2b^2d^2+na^2d^2+nb^2c^2 \\
-		&= a^2c^2+n^2b^2d^2+na^2d^2+nb^2c^2 +2nabcd-2nabcd \\
-		&= a^2c^2+2nabcd+n^2b^2d^2+na^2d^2-2nabcd+nb^2c^2 \\
+		&= a^2c^2+n^2b^2d^2+na^2d^2+nb^2c^2 \\
+		&+2nabcd-2nabcd \\
+		&= a^2c^2+2nabcd+n^2b^2d^2+na^2d^2\\
+		&-2nabcd+nb^2c^2 \\
 		&= (ac+nbd)^2+na^2d^2-2nabcd+nb^2c^2 \\
 		&= (ac+nbd)^2+n(a^2d^2-2abcd+b^2c^2) \\
 		&= (ac+nbd)^2+n(ad-bc)^2 \\
@@ -315,7 +321,7 @@ $t^5-t^4=t^2-t^3$ vastaa yhtälöä $t^5-t^4+t^3-t^2=0$, jonka taasen saa yhteis
 \begin{tehtava}
 Ratkaise yhtälöstä $y^{2n}=y^n$ molemmat reaalimuuttujat $y$ ja $n$.
 	\begin{vastaus}
-Alkuperäinen yhtälö on yhtäpitävä yhtälön $y^{2n}-y^n=0$ kanssa. Sovelletaan tulon nollasääntöä:
+Alkuperäinen yhtälö on yhtäpitävä yhtälön $y^{2n}-y^n=0$ kanssa. Jaetaan tekijöihin ja sovelletaan tulon nollasääntöä:
 	\begin{align*}
 	y^{2n}-y^n&=0 \\
 	(y^n)^2-y^n&=0 \\
@@ -326,7 +332,7 @@ Eli joko $y^n=0$ tai $y^n-1=0$.	 Ensimmäinen yhtälö voi päteä vain, jos $y=
 
 Toisesta yhtälöstä saadaan $y^n=1$, joka voi olla tosi vain, jos joko $n=0$ ja $y \neq 0$ (minkä tahansa nollasta poikeavan luvun nollas potenssi on arvoltaan yksi) tai sitten $y=1$ ja $n$ on mielivaltainen.
 
-Yhtälön ratkaisut ovat siis:
+Yhtälön ratkaisut ovat siis: \\
 $y=0$ ja $n \neq 0$ \\
 $n=0$ ja $y \neq 0$ \\
 $y=1$ ja mikä tahansa $n$
@@ -371,7 +377,7 @@ $P(2)=0 \Rightarrow$ $(k^2+2k)\cdot 2+2k=0$
 \begin{align*}
 k^2\cdot 2+2k\cdot 2+2k&=0 \\
 2k^2+4k+2k&=0 \\
-k^2+2k+k&=0 \\
+k^2+2k+k&&=0 \\
 (k+1)^2&=0 \\
 k+1=&0 \\
 k&=-1  \\
@@ -446,7 +452,7 @@ Funktion $y$ arvot määritellään kaavalla $y(t)=\dfrac{t^2+\left(\frac{1}{3}+
 		\begin{vastaus}
 	\alakohdat{
 	§ Reaalilukujen joukko poislukien $t=-\frac{1}{3}$ ja $t=\pi$
-	§ $y$-akseli leikkautuu, kun $t=0$, eli pisteessä $(0,\frac{pi}{3})$. $t$-akseli leikkautuu vain yhdessä pisteessä: $(-\pi, 0)$, koska määrittejoukko ei sisällä funktion lausekkeen osoittajan toista nollakohtaa $-\frac{1}{3}$.
+	§ $y$-akseli leikkautuu, kun $t=0$, eli pisteessä $(0,\frac{\pi}{3})$. $t$-akseli leikkautuu vain yhdessä pisteessä: $(-\pi, 0)$, koska määrittejoukko ei sisällä funktion lausekkeen osoittajan toista nollakohtaa $-\frac{1}{3}$.
 	}
 		\end{vastaus}
 \end{tehtava}
@@ -460,7 +466,7 @@ Johda toisen asteen yhtälön ratkaisukaava lähtien yhtälön normaalimuodosta 
 
 \newpage
 
-%\subsection*{Harjoituskoe 5}
+%KERTAUSTEHTÄVIKSI
 %\alakohdat{
 %§ Ratkaise yhtälöt.\\ a) $-x-5+2x=0$\\ b) $8x^2=-2x+4$\\ c) $(-3x)^2-36=0$
 %§ Ratkaise epäyhtälöt.\\ a) $-2x^2-2>2$\\ b) $x^2-1\geq0$\\ c) $ax^2<bx$

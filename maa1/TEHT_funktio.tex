@@ -44,6 +44,15 @@ Hahmottele funktion kuvaaja koordinaatistoon. Voit myös käyttää tietokonetta
 § $f(x) = x^2$
 § $f(x) = \frac{2}{x}$
 }
+%	\begin{vastaus}
+%	\alakohdat{
+%	
+%	\begin{kuva}
+%    kuvaaja.pohja(-3, 3, -2, 4)
+%    kuvaaja.piirra("x**2-1", nimi = "$f$")
+%	\end{kuva}
+%	\end{vastaus}
+%	}
 \end{tehtava} %VASTAUKSET!
 
 \begin{tehtava}
@@ -82,14 +91,14 @@ Mikä on funktion $f(x)=\frac{x+1}{2x+5}$ laajin reaalinen määrittelyjoukko?
 	  § $4$
 	  § $-2$
 	  § $8$?
+	  § Mikä on funktion $P$ nollakohta?
 	 }
-	 Mikä on funktion $P$ nollakohta?
 	 \begin{vastaus}
-	  \alakohdat{
+	  \alakohdatm{
 	   § pisteessä $(0,4)$
 	   § pisteessä $(3,-2)$
 	   § pisteessä $(-2,8)$
-	   Funktiolla on nollakohta $t$:n arvolla $2$, eli pisteessä $(2,0)$.
+	   § Funktiolla on nollakohta $t$:n arvolla $2$, eli pisteessä $(2,0)$.
 	  }
 	 \end{vastaus}
 \end{tehtava}
@@ -150,10 +159,10 @@ $x=\frac{9}{8}$
 		§ $g(x)=\sqrt[3]{x}$.
 	}
 	\begin{vastaus}
-	\alakohdat{
+	\alakohdatm{
 	§ $\mathbb{R}$
-	§ $\mathbb{R}$ $\setminus {0}$
-	§ $\mathbb{R}+$ (mukaan lukien nolla)
+	§ $\mathbb{R}$ $\setminus \lbrace 0 \rbrace$
+	§ $\mathbb{R}_+$ (tai $\mathbb{R}_{\geq 0}$ tai $[0,\inf[$)
 	§ $\mathbb{R}$
 	}
 	\end{vastaus}
@@ -161,9 +170,9 @@ $x=\frac{9}{8}$
 %laatinut Jaakko Viertiö 14.12.2013
 
 \begin{tehtava}
-	Lääketieteen valintakoneessa on monivalintatehtävä, jossa kustakin oikeasta vastauksesta saa $0,25$ pistettä ja kustakin väärästä vastauksesta pistemäärästä vähennetään $0,5$ pistettä. Monivalintakohtia on $28$. Olettaen kokelaan vastaavan jokaiseen tehtävään, esitä kokonaispistemäärä $p$ väärien vastauksien määrän $v$ funktiona. Kuinka moneen kohtaan kokelas on korkeintaan vastannut väärin, jos hän saa positiivisen kokonaispistemäärän?
+	Lääketieteen valintakoneessa on monivalintatehtävä, jossa kustakin oikeasta vastauksesta saa $0,25$ pistettä ja kustakin väärästä vastauksesta pistemäärästä vähennetään $0,5$ pistettä. Monivalintakohtia on $28$. Esitä kokonaispistemäärä $p$ väärien vastauksien määrän $v$ funktiona olettaen kokelaan vastaavan jokaiseen tehtävään. Kuinka moneen kohtaan kokelas on korkeintaan vastannut väärin, jos hän saa positiivisen kokonaispistemäärän?
 	\begin{vastaus}
-		$p(v) = 7-3v/4$. Kokelas voi antaa korkeintaan $9$ väärää vastausta menemättä nollille.
+		$p(v) = 7-\frac{3v}{4}$. Kokelas voi antaa korkeintaan $9$ väärää vastausta menemättä nollille.
 	\end{vastaus}
 \end{tehtava}
 
@@ -188,7 +197,7 @@ $x=\frac{9}{8}$
 \begin{tehtava}
 %Laatinut Emilia Välttilä 10.11.2013
 Suorakaiteen muotoisen aitauksen toinen sivu on $2$\,m pidempi kuin toinen. Muodosta aitauksen pinta-alan funktio $A(x)$. Mikä on aitauksen pinta-ala, kun lyhyemmän sivun pituus on
-  \alakohdat{
+  \alakohdatm{
     § $0$\,m
     § $5$\,m
     § $20$\,m?
@@ -196,11 +205,11 @@ Suorakaiteen muotoisen aitauksen toinen sivu on $2$\,m pidempi kuin toinen. Muod
   }
   \begin{vastaus}
     $A(x) = x(x+2)=x^2+2x$
-      \alakohdat{
+      \alakohdatm{
 	§ $0$\,m
 	§ $35$\,m
 	§ $440$\,m
-	§ $x\geq0$ (Pinta-ala on epänegatiivinen.)
+	§ $x\geq0$
       }
   \end{vastaus}
 \end{tehtava}
@@ -260,9 +269,9 @@ Suorakaiteen muotoisen aitauksen toinen sivu on $2$\,m pidempi kuin toinen. Muod
 
 \begin{tehtava} % Emilia Välttilä 9.11.2013
 	Millä vakion $a$ arvolla funktio $g(x) = \frac{2x+1+a}{5x}$ saa arvon $5$ kohdassa $x = 3$?
-\begin{vastaus}
+	\begin{vastaus}
 $a=68$
-\end{vastaus}
+	\end{vastaus}
 \end{tehtava}
 	 
 \subsubsection*{Lisää tehtäviä}
@@ -294,7 +303,7 @@ $a=68$
 		§ $f(-1)$
 	}
 	\begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 			§ $4$
 			§ $3\sqrt[3]{2}+12$
 			§ Ei määritelty, koska nollalla jakaminen ei ole määritelty
