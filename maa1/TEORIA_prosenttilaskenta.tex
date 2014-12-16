@@ -50,6 +50,7 @@ Taulukon ylärivin kaksi tapausta ovat yksinkertaisimmat tehtävänannot, ja ne 
 
 Tehtävien ratkaisu saattaa vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä. Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
 
+\newpage % VIIMEISTELY
 \subsection{Vertailuprosentti ja perusarvo}
 
 \laatikko[Vertailuprosentti ja perusarvo]{
@@ -336,6 +337,7 @@ Huomataan, että se, mihin verrataan, on merkittävää ja vaikuttaa tulokseen.
       \end{esimvast}
 \end{esimerkki}
 
+\newpage % VIIMEISTELY
 \begin{esimerkki}
 Siinä missä arkisia lämpötiloja ollaan totuttu mittamaan celsiusasteissa, fysiikassa yleisemmässä käytössä ovat absoluuttista lämpötilaa mittaavat kelvinit. Yksi aste celsiusta ja yksi kelvin ovat yhtä suuret, mutta asteikolla on vain eri nollapiste: $0$\,K on niin sanottu absoluuttinen nollapiste, jossa hiukkasten lämpöliike lakkaa. Kelvinit ja celsiusasteet voidaan muuttaa toisikseen kaavalla $T=t+273,15\,$($\textdegree$C tai K), missä $T$ on lämpötila kelvineinä ja $t$ lämpötila asteina celsiusta.
 \alakohdat{
@@ -528,14 +530,16 @@ UV-säteilyn täydelle voimakkuudelle/määrälle/annokselle (säteilyn tyyppiä
 
 \begin{esimerkki}
 Osoitetaan, että jos mielivaltainen nollasta poikkeava luku $y$ kasvaa ensin $p$ prosenttia ($p>0$) ja sen jälkeen pienee samat $p$ prosenttia, emme päädy takaisin alkuperäiseen lukuun $y$. $p$ prosentin kasvu antaa prosenttikertoimen $(1+\frac{p}{100})$, ja $p$:llä pienentäminen antaa prosenttikertoimen $(1-\frac{p}{100})$. Kun edellä mainitut yhdistetään, saadaan muutosten jälkeiseksi luvuksi $(1-\frac{p}{100})(1+\frac{p}{100})y$. Koska tekijä $y$ on alkuperäinen perusarvo, riittää osoittaa, että prosenttikerroin ei voi saada arvoa $1$. Jos se voisi saada arvon $1$, niin olisi mahdollista päätyä takaisin perusarvoon. Sievennetään prosenttikertoimen lauseketta:
+\begin{scriptsize} % VIIMEISTELY
 \begin{align*}
-&(1-\frac{p}{100})(1+\frac{p}{100}) && || \text{sovelletaan osittelulakia (puretaan oikeanpuoleiset sulkeet)} \\
-&=(1-\frac{p}{100})\cdot 1 + (1-\frac{p}{100})\cdot \frac{p}{100} && || \text{yhdellä kertominen} \\
-&=1-\frac{p}{100} + (1-\frac{p}{100})\cdot \frac{p}{100} && || \text{sovelletaan osittelulakia (avataan oikeanpuoleiset sulkeet)} \\
-&=1-\frac{p}{100} + 1\cdot \frac{p}{100}-\frac{p}{100}\cdot \frac{p}{100}  && || \text{yhdellä kertominen ja oikeanpuoleinen kertolasku} \\
-&=1-\frac{p}{100} + \frac{p}{100}-\frac{p^2}{10\,000}  && || \text{erimerkkiset termit kumoutuvat} \\
+&(1-\frac{p}{100})(1+\frac{p}{100}) && \ppalkki \text{sovelletaan osittelulakia (puretaan oikeanpuoleiset sulkeet)} \\
+&=(1-\frac{p}{100})\cdot 1 + (1-\frac{p}{100})\cdot \frac{p}{100} && \ppalkki \text{yhdellä kertominen} \\
+&=1-\frac{p}{100} + (1-\frac{p}{100})\cdot \frac{p}{100} && \ppalkki \text{sovelletaan osittelulakia (avataan oikeanpuoleiset sulkeet)} \\
+&=1-\frac{p}{100} + 1\cdot \frac{p}{100}-\frac{p}{100}\cdot \frac{p}{100}  && \ppalkki \text{yhdellä kertominen ja oikeanpuoleinen kertolasku} \\
+&=1-\frac{p}{100} + \frac{p}{100}-\frac{p^2}{10\,000}  && \ppalkki \text{erimerkkiset termit kumoutuvat} \\
 &=1-\frac{p^2}{10\,000}  && \\
 \end{align*}
+\end{scriptsize} % VIIMEISTELY
 Murtolauseke $\frac{p^2}{10\,000}$ saa arvon nolla, jos ja vain jos sen osoittaja $p^2$ saa arvon nolla. Koska lähtöoletus oli, että prosentuaalinen muutos on nollasta poikkeava, ei $p^2$ voi olla nolla. Niin myöskään erotuksesta $1-\frac{p^2}{10\,000}$ ei voi tulla tasan yhtä, eikä prosenttikerron näin voi saada tasan arvoa $1$. Siis $p$ prosentilla kasvattaminen ja sen jälkeen pienentäminen ei voi tuottaa uudelleen alkuperäistä arvoa (kunhan alkuperäinen arvo tai prosentuaalinen muutos eivät ole nollia).
 \end{esimerkki}
 
@@ -543,6 +547,7 @@ Murtolauseke $\frac{p^2}{10\,000}$ saa arvon nolla, jos ja vain jos sen osoittaj
 
 Jos jokin käsiteltävä kaava koostuu muuttujien tulosta, voidaan siihen suoraan sijoittaa yksittäisten muuttujien suhteelliset muutokset prosenttikertoimien avulla. Erilliset prosenttikertoimet voidaan kaikki siirtää alkuperäisen lausekkeen eteen, yhdistää ja tulkita siitä kokonaisvaikutus.
 
+\newpage % VIIMEISTELY
 \begin{esimerkki}
 %\alakohdat{
 %§
