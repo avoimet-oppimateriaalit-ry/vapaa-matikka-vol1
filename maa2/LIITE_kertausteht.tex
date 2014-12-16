@@ -1,10 +1,11 @@
 \begin{tehtavasivu}
 
 \subsubsection*{Polynomi}
+%\begin{multicols}{2}
 
 \begin{tehtava} 
 Laske.
-		\alakohdat{
+		\alakohdatm{
 		§ $x+x+x$ 
 		§ $x\cdot x \cdot x$
 		§ $-5x^2-5x^2$
@@ -12,7 +13,7 @@ Laske.
 		§ $\frac{1}{2}x^2\cdot(-6x^3)$
 		}
     \begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $3x$
 		§ $x^3$
 		§ $-10x^2$
@@ -52,7 +53,7 @@ Kerro sulut auki.
 		§ $(4x+1)(4x-1)$						
 		}
     \begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $x^2+2x-8$
 		§ $3a^2-2ab-b^2$
 		§ $a^2+6a+9$
@@ -83,8 +84,24 @@ Jaa tekijöihin.
 \end{tehtava}
 
 \begin{tehtava}
-Sievennä muistikaavan avulla
+    Jaa tekijöihin.
     \alakohdat{
+    	§ $x^3 - x$
+        § $x^2 - x + \frac{1}{4}$
+        § $9-x^4$
+    }
+    \begin{vastaus}
+        \alakohdat{
+            § $x(x-1)^2$
+            § $(x-\frac{1}{2})^2$
+            § $(3+x^2)(3-x^2)$
+        }
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Sievennä muistikaavan avulla
+    \alakohdatm{
             § $(x^2-1)^2$ 
 	        § $(a^6+3b^3)^2$
             § $(-12-3x)(12-3x)$
@@ -100,10 +117,60 @@ Sievennä muistikaavan avulla
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava} 
-Ratkaise yhtälö \\ $(x-3)(x+2)(x-1)=0$.
+\begin{tehtava}
+    Jaa tekijöihin muistikaavojen avulla.
+    \alakohdat{
+        § $x^2-4x+4$
+        § $9y^2 + 6y+1$
+        § $49-4x^2$
+    }
     \begin{vastaus}
-		$x=3$ tai $x=-2$ tai $x=1$.
+        \alakohdat{
+        § $(x-2)^2$
+        § $(3y+1)^2$
+        § $(7-2x)(7+2x)$
+        }
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Sievennä. 
+	\alakohdat{
+		§ $(x-3)(2x^3-3x+4)$
+		§ $(x^2+1)(x^3-2x-4)$
+		§ $(x-1)(x^4+x^3+x^2+x+1)$
+		§ $(\frac x5-\frac23)(x^2+x+1)$
+	}
+	\begin{vastaus}
+		\alakohdat{
+			§ $2x^4-6x^3-3x^2+13x-12$
+			§ $x^5-x^3-4x^2-2x-4$
+			§ $x^5-1$
+			§ $\frac15x^3-\frac{7}{15}x^2-\frac{7}{15}x-\frac23$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Ratkaise yhtälö jakamalla tekijöihin.
+	\alakohdat{
+		§ $x^3-x^2 = 0$
+		§ $x^3+3x^2-4x-12 = 0$
+		§ $x^2-4x+4 = 4$
+	}
+	\begin{vastaus}
+		\alakohdat{
+			§ $x=0$ tai $x=1$
+			§ $x=-3$, $x=2$ tai $x=-2$
+			§ $x=0$ tai $x=4$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava} 
+Ratkaise yhtälö $(x-3)(x+2)(x-1)=0$.
+    \begin{vastaus}
+		$x=3$, $x=-2$ tai $x=1$
     \end{vastaus}
 \end{tehtava}
 
@@ -116,9 +183,7 @@ Miksi polynomi $x^6+3x^2+5$ ei voi saada negatiivisia arvoja?
 
 \begin{tehtava} 
 		\alakohdat{
-		§ Osoita oikeaksi kaavat \\
-$a^3-b^3=(a-b)(a^2+ab+b^2)$ ja \\
-$a^3+b^3=(a+b)(a^2-ab+b^2)$
+		§ Osoita oikeaksi kaavat $a^3-b^3=(a-b)(a^2+ab+b^2)$ ja $a^3+b^3=(a+b)(a^2-ab+b^2)$.
 		§ Jaa $x^6-y^6$ neljään tekijään.						
 		}
     \begin{vastaus}
@@ -131,6 +196,7 @@ $a^3+b^3=(a+b)(a^2-ab+b^2)$
 
 \begin{tehtava} 
 Kuvassa on polynomin $P(x)$ kuvaaja.
+
 \begin{kuvaajapohja}{0.8}{-3}{3}{-2}{4}
 				\kuvaaja{x*(x-1)*(x+2)}{}{black}
 \end{kuvaajapohja}
@@ -150,10 +216,9 @@ Kuvassa on polynomin $P(x)$ kuvaaja.
 \end{tehtava}
 
 \begin{tehtava} 
-Jaa tekijöihin \\ $(a+b)^2-16$.
+Jaa tekijöihin $(a+b)^2-16$.
     \begin{vastaus}
-		$(a+b+4)(a+b-4)$. \\
-    Opastus: Älä kerro aluksi sulkuja auki. $16=4^2$
+		$(a+b+4)(a+b-4)$. (Opastus: Älä kerro aluksi sulkuja auki. $16=4^2$)
     \end{vastaus}
 \end{tehtava}
 
@@ -164,14 +229,18 @@ Sievennä:
 			§ $(x+y)^2-4xy$
 		}
 	\begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 			§ $0$
 			§ $(x-y)^2$
 		}
     \end{vastaus}
 \end{tehtava}
 
+%\end{multicols}
+
 \subsubsection*{Ensimmäinen aste}
+
+%\begin{multicols}{2}
 
 \begin{tehtava} 
 Ratkaise yhtälöt.
@@ -181,7 +250,7 @@ Ratkaise yhtälöt.
 		§ $ \frac{2x}{3}-\frac{x-3}{4}=7$
 		}
     \begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $x = \frac{7}{3}$
 		§ $x=-\frac{5}{6}$
 		§ $15$			
@@ -190,14 +259,14 @@ Ratkaise yhtälöt.
 \end{tehtava}
 
 \begin{tehtava} 
-Kirjoita joukko-opilliset ehdot epäyhtälöinä.
-		\alakohdat{
+Kirjoita joukko-opilliset ehdot (kaksois)epäyhtälöinä.
+		\alakohdatm{
 		§ $x \in [2,7]$
 		§ $y \in ]-3,0]$
 		§ $z \in ]-\infty, 5[$?
 		}
     \begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $2 \leq x \leq 7$
 		§ $-3 < y \leq 0$
 		§ $z < 5$			
@@ -207,25 +276,51 @@ Kirjoita joukko-opilliset ehdot epäyhtälöinä.
 
 \begin{tehtava} 
 Ratkaise epäyhtälöt.
-		\alakohdat{
+		\alakohdatm{
 		§ $-3x < 6$
 		§ $5x-2 > 7x+3$
-		§ $ -2(x+3)  \leq x-(5-x)$
+		§ $ -2(x+3) \leq x-(5-x)$
 		}
     \begin{vastaus}
-		\alakohdat{
+		\alakohdatm{
 		§ $ x > -2$	
-		§ $x < -\frac{5}{2}=-2\frac{1}{2}$
+		§ $x < -\frac{5}{2}$
 		§ $x \geq -\frac{1}{4}$
 		}
     \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava} 
-Polkupyörävuokraamo A laskuttaa pyörän vuokrasta $5$\,€ ja $2,5$\,€ jokaisesta täydestä tunnista. Vuokraamo B laskuttaa $11,50$\,€ ja $1,5$\,€ jokaisesta
-täydestä tunnista. Kuinka monen tunnin vuokrassa vuokraamo B on edullisempi?
+\begin{tehtava}
+    Ratkaise seuraavat yhtälöt tai epäyhtälöt.
+    \alakohdat{
+        § $-2r+6=0$
+        § $-2r+6\leq 0$
+        § $5y-2<y+6$
+        § $8(x+2)\geq -5(5-x)+3$
+        § $\frac{x+3}{2}+\frac{-2x+1}{3}>\frac{x-9}{4}$
+    }
     \begin{vastaus}
-	$7$\,h tai sitä pidemmissä vuokrissa
+        \alakohdatm{
+            § $r=3$
+            § $r\geq 3$
+            § $y<2$
+            § $x=-12\frac{2}{3}$
+            § $x<9\frac{4}{5}$
+        }
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Ratkaise kaksoisepäyhtälö $2x-1 < x \leq 3+5x$.
+    \begin{vastaus}
+        $-\frac{3}{4} \leq x < 1$
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Polkupyörävuokraamo A laskuttaa pyörän vuokrasta $5$\,€ ja lisäksi $2,5$\,€ jokaisesta täydestä tunnista. Vuokraamo B laskuttaa $11,50$\,€ ja lisäksi $1,5$\,€ jokaisesta täydestä tunnista. Kuinka monen tunnin vuokrassa vuokraamo B on edullisempi?
+    \begin{vastaus}
+	$7$\,h:n tai sitä pidemmissä vuokrissa
     \end{vastaus}
 \end{tehtava}
 
@@ -245,7 +340,11 @@ Ratkaise epäyhtälö $ax \geq a-2x$ parametrin $a$ kaikilla arvoilla.
 	\end{vastaus}
 \end{tehtava}
 
+%\end{multicols}
+
 \subsubsection*{Toinen aste}
+
+%\begin{multicols}{2}
 
 \begin{tehtava} 
 Ratkaise yhtälöt.
@@ -263,9 +362,54 @@ Ratkaise yhtälöt.
     \end{vastaus}
 \end{tehtava}
 
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \alakohdat{
+        § $x^2+3x+2=0$
+        § $2x^2+5x-12=0$
+        § $3x^2-7x-20=0$
+        § $x^2+3x-5=0$
+        § $x^2+5x-24=0$
+    }
+    \begin{vastaus}
+        \alakohdat{
+            § $x=-2$ tai $x=-1$
+            § $x=3/2$ tai $x=-4$
+            § $x=4$ tai $x=-5/3$
+            § $x=\frac{3\pm\sqrt{29}}{2}$
+            § $x=3$ tai $x=-8$
+        }
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \alakohdat{
+        § $x^2+3x-5=4x+8$
+        § $8x^2-5x+1=-36$
+        § $-3x^2-4x+2=-5x^2+3$
+        § $-3x^2+4x+13=-5x^2+10x+9$
+    }
+    \begin{vastaus}
+        \alakohdat{
+            § $\frac{1\pm\sqrt{53}}{2}$
+            § Ei ratkaisua reaalilukujen joukossa.
+            § $1\pm\frac{\sqrt{6}}{2}$
+            § $x=1$ tai $x=2$
+        }
+    \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Ratkaise yhtälö $x - 3 = \frac{1}{x}$.
+    \begin{vastaus}
+    $x =\frac{3 \pm \sqrt{13}}{2}$
+    \end{vastaus}
+\end{tehtava}
+
 \begin{tehtava} 
 Ratkaise epäyhtälöt.
-		\alakohdat{
+		\alakohdatm{
 		§ $x^2-x-6<0$ 
 		§ $x^2 \geq 5x$  
 		}
@@ -307,7 +451,18 @@ ja $5-x$. Millä luvun $x$ arvoilla suorakulmion $A$ ala on suurempi?
     \end{vastaus}
 \end{tehtava}
 
+\begin{tehtava} % toisen asteen yhtälö
+Neliön muotoisen taulun sivu on $36$\,cm. Taululle tehdään tasalevyinen kehys, jonka nurkat on pyöristettu neljännesympyrän muotoisiksi. Kuinka leveä kehys on, kun sen pinta-ala on puolet taulun pinta-alasta? Ympyrän pinta-ala on $\pi r^2$.
+    \begin{vastaus}
+     $7,7$\,cm
+    \end{vastaus}
+\end{tehtava}
+
+%\end{multicols}
+
 \subsubsection*{Korkeampi aste}
+
+%\begin{multicols}{2}
 
 \begin{tehtava} 
 Ratkaise yhtälö $2x^7=5x^2$.
@@ -346,6 +501,25 @@ $x^7=5x^5-x^6$.
 		$x=0$ tai $x\frac{-1 \pm \sqrt{21}}{2}$ 
     \end{vastaus}
 \end{tehtava}
+
+\begin{tehtava}
+    Ratkaise yhtälöt.
+    \alakohdat{
+        § $x^4 + 7x^3 = 0$
+        § $2x^3 - 16x^2 + 32x = 0$
+        § $x^6 + 6x^5 = -9x^4$
+        § $x^3 - 2x^5 = 0$
+    }
+    \begin{vastaus}
+        \alakohdat{
+        	§ $x = 0$ tai $x = -7$
+        	§ $x = 0$ tai $x = 4$
+        	§ $x = 0$ tai $x = -3$
+            § $x = 0$ tai $x = \pm\dfrac{1}{\sqrt{2}}$
+        }
+    \end{vastaus}
+\end{tehtava}
+
 
 \begin{tehtava}
 Mitkä luvut ovat kuutiotaan suurempia?
@@ -388,5 +562,7 @@ Etsi yhtälön $x^5-5x^4+6x^3-1=0$ kaikkien kolmen ratkaisun likiarvot laskimell
 	$x \approx 0,69$, $x \approx 1,86$ tai $x \approx 3,03$.
     \end{vastaus}
 \end{tehtava}
+
+%\end{multicols}
 
 \end{tehtavasivu}

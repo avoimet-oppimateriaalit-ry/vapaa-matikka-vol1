@@ -74,7 +74,7 @@ Hahmottele funktion kuvaaja koordinaatistoon. Voit myös käyttää tietokonetta
 \begin{tehtava} %Laatinut Emilia Välttilä 9.11.2013
 Mikä on funktion $f(x)=\frac{x+1}{2x+5}$ laajin reaalinen määrittelyjoukko?
   \begin{vastaus}
-   $\mathbb{R} \backslash \lbrace \frac{5}{2} \rbrace$ eli reaaliluvut pois lukien rationaaliluku $\frac{5}{2}$.
+   $\mathbb{R} \backslash \lbrace \frac{5}{2} \rbrace$ eli reaaliluvut pois lukien rationaaliluku $\frac{5}{2}$
   \end{vastaus}
 \end{tehtava}
 
@@ -162,7 +162,7 @@ $x=\frac{9}{8}$
 	\alakohdatm{
 	§ $\mathbb{R}$
 	§ $\mathbb{R}$ $\setminus \lbrace 0 \rbrace$
-	§ $\mathbb{R}_+$ (tai $\mathbb{R}_{\geq 0}$ tai $[0,\inf[$)
+	§ $\mathbb{R}_+$ (tai $\mathbb{R}_{\geq 0}$ tai $[0, \infty [$)
 	§ $\mathbb{R}$
 	}
 	\end{vastaus}
@@ -295,110 +295,6 @@ $a=68$
 \end{tehtava}
 
 \begin{tehtava}
-	Olkoon $f(x)=\frac{2^x+4}{x}$. Laske, mikäli mahdollista:
-	\alakohdatm{
-		§ $f(2)$
-		§ $f(\frac{1}{3})$
-		§ $f(0)$
-		§ $f(-1)$
-	}
-	\begin{vastaus}
-		\alakohdatm{
-			§ $4$
-			§ $3\sqrt[3]{2}+12$
-			§ Ei määritelty, koska nollalla jakaminen ei ole määritelty
-			§ $\frac{-9}{2}$
-		}
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava} % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
-	Olkoon $f(x) = \frac{x^2+3}{x}$. Laske
-	\alakohdatm{
-		§ $f(2)$
-		§ $f(a)$
-		§ $f(2a)$
-		§ $2f(x^2)$
-		§ $f(\sqrt{x+1})^2$.
-	}
-  \begin{vastaus}
-	\alakohdatm{
-		§ $\frac{7}{2}$
-		§ $a + \frac{3}{a}$
-		§ $2a + \frac{3}{2}a$
-		§ $2x^2 + \frac{6}{x^2}$
-		§ $\frac{x^2 + 8}{x + 1}$
-	} 
-  \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-$\star$ Millä muuttujan $x$ arvoilla yhtälö $f(f(x)) = x$ pätee, kun
-	\alakohdatm{
-		§ $f(x) = 1$
-		§ $f(x) = x$
-		§ $f(x) = x+1$
-		§ $f(x) = 2x+1$?
-	}
-	\begin{vastaus}
-		\alakohdatm{
-			§ $x = 1$
-			§ kaikilla $x\in\rr$
-			§ ei ratkaisuja
-			§ $x = -1$
-		}
-	\end{vastaus}
-\end{tehtava}
-
-%Laatinut V-P Kilpi 2013-11-09
-\begin{tehtava}$\star$
-  Olkoon $f(x)=\frac{x}{5}$ ja $g(x)=2x-3$. Laske
-  %Muodosta yhdistetyt funktiot ja laske minkä arvon ne saavat kohdassa $ x=4 $.
-\alakohdatm{
-			§ $f(f(4))$
-			§ $f(g(4))$
-			§ $g(f(4))$
-			§ $g(f(x))$
-			§ $f(g(x))$.
-
-%			§ $f(f(x))$
-%			§ $f(g(x))$
-%			§ $g(f(x))$
-		}
-  \begin{vastaus}
-\alakohdatm{
-    § $\frac{4}{25}$
-	§ $1$
-	§ $-\frac{7}{5}$	
-	§ $2x/5-3$
-	§ $2x/5-3/5$			
-}
-  \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}$\star$ % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
-	Olkoon $f(x) =\sqrt{x} $ ja 
-	\begin{equation*}
-	g(x)=
-		\begin{cases}
-		  0, & x \in \mathbb{Q},\\
-		  1, & x \notin \mathbb{Q}.
-		\end{cases}
-	\end{equation*}
-	Laske
-	\alakohdat{
-			§ $g(f(2))$
-			§ $g(f(0))$.
-	}
-    \begin{vastaus}
-	\alakohdat{
-		§ $1$
-		§ $0$
-	}
-    \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
 	Määritellään funktio $f$ lausekkeella \[f(x)=\frac{1}{2}x^2+2x-1.\] Funktion $f$ kuvaaja löytyy alta. Oletetaan lisäksi, että $a>1$. Päättele lukujen suuruusjärjestys.
 	\alakohdat{
 		§ $f(a)$ ja $f(a+2)$
@@ -432,6 +328,72 @@ $\star$ Millä muuttujan $x$ arvoilla yhtälö $f(f(x)) = x$ pätee, kun
 		§ $f(x)=|x|$
 	}
     \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+$\star$ Millä muuttujan $x$ arvoilla yhtälö $f(f(x)) = x$ pätee, kun
+	\alakohdatm{
+		§ $f(x) = 1$
+		§ $f(x) = x$
+		§ $f(x) = x+1$
+		§ $f(x) = 2x+1$?
+	}
+	\begin{vastaus}
+		\alakohdatm{
+			§ $x = 1$
+			§ kaikilla $x\in\rr$
+			§ ei ratkaisuja
+			§ $x = -1$
+		}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}$\star$ % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
+	Olkoon $f(x) =\sqrt{x} $ ja 
+	\begin{equation*}
+	g(x)=
+		\begin{cases}
+		  0, & x \in \mathbb{Q},\\
+		  1, & x \notin \mathbb{Q}.
+		\end{cases}
+	\end{equation*}
+	Laske
+	\alakohdatm{
+			§ $g(f(2))$
+			§ $g(f(0))$.
+	}
+    \begin{vastaus}
+	\alakohdatm{
+		§ $1$
+		§ $0$
+	}
+    \end{vastaus}
+\end{tehtava}
+
+%Laatinut V-P Kilpi 2013-11-09
+\begin{tehtava}$\star$
+  Olkoon $f(x)=\frac{x}{5}$ ja $g(x)=2x-3$. Laske
+  %Muodosta yhdistetyt funktiot ja laske minkä arvon ne saavat kohdassa $ x=4 $.
+\alakohdatm{
+			§ $f(f(4))$
+			§ $f(g(4))$
+			§ $g(f(4))$
+			§ $g(f(x))$
+			§ $f(g(x))$.
+
+%			§ $f(f(x))$
+%			§ $f(g(x))$
+%			§ $g(f(x))$
+		}
+  \begin{vastaus}
+\alakohdatm{
+    § $\frac{4}{25}$
+	§ $1$
+	§ $-\frac{7}{5}$	
+	§ $2x/5-3$
+	§ $2x/5-3/5$			
+}
+  \end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
