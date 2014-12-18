@@ -40,17 +40,12 @@
     \luku{potenssifunktio}{Potenssifunktio}
     \luku{eksponenttifunktio}{Eksponenttifunktio}
 	
-\nosa{Kertausosio}
+\osa{Kertausosio}
     \nluku{LIITE_testaatietosi}{Testaa tietosi!}
     \nluku{LIITE_kertausteht}{Kertaustehtäviä}
     \nluku{LIITE_harjoituskokeet}{Harjoituskokeita}
     \nluku{LIITE_ylioppilaskokeet}{Ylioppilaskoetehtäviä}
     \nluku{LIITE_paasykokeet}{Pääsy- ja valintakoetehtäviä}
-
-\nosa{Lisämateriaalia}
-	\nluku{LIITE_lukujarjestelmat}{Lukujärjestelmät}
-	%\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat}
-	%\nluku{LIITE_sanasto}{Hakemisto ja suomi–ruotsi–englanti-sanasto}
 
 \renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
 \renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
@@ -86,17 +81,25 @@
     \luku{korkeamman_asteen_epayhtalot}{Korkeamman asteen epäyhtälöt}
 
 \newpage
-\nosa{Kertausosio}
+\osa{Kertausosio}
    \nluku{LIITE_testaatietosi}{Testaa tietosi!}
    \nluku{LIITE_kertausteht}{Kertaustehtäviä}
    \nluku{LIITE_harjoituskokeita}{Harjoituskokeita}
    \nluku{LIITE_yokokeita}{Ylioppilaskoetehtäviä}
 
-\newpage
-\nosa{Lisämateriaalia}
-   \nluku{LIITE_paraabeli}{Paraabeli}
+\renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
+\renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
+
+\part{Lisämateriaalia}
+
+\osa{Syventäviä aiheita}
+    \section*{Lukujärjestelmät} \addcontentsline{toc}{section}{Lukujärjestelmät} \lukufilter{LIITE_lukujarjestelmat}{\input{maa1/LIITE_lukujarjestelmat}}
+    \section*{Paraabeli} \addcontentsline{toc}{section}{Paraabeli} \lukufilter{LIITE_paraabeli}{\input{maa2/LIITE_paraabeli}}
+    %\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat}
+    %\nluku{LIITE_sanasto}{Hakemisto ja suomi–ruotsi–englanti-sanasto}
 
 \Closesolutionfile{ans}
-\vast
 
-\Opensolutionfile{ans}[vast]
+\osa{Vastaukset ja hakemisto}
+\vast
+% hakemisto tulee yleisestä rakenteesta

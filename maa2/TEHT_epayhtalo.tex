@@ -78,11 +78,11 @@ Mitkä seuraavista väitteistä ovat tosia?
     }
     \begin{vastaus}
         \alakohdat{
-			§ $x \in \aavali{-10}{10}$ \\  \naytaKuva{teht1}
-            § $x \in \asvali{-9}{7}$ \\  \naytaKuva{teht2}
-            § $c \in \savali{5}{\infty}$ \\  \naytaKuva{teht3}
-            § $s \in \ssvali{5}{7\frac{1}{2}}$ \\ , \naytaKuva{teht4}
-            § $x \in \asvali{1}{5}$ \\  \naytaKuva{teht5}
+			§ $x \in \aavali{-10}{10}$ %\\  \naytaKuva{teht1}
+            § $x \in \asvali{-9}{7}$ %\\  \naytaKuva{teht2}
+            § $c \in \savali{5}{\infty}$ %\\  \naytaKuva{teht3}
+            § $s \in \ssvali{5}{7\frac{1}{2}}$ %\\ , \naytaKuva{teht4}
+            § $x \in \asvali{1}{5}$ %\\  \naytaKuva{teht5}
         }
     \end{vastaus}
 \end{tehtava} %FIXME todo + "esitä epäyhtälöinä"
@@ -218,9 +218,10 @@ Piirrä funktion $P$ kuvaaja, kun funktion arvot määritellään kaavalla $P(x)
 \begin{tehtava}
 Osoita, että $m^2+n^2 \geq mn$ kaikilla kokonaisluvuilla $m$ ja $n$. Vihje: (binomin neliö).
 		\begin{vastaus}
-Käsitellään erilaiset tilanteet kolmessa eri osassa: 		
+		Käsitellään erilaiset tilanteet kolmessa eri osassa: 		
 		Jos joko $m$ tai $n$ on nolla, niin $0^2+n^2 \geq 0\cdot n$ eli $n^2\geq 0$, mikä pitää paikkansa kaikilla kokonaisluvuille $n$. Symmetrian vuoksi sama pätee myös tapaukselle $m=0$. Jos sekä $m$ että $n$ ovat nollia, saadaan $0\geq 0$, mikä on myös tosi epäyhtälö. \\
-		Jos $m$ ja $n$ ovat erimerkkiset, niin epäyhtälön vasenpuoli on edelleen neliöönkorotuksien vuoksi positiivinen. Epäyhtälön oikea puoli on kertolaskun merkkisäännön perusteella varmasti negatiivinen. Koska kaikki negatiiviset luvut ovat kaikkia positiivisia lukuja pienempiä, epäyhtälö pätee tässä tapauksessa. \\
+		Jos $m$ ja $n$ ovat erimerkkiset, niin epäyhtälön vasenpuoli on edelleen neliöönkorotuksien vuoksi positiivinen. Epäyhtälön oikea puoli on kertolaskun merkkisäännön perusteella varmasti negatiivinen. Koska kaikki negatiiviset luvut ovat kaikkia positiivisia lukuja pienempiä, epäyhtälö pätee tässä tapauksessa.
+
 		Viimeinen tapaus: $m$ ja $n$ on samanmerkkiset. Epäyhtälön $m^2+n^2 \geq mn$ vasen puoli muistuttaa binomin neliötä. Täydennetään se vähentämällä molemmilta puolilta epäyhtälöä lauseke $2mn$, jolloin saadaan: $m^2+n^2-2mn \geq mn-2mn$ eli $m^2-2mn+n^2 \geq -mn$, minkä voi kirjoittaa binomin neliön kaavalla muodossa $(m-n)^2 \geq -mn$. Neliöönkorotus varmistaa, että epäyhtälön vasen puoli on aina epänegatiivinen. Koska oletuksen mukaan $m$ ja $n$ ovat samanmerkkiset, tulo $-mn$ on negatiivinen. Jälleen epäyhtälö pitää paikkansa, ja kaikki mahdolliset $m$:n ja $n$:n yhdistelmät on käsitelty. 
 		\end{vastaus}
 \end{tehtava}
@@ -230,7 +231,7 @@ Käsitellään erilaiset tilanteet kolmessa eri osassa:
 \begin{tehtava}
 Keksi jokin epätosi epäyhtälö, jonka totuusarvo muuttuu todeksi, kun puolittain suoritetaan jokin laskutoimitus.
 	\begin{vastaus}
-	Esimerkiksi väite $-2>1$ on epätosi. Jos kuitenkin epäyhtälön molemmat puolet korotetaan parilliseen potenssiin, esimerkiksi toiseen, saadaankin tosi väite: $(-2)^2>1^2 \Rightarrow 4>2$.
+	Esimerkiksi väite $-2>1$ on epätosi. Jos kuitenkin epäyhtälön molemmat puolet korotetaan parilliseen potenssiin, esimerkiksi toiseen, saadaankin tosi väite: \[(-2)^2>1^2 \Rightarrow 4>2\].
 	\end{vastaus}
 \end{tehtava}
 
@@ -245,14 +246,14 @@ Tilapäivitys sosiaalisessa mediassa sanoo: ''Vaimollani, alle $30$ vuotta, oli 
 \begin{tehtava}
 $\star$ Osoita, että $x^2+\frac{1}{x^2}\geq 2$, kun $x \neq 0$.
     \begin{vastaus}
-     Aloita tiedosta $\left(x-\frac{1}{x}\right)^2 \geq 0$ ja sievennä.
+     Aloita tiedosta \[\left(x-\frac{1}{x}\right)^2 \geq 0\] ja sievennä.
     \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava} 
 $\star$ Osoita, että kun $a \geq 0$ ja $b \geq 0$, pätee $\frac{a+b}{2} \geq \sqrt{ab}$. Milloin yhtäsuuruus on voimassa?
     \begin{vastaus}
-     Opastus: Aloita tiedosta $\left(\sqrt{a}-\sqrt{b}\right)^2 \geq 0$ ja sievennä. Yhtäsuuruus pätee, kun $a = b$.
+     Opastus: Aloita tiedosta \[\left(\sqrt{a}-\sqrt{b}\right)^2 \geq 0\] ja sievennä. Yhtäsuuruus pätee, kun $a = b$.
     \end{vastaus}
 \end{tehtava}
 
