@@ -4,60 +4,59 @@ Polynomin $P(x)=(x-2)(x-3)$ nollakohdat ovat tulon nollasäännön nojalla $x=2$
 
 Yleisesti on voimassa polynomien jakolause:
 
-\laatikko{\textbf{Polynomien jakolause} \\
-Jos $x=b$ on polynomin nollakohta, $x-b$ on polynomin tekijä.}
+\laatikko[Polynomien jakolause]{Jos $x=b$ on polynomin nollakohta, $x-b$ on polynomin tekijä.}
 
-Polynomien jakolauseen todistus jätetään kurssiin 12.
+Polynomien jakolauseen todistus jätetään kurssiin $12$.
 %Polynomien jakolauseen todistus on hahmoteltu liitteessä
 %\ref{tod:poljako}.
 
 \begin{esimerkki}
 Jaa tekijöihin polynomi $P(x)=x^2-3x+2$.
-\begin{esimratk}
+	\begin{esimratk}
 Ratkaistaan ensin polynomin nollakohdat.
-\begin{align*}
+	\begin{align*}
 x^2-3x+2&=0 \\
 x&=\frac{-(-3) \pm \sqrt[]{(-3)^2-4 \cdot 1 \cdot 2}}{2 \cdot 1} \\
 x&=\frac{3 \pm \sqrt[]{9-8}}{2} \\
 x&=\frac{3 \pm 1}{2} \\
 x&=1 \textrm{ tai } x = 2.
-\end{align*}
+	\end{align*}
 Nollakohtien perusteella $(x-1)$ ja $(x-2)$ ovat polynomin $P(x)$ tekijöitä.
 Tarkistetaan:
  $(x-1)(x-2)=x^2-2x-x+2= x^2-3x+2$.
-\end{esimratk}
-\begin{esimvast}
+	\end{esimratk}
+	\begin{esimvast}
 $x^2-3x+2 = (x-1)(x-2)$.
-\end{esimvast}
+	\end{esimvast}
 \end{esimerkki}
 
 Ensimmäisen asteen tekijöiden lisäksi saatetaan tarvita vakiokerroin:
 
 \begin{esimerkki}
 Jaa polynomi $-2x^2-x+1$ tekijöihinsä.
-\begin{esimratk}
+	\begin{esimratk}
 Ratkaistaan nollakohdat:
-\begin{align*}
+	\begin{align*}
 -2x^2-x+1&=0 \\
 x&=\frac{-(-1) \pm \sqrt[]{(-1)^2-4 \cdot (-2) \cdot 1}}{2 \cdot (-2)} \\
 x&=\frac{1 \pm \sqrt[]{1+8}}{-4} \\
 x&=\frac{1 \pm 3}{-4} \\
 x&=-1 \textrm{ tai } x = \frac{1}{2}.
-\end{align*}
+	\end{align*}
 Jakolauseen mukaan $(x-\frac{1}{2})$ ja $(x-(-1))$ eli$(x+1)$ ovat kyseisen polynomin tekijöitä.
 Ne keskenään kertomalla ei kuitenkaan saada oikeaa tulosta:
 $$\left(x-\frac{1}{2}\right)(x+1)=x^2+\frac{1}{2}x-\frac{1}{2}.$$
 Puuttuu vielä korkeimman asteen termin kerroin $-2$. Sillä kertomalla saadaan alkuperäinen polynomi:
 $-2\left(x-\frac{1}{2}\right)(x+1)=-2x^2-x+1$.
-\end{esimratk}
-\begin{esimvast}
+	\end{esimratk}
+	\begin{esimvast}
 $-2x^2-x+1 = -2(x-\frac{1}{2})(x+1)$.
-\end{esimvast}
+	\end{esimvast}
 \end{esimerkki}
 
 \subsubsection*{Toisen asteen polynomin tekijät}
 
-Polynomien jakolauseen mukaan
+Polynomien jakolauseen mukaan:
 
 \laatikko{Jos toisen asteen polynomin $ax^2+bx+c$ nollakohdat ovat $x_1$ ja $x_2$,
 \[ ax^2+bx+c=a(x-x_1)(x-x_2). \]}
@@ -66,15 +65,15 @@ Huomaa, että kerroin $a$ on edellisessä yhtälössä kummallakin puolella sama
 
 \newpage % VIIMEISTELY
 \begin{esimerkki}
-Jaetaan tekijöihin $P(x)=2x^2 + 4x-30$. \\
-Ratkaistaan nollakohdat yhtälöstä $$2x^2 + 4x-30=0$$ toisen asteen yhtälön ratkaisukaavalla.
-Nollakohdat ovat $x_1=3$ ja $x_2=-5$. Saadaan siis
+Jaetaan tekijöihin $P(x)=2x^2 + 4x-30$.
+	\begin{esimratk}
+Ratkaistaan nollakohdat yhtälöstä $$2x^2 + 4x-30=0$$ toisen asteen yhtälön ratkaisukaavalla. Nollakohdat ovat $x_1=3$ ja $x_2=-5$. Saadaan siis
 $$P(x)= 2(x-3)(x-(-5)) = 2(x-3)(x+5).$$
+	\end{esimratk}
 \end{esimerkki}
 
 \begin{esimerkki}
-Toisen asteen polynomin $P$ nollakohdat ovat $x=1$ ja $x=3$. Lisäksi $P(2)=3$.
-Määritä $P(x)$.
+Toisen asteen polynomin $P$ nollakohdat ovat $x=1$ ja $x=3$. Lisäksi $P(2)=3$. Määritä $P(x)$.
 \begin{esimratk}
 Koska polynomin nollakohdat ovat $x_1=1$ ja $x_2=3$, polynomi on muotoa
 \begin{align*} P(x)=a(x-1)(x-3). \end{align*}
@@ -113,5 +112,5 @@ $P(x)=2(x-1)^2$.
 Jos toisen asteen polynomilla ei ole reaalisia nollakohtia, sitä ei voi jakaa ensimmäisen asteen tekijöihin, joissa on vain reaalilukuja. (Sillä ensimmäisen asteen tekijällä on aina nollakohta.)
 
 \begin{esimerkki}
-Polynomia $x^2+4$ ei voi jakaa reaalisiin ensimmäisen asteen tekijöihin. %kompleksiluvuila tämä kyllä onnistuu)
+Polynomia $x^2+4$ ei voi jakaa reaalisiin ensimmäisen asteen tekijöihin. (Algebrallisten ja numeeristen menetelmien jatkokurssin kompleksiluvuila tämä kyllä onnistuu).
 \end{esimerkki}

@@ -27,7 +27,7 @@ Joskus potenssimerkintä on lausekkeen laskettua arvoa sievempi ilmaisutapa. Raj
 \newpage % VIIMEISTELY
 \begin{esimerkki}
 Sievennä lausekkeet.
-\alakohdat{
+\alakohdatm{
 § $3^4$
 § $xxx\cdot x$
 § $x(x+1)$
@@ -37,14 +37,14 @@ Sievennä lausekkeet.
 	
 \alakohdat{
 § $3^4=3\cdot3\cdot3\cdot3=9\cdot9=81$ (potenssin määritelmä)
-§ $xxx\cdot x=x\cdot x \cdot x \cdot x =x^4$ (potenssin määritelmä)
+§ $xxx\cdot x=x\cdot x \cdot x \cdot x =x^4$ (kertolaskun merkintä ja potenssin määritelmä)
 § $x(x+1)=x\cdot x+x\cdot 1=x^2+x$ (osittelulaki ja potenssin määritelmä)
 § $x^3(2x-1)=x^3\cdot 2x - x^3\cdot 1=x\cdot x\cdot x\cdot 2x - x^3 =2\cdot x\cdot x\cdot x\cdot x - x^3 =2x^4-x^3$ (osittelulaki ja potenssin määritelmä)
 }
 	\end{esimratk}
 	
 	\begin{esimvast}
-	\alakohdat{
+	\alakohdatm{
 § $81$
 § $x^4$
 § $x^2+x$
@@ -84,7 +84,7 @@ Tarkkaile laskujärjestystä
 Mikäli potensseja on monta sisäkkäin eli eksponenttina on uusi potenssilauseke, laskeminen aloitetaan uloimmasta, ''ylimmästä'' potenssista. Laskujärjestyksen poikkeudet merkataan tuttuun tapaan sulkeilla. %potenssin potenssi
 
 \begin{esimerkki}
-\alakohdat{
+\alakohdatm{
 § $2^{3^2}= 2^9 = 512$
 § $(2^3)^2=8^2=64$
 }
@@ -111,15 +111,16 @@ Monesti tulee tarpeeseen sieventää yksittäisiä lukuja monimutkaisempien laus
 Jos kantaluku on negatiivinen, sen ympärille merkitään aina sulkeet.
 
 \begin{esimerkki}
-$(-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16$
-
-Merkinnässä $-2^4$ puolestaan potenssin kantaluku on $2$. Koska $2^4 = 16$, $-2^4=-16$. Kerralla laskettuna: $-2^4 =-(2^4)= -(2 \cdot 2\cdot 2 \cdot 2) = -16$
+\alakohdat{
+§ $(-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16$
+§ Merkinnässä $-2^4$ potenssin kantaluku on $2$. Koska $2^4 = 16$, $-2^4=-16$. Kerralla laskettuna: $-2^4 =-(2^4)= -(2 \cdot 2\cdot 2 \cdot 2) = -16$
+}
 \end{esimerkki}
 
 Negatiivisella kantaluvulla laskettaessa ei ole mitään erityistä. Käytetään vain potenssin määritelmää toistuvana kertolaskuna ja ollaan huolellisia lopullisen merkin kanssa.
  
 \begin{esimerkki}
-        \alakohdat{
+        \alakohdatm{
             § $(-5)^2 = -5\cdot (-5)= 25$
             § $-5^2 = -(5\cdot 5)= -25$
             § $10-5^2=10-25=-15$
@@ -139,16 +140,13 @@ Huomaa seuraavat potenssien etumerkkeihin liittyvät ominaisuudet.
 			 }
 }
 
-Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen, koska tulossa on negatiivisia kertoimia parillinen määrä. Tällöin miinukset kumoavat toisensa, olipa kantaluku mikä tahansa.
+Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen, koska tulossa on negatiivisia kertoimia parillinen määrä. Tällöin miinukset kumoavat toisensa, olipa kantaluku mikä tahansa. Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen.
 
 \begin{esimerkki}
-$(-1)^4=(-1) \cdot (-1) \cdot (-1) \cdot (-1)= 1\cdot 1=1$
-\end{esimerkki}
-
-Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen.
-
-\begin{esimerkki}
-$(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
+\alakohdat{
+§ $(-1)^4=(-1) \cdot (-1) \cdot (-1) \cdot (-1)= 1\cdot 1=1$
+§ $(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
+}
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -165,55 +163,37 @@ Aiemmin todettiin, että lausekkeet $x-y$ ja $y-x$ ovat toistensa vastaluvut. Ko
 Ei siis ole väliä, kummin päin toiseen korottamisen sisällä oleva vähennyslasku on.
 
 \end{esimerkki}
-%\begin{esimerkki}
-%Koska parilliseen potenssin korottamisessa saadaan lopputulos sekä luvulla että sen vastaluvulla, lausekkeiden $(x-y)^2$ ja $(y-x)^2$ tulisi olla samat. Todetaan tämä avaamalla ensin ensimmäisestä lausekkeesta sulkeet potenssin määritelmän ja osittelulain avulla:
-%
-%	\begin{align*}
-%	(x-y)^2
-%	&=(x-y)(x-y) && \text{potenssin määritelmä} \\
-%	&=(x-y)x-(x-y)y && \text{osittelulaki} \\
-%	&=x(x-y)-y(x-y) && \text{vaihdantalaki} \\
-%	&=xx-xy-yx+y\cdot y && \text{osittelulaki} \\
-%	&=x^2-xy-xy+y^2 && \text{potenssin määritelmä ja vaihdatalaki} \\
-%	&=x^2-2xy+y^2 && \text{osittelulaki ja summa}
-%	\end{align*}
-%	
-%	Huomataan, että avatussa muodossa $x$ ja $y$ esiintyvät symmetrisesti, ts. niiden paikkoja voi vaihtaa vaikuttamatta lausekkeen arvoon:
-%	
-%	\begin{align*}
-%	x^2-2xy+y^2
-%	&=y^2-2xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
-%	&=y^2-2yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
-%	\end{align*}
-%	
-%Tämä on täsmälleen myös se muoto, johon päädytään, jos avattaisiin sulut ja sievennettäisiin lauskee $(y-x)^2$. Siis $(x-y)^2=(y-x)^2$.
-%\end{esimerkki} %niin joo ton olis voinut tehdä helpomminkin, mutta hyvä harjoitus nevertheless :P
+
 
 \subsection{Potenssien laskusäännöt}
 
-Potenssilausekkeita voi usein sieventää paljonkin, vaikka kantaluku olisi tuntematon. Tässä esimerkkejä.    
-    
-    Samankantaisten potenssien kertolasku
+Potenssilausekkeita voi usein sieventää paljonkin, vaikka kantaluku olisi tuntematon.
+
+\begin{esimerkki}
+\alakohdat{
+§ Samankantaisten potenssien kertolasku:
 	\[
 a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot a\cdot a\cdot a}_{\text{4kpl}}=a^{\mathbf{3+4}}=a^7
     	\]
-    Samankantaisten potenssien jakolasku
+§ Samankantaisten potenssien jakolasku:
 	\[
 \frac{a^7}{a^4}=\frac{a\cdot a\cdot a\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}	{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=a^{\mathbf{7-4}}=a^3
     	\]
-    Potenssin potenssi
+§ Potenssin potenssi:
 	\[
 (a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=
 \underbrace{(a\cdot a)\cdot (a\cdot a)\cdot (a\cdot a)}_{2\cdot 3=6\text{ kpl}}=a^{\boldsymbol{{2\cdot 3}}}=a^6
 \]
-    Tulon potenssi
+§ Tulon potenssi:
 	\[
 (ab^5)^3=ab^5\cdot ab^5\cdot ab^5=a\cdot a\cdot a\cdot b^5\cdot b^5\cdot b^5=a^{\mathbf{1\cdot 3}}\cdot b^{\mathbf{5\cdot 3}}=a^3b^{15}
 	\]
-     Osamäärän potenssi
+§ Osamäärän potenssi:
 	\[
 	\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{b^{21}}
 	\]
+}
+\end{esimerkki}
 
  Edellä esitetyt ideat voi yleistää potenssien laskusäännöiksi:
     
@@ -229,7 +209,7 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
  
     \begin{esimerkki}
         Lasketaan potenssien laskusääntöjen avulla
-        \alakohdat{
+        \alakohdatm{
             § $a^3\cdot a^2 = a^{2+3}=a^5$
             § $(a^3)^2 = a^{2\cdot 3}=a^6$
             § $\frac{7^9}{7^7}=7^{9-7}=7^2=49$
@@ -269,7 +249,7 @@ Siis $a^0=1$, kunhan $a\neq 0$. Laskua $0^0$ ei ole määritelty, koska nollalla
     }
     
     \begin{esimerkki}
-        \alakohdat{
+        \alakohdatm{
             § $7^0=1$
             § $(-556)^0=1$
          }
@@ -308,11 +288,11 @@ Sama ajatus yleistyy: koska potenssien laskusääntöjen halutaan pätevän ylei
 Erityisesti $a^{-1}=\frac{1}{a}$ kaikilla $a \neq 0$, eli miinus yksi eksponenttina tarkoittaa käänteislukua.
     
 \begin{esimerkki}
-\alakohdat{
+\alakohdatm{
 § $4^{-1}=\frac{1}{4^1}=\frac{1}{4}$
 § $8^{-1}=\frac{1}{8^1}=\frac{1}{8}$
 § $(\frac{2}{3})^{-1}=\frac{1}{(\frac{2}{3})^{1}}=\frac{1}{\frac{2}{3}}=1:\frac{2}{3}=1\cdot \frac{3}{2}=\frac{3}{2}$
-§ $\left(\frac{5}{7}\right)^{-1}=\frac{7}{5}$
+§ $\left(\frac{5}{7}\right)^{-1}=\frac{7}{5}$ (vrt. edellinen kohta)
 § $3^{-2}=\frac{1}{3^2}=\frac{1}{9}$
 § $(\frac{4}{5})^{-2}=(\frac{5}{4})^2=\frac{5^2}{4^2}=\frac{25}{16}$
 § $(-2)^{-2}=\frac{1}{(-2)^{2}}=\frac{1}{4}$.

@@ -41,7 +41,7 @@ Jos käsiteltävät murtoluvut eivät jo valmiiksi ole samannimisiä, ne voidaan
 	missä $b \neq 0$ ja $c \neq 0$.
 }
 
-Laventamisen mahdollistaa se, että jokainen luku $c(\neq0)$ voidaan esittää muodossa $\frac{c}{c}=1$. Kun mielivaltaista lukua kerrotaan luvulla $1$, luvun arvo ei muutu. Huomaa, että murtoluvun laventaminen ei tarkoita samaa kuin murtoluvun kertominen.
+Laventamisen mahdollistaa se, että jokainen nollasta poikkeavalle luvulle $c$ pätee $\frac{c}{c}=1$. Kun mielivaltaista lukua kerrotaan luvulla $1$, luvun arvo ei muutu. Huomaa, että murtoluvun laventaminen ei tarkoita samaa kuin murtoluvun kertominen.
 
 Koska murtolukuesitystä voidaan laventaa millä tahansa (nollasta eriävällä) kokonaisluvulla, jokaisella murtoluvulla on monta esitystapaa; esimerkiksi $\frac{1}{2}=\frac{3}{6}$. Konkreettisemmin voidaan ajatella, että puolikas pizza ei vähene vaikka molemmat puolikkaat jaetaan edelleen kolmeen osaan.
 
@@ -57,8 +57,9 @@ Mitä tahansa kahta murtolukua voidaan vertailla laventamalla (tai supistamalla)
 \laatikko[Murtolukujen yhteenlasku, samat nimittäjät]{
     Jos murtolukujen nimittäjät ovat samat, voidaan murtoluvut laskea yhteen laskemalla osoittajat yhteen. %PERUSTELU: PERUSTUU OSITTELULAKIIN
     \[
-    \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}
-    \], missä $c \neq 0$
+    \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c},
+    \]
+    missä $c \neq 0$
 }
 
 Jos yhteenlaskettavilla murtoluvuilla on eri nimittäjät, murtoluvut lavennetaan ensin samannimisiksi ja sitten osoittajat lasketaan yhteen. Jos siis $\frac{a}{b}$ ja $\frac{c}{d}$ ovat murtolukuja (missä $b \neq 0$ ja $d \neq 0$), lasketaan
@@ -88,6 +89,8 @@ Yllä esitetty menettely, missä murtoluvut on lavennettu toistensa nimittäjill
            											&= \frac{3+1+2}{6}\\
            											&= \frac{6}{6} = 1.
         \end{align*}
+        
+        Mahdollista olisi ollut myös ensin yhdistää jo valmiiksi samannimiset murtoluvut ja vasta sitten muokata samannimisiksi.
         \end{esimratk}
     \end{esimerkki}
     
@@ -97,7 +100,7 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
 
 \end{esimerkki}    
     
-    Kaikki rationaaliluvut voidaan esittää murtolukumuodossa, mutta myöskokonaisluvut voidaan esittää murtolukuina asettamalla murtoluvun nimittäjäksi yksi. Tätä voidaan käyttää, kun lasketaan yhteen kokonaislukuja ja murtolukuja.
+Kaikki rationaaliluvut voidaan esittää murtolukumuodossa, mutta myös kokonaisluvut voidaan esittää murtolukuina asettamalla murtoluvun nimittäjäksi yksi. Tätä voidaan käyttää, kun lasketaan yhteen kokonaislukuja ja murtolukuja.
     
     \begin{esimerkki}
         Laske\[ 2 + \frac{1}{3}.\]
@@ -106,6 +109,7 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
         \begin{align*}
            2 + \frac{1}{3} &= \frac{2}{1} + \frac{1}{3}  \\ 
 	   &= \frac{3 \cdot 2}{3 \cdot 1} + \frac{1}{3} \\ 
+	    &= \frac{6}{3} + \frac{1}{3} \\ 
 	   &= \frac{6+1}{3} \\ 
 	   &= \frac{7}{3}.
         \end{align*}
@@ -114,7 +118,7 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
     
 Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlaskukin (vähennyslasku määriteltiin vastaluvun lisäämisenä). Ensin lavennetaan samannimisiksi, sitten suoritetaan vähennyslasku osoittajassa.
 
-\newpage % VIIMEISTELY
+% VIIMEISTELY
 %Murtolukujen nimittäjillä ei ole yhteisiä tekijöitä. Luvut voisi lavetaan kerralla samannimisiksi, mutta voimme käsitellä myös kahta murtolukua kerrallaan. TÄMÄKIN PUUTTUU!
 %ei-niin-pitkälle menevä esimerkki vähennyslaskusta
  %selitä, miksi tuo toimii: koska kertolaskun vaihdannaisuus %SEKALUKU PITÄÄ SELITTÄÄ PAREMMIN! ja antaa esimerkkejä!!!
@@ -153,6 +157,8 @@ $$2\frac{5}{21}$$
     \]
 }
 
+Laskusääntö voidaan perustella graafisesti:
+
 \includegraphics[scale=0.4]{pictures/Kuva3-1-1.pdf}
 \includegraphics[scale=0.4]{pictures/Kuva3-1-2.pdf}
 \includegraphics[scale=0.4]{pictures/Kuva3-1-3.pdf}
@@ -168,7 +174,7 @@ $$2\frac{5}{21}$$
         \begin{esimratk}
         Murtolukujen kertolaskussa tekijöitä ei tarvitse laventaa samannimisiksi. Osoittajat kerrotaan keskenään ja nimittäjät kerrotaan keskenään:
       \[
-        \frac{3}{4}\cdot \frac{6}{5}= \frac{3\cdot 6}{4\cdot 5}= \frac{18}{20}=\frac{9}{10}
+        \frac{3}{4}\cdot \frac{6}{5}= \frac{3\cdot 6}{4\cdot 5}= \frac{18}{20}=\frac{\cancel{2}\cdot 9}{\cancel{2}\cdot 10}=\frac{9}{10}
         \]
         \end{esimratk}
         \begin{esimvast}
@@ -176,7 +182,6 @@ $$2\frac{5}{21}$$
         \end{esimvast}
     \end{esimerkki}
     
-
 
 %esimerkkejä\ldots
 % erityisesti esimerkki siitä, miten yhteiset supistettavat tekijät voi nähdä jo etukäteen, ja vältetään turhaa laskutyötä
@@ -188,7 +193,7 @@ $$2\frac{5}{21}$$
     
     Rationaaliluvun $a$ käänteisluku on $\frac{1}{a}$ ($a\neq 0$), sillä
     \[
-    a\cdot \frac{1}{a} = 1.
+    a\cdot \frac{1}{a} =\frac{a}{a}= 1.
     \]
     Vastaavasti rationaaliluvun $\frac{a}{b}$ käänteisluku on $\frac{b}{a}$ ($a\neq 0$ ja $b\neq 0$), sillä
     \[
@@ -254,7 +259,7 @@ Olkoon $b \neq 0$, $c \neq 0$ ja $d \neq 0$. Murtolukujen osamäärä $\frac a b
 Jos jonkin luvun jakaminen päässä viidellä tuntuu vaikealta, voi käyttää esimerkiksi seuraavaa kikkaa: Koska $5$ vastaa arvoltaa lauseketta $10:2$, voidaan viidellä jakamisen sijaan jakaa $\frac{10}{2}$:lla. Tämä voi helpottaa päässälaskua, koska yleensä kahdella ja kymmenellä suoritetut kerto- ja jakolaskut koetaan yksinkertaisina. Jaetaan mielivaltainen $x$ viidellä näin:
 $$x:5=x:\frac{10}{2}=x\cdot \frac{2}{10}=\frac{2x}{10}$$
 
-Viidellä tulee siis jaettua, jos kertoo kahdella ja jakaa tmän jälkeen tulon kymmenellä. (Toki myös laskujärjestys $\frac{x}{10}\cdot 2$ on mahdollinen, eli että ensin jakaa kymmenellä ja sitten vasta kertoo kahdella.) Näin esimerkiksi lasku $1\,340:5$ muuttuu muotoon $\frac{1\,340\cdot 2}{10}=\frac{2\,680}{10}=268$.
+Viidellä tulee siis jaettua, jos kertoo kahdella ja jakaa tämän jälkeen tulon kymmenellä. Toki myös laskujärjestys $\frac{x}{10}\cdot 2$ on mahdollinen, eli että ensin jakaa kymmenellä ja sitten vasta kertoo kahdella. Näin esimerkiksi lasku $1\,340:5$ muuttuu muotoon $\frac{1\,340\cdot 2}{10}=134\cdot 2=268$.
 \end{esimerkki}
 
 \subsection{Murtolausekkeiden sieventäminen}
@@ -276,6 +281,8 @@ Kun jakaa kolme erikokoista nallekarkkipussia ($a$, $b$ ja $c$) tasan kolmen ihm
 
 Jos taas samat kolme henkilöä jakavat keskenään pussin tikkareita ($6$ kpl) ja yhden pussin nallekarkkeja ($n$ kpl), niin saadaan seuraavanlainen lasku: $ \frac{6\text{ tikkaria}+n\text{ nallekarkkia}}{3} = \frac{6\text{ tikkaria}}{3} + \frac{n\text{ nallekarkkia}}{3} = \frac{\cancel{3} \cdot 2\text{ tikkaria}}{\cancel{3}} + \frac{n\text{ nallekarkkia}}{3} = 2\text{ tikkaria} + \frac{n\text{ nallekarkkia}}{3}$. Toisin sanoen, kukin saa kaksi tikkaria ja kuinka paljon ikinä onkaan kolmasosa kaikista nallekarkeista.
 \end{esimerkki}
+
+%esimerkkejä!
 
 %tarviataanko? tehtäviä on.
 %\laatikko[Ryhmittely]{
