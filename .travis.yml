@@ -9,10 +9,8 @@ before_deploy: "mkdir build ; mv vol1.pdf build/vol1-`TZ='Europe/Helsinki' date 
 deploy:
   provider: s3
   bucket: vapaa-matikka
-  access_key_id: 
-    secure: xjewaMkhzuBF1PBYgzLKP9Ijq8klBTuSIq049LJ9uN9KlRKEEZbXybO8Ma6cIAXWKnPJFx2MNP8wIMW8JGWqT0VUnZ3fq1tqzOrWvOj05L3yt6w7B0gnAI5vUYrbAz5nk8nh8LCAt2KP6pcySSgd4TirB5ErE0A8NhVSnk4In7k=
-  secret_access_key: 
-    secure: R22vbqZDOxPSoD+bM0N3DIYZIz4zAvVi86/x3EJh+qcDH19wJOZ6AipKtYB9WCMpJ0OCPkZTfGaXYQkUs/i21VUA4IFV3hl/3g8iZYGm4QTV5BTGWaOc5WKxKWqLCPbX473y1Q0EtXdAED5+xKd4CsyamLv/YMQzyCZfTlIypwM=
+  access_key_id: AWS_ACCESS_KEY_ID
+  secret_access_key: AWS_ACCESS_KEY_SECRET
   skip_cleanup: true
   region: eu-west-1
   local-dir: build
