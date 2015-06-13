@@ -9,8 +9,8 @@ before_deploy: "mkdir build ; mv vol1.pdf build/vol1-`TZ='Europe/Helsinki' date 
 deploy:
   provider: s3
   bucket: vapaa-matikka
-  access_key_id: AWS_ACCESS_KEY_ID
-  secret_access_key: AWS_ACCESS_KEY_SECRET
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_ACCESS_KEY_SECRET
   skip_cleanup: true
   region: eu-west-1
   local-dir: build
