@@ -5,8 +5,6 @@
 \newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa1/#1}}} % numeroimaton luku
 \newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{vast} \end{vastaussivu}}
 
-\Opensolutionfile{ans}[vast] %kirjoittaa vastaukset tiedostoon vast.tex
-
 \newpage
 
 % siirrä tiedostoon kayttoohje.tex
@@ -29,13 +27,13 @@ Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaus
 
 \newpage
 
-\section*{Lähtötasotesti}
+\chapter*{Lähtötasotesti}
 \addcontentsline{toc}{chapter}{Lähtötasotesti}
 \lukufilter{#1}{\input{maa1/LIITE_lahtotasotesti}}
 
 \newpage
 
-\section*{MAA1 Funktiot ja yhtälöt}
+\chapter*{MAA1 Funktiot ja yhtälöt}
 \addcontentsline{toc}{chapter}{MAA1 Funktiot ja yhtälöt}
 \lukufilter{#1}{\input{maa1/LIITE_esipuhe}}
 
@@ -77,7 +75,7 @@ Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaus
 \renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
 \renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
 
-\section*{MAA2 Polynomifunktiot}
+\chapter*{MAA2 Polynomifunktiot}
 \addcontentsline{toc}{chapter}{MAA2 Polynomifunktiot}
 \lukufilter{#1}{\input{maa2/LIITE_esipuhe}}
 
@@ -115,17 +113,9 @@ Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaus
    \nluku{LIITE_harjoituskokeita}{Harjoituskokeita}
    \nluku{LIITE_yokokeita}{Ylioppilaskoetehtäviä}
 
-\renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
-\renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
-
-\osa{Syventäviä aiheita}
+\chapter*{Syventäviä aiheita}
+\addcontentsline{toc}{chapter}{Syventäviä aiheita}
     \section*{Lukujärjestelmät} \addcontentsline{toc}{section}{Lukujärjestelmät} \lukufilter{LIITE_lukujarjestelmat}{\input{maa1/LIITE_lukujarjestelmat}}
     \section*{Paraabeli} \addcontentsline{toc}{section}{Paraabeli} \lukufilter{LIITE_paraabeli}{\input{maa2/LIITE_paraabeli}}
     %\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat}
     %\nluku{LIITE_sanasto}{Hakemisto ja suomi–ruotsi–englanti-sanasto}
-
-\Closesolutionfile{ans}
-
-\osa{Vastaukset ja hakemisto}
-\vast
-% hakemisto tulee yleisestä rakenteesta
