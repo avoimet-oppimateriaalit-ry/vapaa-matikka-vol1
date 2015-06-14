@@ -1,9 +1,5 @@
-\providecommand{\lukufilter}[2]{#2} % ylikirjoitetaan kaanna_luku.sh -skriptistä.
-\newcommand{\osa}[1]{\chapter{#1}} % osa
-\newcommand{\nosa}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1}} %numeroimaton osa
-\newcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa1/TEORIA_#1} \input{maa1/TEHT_#1}}} % luku
-\newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa1/#1}}} % numeroimaton luku
-\newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{vast} \end{vastaussivu}}
+\renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa1/TEORIA_#1} \input{maa1/TEHT_#1}}} % luku
+\renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa1/#1}}} % numeroimaton luku
 
 \newpage
 
@@ -26,15 +22,11 @@ Kirjan tehtävät on suurimmassa osaa luvuista jaettu kolmeen kategoriaan: Perus
 Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaustehtäviä, harjoituskokeita, vanhoja yo- ja eri alojen valintakokeita, harjoitustehtävien vastaukset sekä asiasanahakemisto.
 
 \newpage
-
-\chapter*{Lähtötasotesti}
-\addcontentsline{toc}{chapter}{Lähtötasotesti}
+\nosa{Lähtötasotesti}
 \lukufilter{#1}{\input{maa1/LIITE_lahtotasotesti}}
 
 \newpage
-
-\chapter*{MAA1 Funktiot ja yhtälöt}
-\addcontentsline{toc}{chapter}{MAA1 Funktiot ja yhtälöt}
+\nosa{MAA1 -- Funktiot ja yhtälöt}
 \lukufilter{#1}{\input{maa1/LIITE_esipuhe}}
 
 \osa{Luvut ja laskutoimitukset}
@@ -75,8 +67,8 @@ Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaus
 \renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
 \renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
 
-\chapter*{MAA2 Polynomifunktiot}
-\addcontentsline{toc}{chapter}{MAA2 Polynomifunktiot}
+\newpage
+\nosa{MAA2 -- Polynomifunktiot}
 \lukufilter{#1}{\input{maa2/LIITE_esipuhe}}
 
 \osa{Polynomi}
