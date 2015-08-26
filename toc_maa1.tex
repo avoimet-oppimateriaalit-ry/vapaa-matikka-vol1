@@ -1,0 +1,66 @@
+\renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa1/TEORIA_#1} \input{maa1/TEHT_#1}}} % luku
+\renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa1/#1}}} % numeroimaton luku
+
+\newpage
+
+% siirrä tiedostoon kayttoohje.tex
+\subsection*{Kirjan käyttämisestä}
+
+Kirjan kirjoituksessa on nähty erityistä vaivaa siinä, että \textit{mitään ei oleteta osattavan etukäteen}. Esitietovaatimuksia ei ole melkeinpä lainkaan:
+
+\luettelo{
+§ intuitio yhteen-, vähennys-, kerto- ja jakolaskusta sekä kyky käyttää laskinta näiden laskemiseen; kellonajat
+§ geometriaa: kolmio, suorakulmio; pituus, pinta-ala, tilavuus
+§ lukusanoja: kymmenen, sata, tuhat, miljoona -- käytetään kirjan alussa, ja myöhemmin selitetään perusteellisemmin
+§ desimaali -- sanaa käytetään kirjan alussa, mutta myöhemmin määritellään perusteellisemmin
+}
+
+Jos kirja ei anna tarpeeksi esimerkkejä jostakin asiasta, \textbf{ota yhteyttä}, ja asia korjataan välittömästi. \textbf{Oletusarvoisesti ymmärtämättömyyden syy ei ole sinun vaan oppimateriaalin.} Ota toki myös yhteyttä, jos sinulla on mielenkiintoisia tehtäväideoita!
+
+Kirjan tehtävät on suurimmassa osaa luvuista jaettu kolmeen kategoriaan: Perusteet, kokonaisuuden hallitseminen ja lisätehtävät. Perustehtävät tarkistavat luvun määritelmien ja keskeisten tulosten ymmärtämisen sekä perustavanlaatuiset taidot -- nämä täytyy osata kurssin läpäisemiseen. Hallitse kokonaisuus -osiossa tehtävät ovat soveltavampia, ja ne yhdistelevät monipuolisesti luvun eri menetelmiä ja myös aiemmissa luvuissa opittuja asioita. Jos kaipaat lisäharjoitusta, sekä perustehtäviä että sekalaisia sovelluksia löytyy lisää kolmannesta osiosta. Yhteiskunnallisia tilanteita soveltavien tehtävien tiedot ovat faktuaalisia, ellei toisin mainita. Lisää tehtäviä -osion tähdellä $\star$ merkityt tehtävät ovat selvästi opetussuunnitelman ulkopuolisia tehtäviä, erittäin soveltavia, oppiainerajat ylittäviä tehtäviä, pitkiä tai tekijöiden mielestä muuten koettu mielenkiintoisiksi tai haastaviksi. Näiden tehtävien osaaminen ei missään nimessä ole vaatimus kympin kurssiarvosanaan.
+
+Kirjan lopusta löytyy ylimääräinen teorialiite lukujärjestelmistä, kertaustehtäviä, harjoituskokeita, vanhoja yo- ja eri alojen valintakokeita, harjoitustehtävien vastaukset sekä asiasanahakemisto.
+
+\newpage
+\nosa{Lähtötasotesti}
+\lukufilter{#1}{\input{maa1/LIITE_lahtotasotesti}}
+
+\newpage
+\nosa{MAA1 -- Funktiot ja yhtälöt}
+\lukufilter{#1}{\input{maa1/LIITE_esipuhe}}
+
+\osa{Luvut ja laskutoimitukset}
+    \luku{luku_ja_relaatio}{Luku ja relaatio}
+    \luku{lukualueet}{Johdatus lukualueisiin ja aritmetiikkaan}
+    \luku{jaollisuus}{Jaollisuus ja tekijöihinjako}
+    \luku{sieventaminen}{Laskujärjestys ja lausekkeiden sieventäminen}
+    \luku{rationaaliluvut}{Murtoluvuilla laskeminen}
+%	\luku{rationaalisovelluksia}{Laskutoimitukset sovelluksissa}
+	\luku{potenssi}{Potenssi}
+    \luku{desimaaliluvut}{Luvun desimaaliesitys}
+    \luku{pyoristaminen}{Pyöristäminen ja vastaustarkkuus}
+%    \luku{suuruusluokat}{Suuruusluokat ja kymmenpotenssimuoto}
+    \luku{yksikot}{Suureet ja yksiköt}
+    \luku{juuret}{Juuret}
+    \luku{murtopotenssi}{Murtopotenssi}
+    \luku{reaaliluvut}{Reaaliluvut lukusuoralla}
+
+\osa{Yhtälöt}
+    \luku{yhtalo}{Yhtälö}
+    \luku{ensimmainen}{Ensimmäisen asteen yhtälö}
+    \luku{prosenttilaskenta}{Prosenttilaskenta}
+    \luku{potenssiyhtalot}{Potenssiyhtälöt}
+    \luku{verrannollisuus}{Suoraan ja kääntäen verrannollisuus}
+
+\osa{Funktiot}
+    \luku{funktio}{Funktio ja sen esitystavat}
+    \luku{potenssifunktio}{Potenssifunktio}
+    \luku{eksponenttifunktio}{Eksponenttifunktio}
+	
+\osa{Kertausosio}
+    \nluku{LIITE_testaatietosi}{Testaa tietosi!}
+    \nluku{LIITE_kertausteht}{Kertaustehtäviä}
+    \nluku{LIITE_harjoituskokeet}{Harjoituskokeita}
+    \nluku{LIITE_ylioppilaskokeet}{Ylioppilaskoetehtäviä}
+    \nluku{LIITE_paasykokeet}{Pääsy- ja valintakoetehtäviä}
+

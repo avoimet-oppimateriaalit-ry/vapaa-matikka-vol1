@@ -1,0 +1,47 @@
+\renewcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{maa2/TEORIA_#1} \input{maa2/TEHT_#1}}} % luku
+\renewcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{maa2/#1}}} % numeroimaton luku
+
+\newpage
+\nosa{MAA2 -- Polynomifunktiot}
+\lukufilter{#1}{\input{maa2/LIITE_esipuhe}}
+
+\osa{Polynomi}
+    \luku{polynomi}{Polynomi}
+    \luku{polynomien_kertolasku}{Polynomeilla laskeminen}
+    \luku{muistikaavat}{Muistikaavat}
+    \luku{tulon_nollasaanto_ja_tulon_merkkisaanto}{Tulon nollasääntö \& tulon merkkisääntö}
+    \luku{tekijoihinjako}{Polynomin jakaminen tekijöihin}
+    \luku{polynomifunktion_kuvaaja}{Polynomifunktion kuvaaja}
+
+\osa{Ensimmäinen aste}
+    \luku{epayhtalo}{Epäyhtälöiden teoriaa}
+    \luku{ensimmaisen_asteen_yhtalo}{Kertausta: ensimmäisen asteen yhtälö}
+    \luku{ensimmaisen_asteen_epayhtalo}{Ensimmäisen asteen epäyhtälö}
+
+\osa{Toinen aste}
+    \luku{paraabeli}{Toisen asteen polynomifunktio ja sen kuvaaja}
+    \luku{toisen_asteen_yhtalo}{Toisen asteen yhtälö}
+    \luku{toisen_asteen_yhtalon_ratkaisukaava}{Toisen asteen yhtälön ratkaisukaava}
+    \luku{diskriminantti}{Diskriminantti}
+    \luku{toisen_asteen_epayhtalo}{Toisen asteen epäyhtälö}
+    \luku{jakolause}{Polynomien jakolause}
+    
+\osa{Korkeampi aste}
+    \luku{korkeamman_asteen_polynomifunktio}{Korkeamman asteen polynomifunktio}
+    \luku{korkeamman_asteen_yhtalot}{Korkeamman asteen yhtälöt}
+    \luku{korkeamman_asteen_epayhtalot}{Korkeamman asteen epäyhtälöt}
+
+\newpage
+\osa{Kertausosio}
+   \nluku{LIITE_testaatietosi}{Testaa tietosi!}
+   \nluku{LIITE_kertausteht}{Kertaustehtäviä}
+   \newpage
+   \nluku{LIITE_harjoituskokeita}{Harjoituskokeita}
+   \nluku{LIITE_yokokeita}{Ylioppilaskoetehtäviä}
+
+\chapter*{Syventäviä aiheita}
+\addcontentsline{toc}{chapter}{Syventäviä aiheita}
+    \section*{Lukujärjestelmät} \addcontentsline{toc}{section}{Lukujärjestelmät} \lukufilter{LIITE_lukujarjestelmat}{\input{maa1/LIITE_lukujarjestelmat}}
+    \section*{Paraabeli} \addcontentsline{toc}{section}{Paraabeli} \lukufilter{LIITE_paraabeli}{\input{maa2/LIITE_paraabeli}}
+    %\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat}
+    %\nluku{LIITE_sanasto}{Hakemisto ja suomi–ruotsi–englanti-sanasto}

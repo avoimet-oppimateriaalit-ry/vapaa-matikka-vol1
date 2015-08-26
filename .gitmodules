@@ -1,3 +1,4 @@
 [submodule "commons"]
 	path = commons
 	url = https://github.com/avoimet-oppimateriaalit-ry/vapaa-matikka-commons.git
+	branch = master
