@@ -1,4 +1,7 @@
-language: latex
+language: generic
+sudo: required
+dist: trusty
+
 install:
   - sudo apt-get install gnuplot
   - ./commons/latex-install-scripts/install_latex
