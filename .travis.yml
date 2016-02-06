@@ -3,6 +3,7 @@ sudo: required
 dist: trusty
 
 install:
+  - sudo apt-get update
   - sudo apt-get install gnuplot
   - ./commons/latex-install-scripts/install_latex
   - export PATH=/usr/local/texlive/2014/bin/x86_64-linux:$PATH
